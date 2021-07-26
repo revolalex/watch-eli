@@ -12,10 +12,7 @@ class Home extends Component {
       <div>
         <CarouselHero />
         <CardLine />
-        <div className="parallax">
-          <div className="parallax-section"></div>
-        </div>
-        {/* <div class="parallax"></div> */}
+        <div class="parallax"></div>
       </div>
     );
   }
