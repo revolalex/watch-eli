@@ -1,0 +1,41 @@
+:root {
+  --gold-color: #A2845C;
+  /* to use ex => color: var(--gold-color) */
+}
+
+.img-carousel {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 400px;
+}
+
+.carousel-hero p {
+  color: white;
+}
+
+.carousel-hero h5 {
+  color: white;
+}
+
+.carousel-hero span {
+  color: white;
+}
+
+.carousel-indicators .active {
+  border: 1px ridge var(--gold-color) !important;
+}
+
+.carousel-indicators button {
+  background-color: var(--gold-color) !important;
+}
+
+.carousel-control-prev-icon {
+  filter: invert(58%) sepia(11%) saturate(1226%) hue-rotate(354deg) brightness(91%) contrast(89%) !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   filter: invert(58%) sepia(11%) saturate(1226%) hue-rotate(354deg) brightness(91%) contrast(89%) !important;
+ }
