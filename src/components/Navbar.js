@@ -20,7 +20,7 @@ class Navbar extends Component {
     render() {
         const t = this.props.t
         return (
-            <nav className="navbar navbar-dark navbar-expand-sm bg-dark">
+            <nav className="navbar navbar-dark navbar-expand-sm bg-dark sticky-top">
                 <div class="container">
                     <a href="/" class="navbar-brand logo-text">
                         <img className="logoWatch" src={watch} alt="logo watch" /> &nbsp;
@@ -31,12 +31,12 @@ class Navbar extends Component {
                     </button>
                     <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto nav-fill">
-                            <li className="shadow-text-gold"><Link to={'/'} className="nav-link">{t("navbar-home")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("buy")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("sell")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("service")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("navbar-about")}</Link></li>
-                            <li><Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link></li>
+                            <li className="shadow-text-gold"><Link to={'/'} className="nav-link">{t("home")}</Link></li>
+                            <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
+                            <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
+                            <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
+                            <li><Link to={'/about'} className="nav-link">{t("about")}</Link></li>
+                            <li><Link to={'/contact'} className="nav-link">{t("contact")}</Link></li>
                         </ul>
                         {/* todo make to left if bigscreen */}
                         <div className="lang-switch"> 

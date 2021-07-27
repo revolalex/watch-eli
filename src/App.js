@@ -3,25 +3,31 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Buy from './pages/Buy'
+import Sell from './pages/Sell'
+import Service from './pages/Service'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import "./App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 class App extends Component {
   render() {
     return (
-    <Router>
+      <Router>
         <div>
-          <Navbar/>
+          <Navbar />
           <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/about' component={About} />
+            <Route exact path='/' component={Home} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/about' component={About} />
+            <Route path='/buy' component={Buy} />
+            <Route path='/sell' component={Sell} />
+            <Route path='/service' component={Service} />
           </Switch>
-          <Footer/>
+          <Footer />
         </div>
       </Router>
     );

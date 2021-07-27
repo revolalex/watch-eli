@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import DaytonaImg from '../img/daytona.jpeg'
-// import VenteImg from '../img/achat.jpg'
-// import ApService from '../img/ap_service.jpg'
 import ServiceBreitling from"../img/serviceBreitling.jpg"
 import SpeedmasterImg from '../img/speedmaster.jpg'
 import "./CardLine.css"
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 class CardLine extends Component {
     componentDidMount() {
@@ -28,7 +27,8 @@ class CardLine extends Component {
                                 <img src={SpeedmasterImg} class="card-img-top img-from-card" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">{t("buy")}</h5>
-                                    <p class="card-text"> Watchiz vous propose une sélection de garde-temps neufs ou d’occasion à la fois rares et iconiques pour le plus grand bonheur des passionnés d’horlogerie mais aussi des collectionneurs. Toutes nos pièces sont authentifiées et certifiées par des experts horlogers afin de garantir à nos acheteurs une qualité irréprochable et des pièces d’origine.</p>
+                                    <p class="card-text">{t("card-buy-text")}</p>
+                                    <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,8 @@ class CardLine extends Component {
                                 <img src={DaytonaImg} class="card-img-top img-from-card" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">{t("sell")}</h5>
-                                    <p class="card-text">Vous souhaitez vous séparer de votre montre afin d’en acquérir une nouvelle ou vous souhaitez tout simplement revendre une de vos montres récentes ou de collection ? Chez Watchiz, nous reprenons votre garde-temps après expertise du modèle, de sa référence, et de son état.</p>
+                                    <p class="card-text">{t("card-sell-text")}</p>
+                                    <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +47,8 @@ class CardLine extends Component {
                                 <img src={ServiceBreitling} class="card-img-top img-from-card" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">{t("service")}</h5>
-                                    <p class="card-text"> travaille main dans la main avec les plus grandes manufactures horlogères afin de vous proposer un service de réparation et de révision à la hauteur de votre garde-temps. Montre mécanique à remontage manuel, montre automatique, ou montre avec complications, nous prenons soin de tous types de garde-temps.</p>
+                                    <p class="card-text">{t("card-service-text")}</p>
+                                    <p><Link to={'/service'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>

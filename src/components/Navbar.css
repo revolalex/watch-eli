@@ -31,5 +31,11 @@
   height: 52px;
   width: 52px;
 } */
+a:hover{
+  color:var(--gold-color) !important
+}
+.nav-link .active{
+  color:var(--gold-color) !important
 
+}
 

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
-class About extends Component {
+class Service extends Component {
   render() {
     return (
       <div>
-        <h2>About</h2>
+        <h2>Service</h2>
       </div>
     );
   }
 }
 
-export default withTranslation()(About);
+export default withTranslation()(Service);
