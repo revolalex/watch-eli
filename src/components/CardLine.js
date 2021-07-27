@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import DaytonaImg from '../img/daytona.jpeg'
 import VenteImg from '../img/achat.jpg'
+import ServiceBreitling from"../img/serviceBreitling.jpg"
+import SpeedmasterImg from '../img/speedmaster.jpg'
 import ApService from '../img/ap_service.jpg'
 import "./CardLine.css"
 import { withTranslation } from 'react-i18next';
@@ -23,7 +25,7 @@ class CardLine extends Component {
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100" data-aos="zoom-in" >
-                                <img src={VenteImg} class="card-img-top img-from-card" alt="..." />
+                                <img src={SpeedmasterImg} class="card-img-top img-from-card" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">{t("buy")}</h5>
                                     <p class="card-text"> Watchiz vous propose une sélection de garde-temps neufs ou d’occasion à la fois rares et iconiques pour le plus grand bonheur des passionnés d’horlogerie mais aussi des collectionneurs. Toutes nos pièces sont authentifiées et certifiées par des experts horlogers afin de garantir à nos acheteurs une qualité irréprochable et des pièces d’origine.</p>
@@ -41,7 +43,7 @@ class CardLine extends Component {
                         </div>
                         <div class="col">
                             <div class="card h-100" data-aos="zoom-in" >
-                                <img src={ApService} class="card-img-top img-from-card" alt="..." />
+                                <img src={ServiceBreitling} class="card-img-top img-from-card" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">{t("service")}</h5>
                                     <p class="card-text"> travaille main dans la main avec les plus grandes manufactures horlogères afin de vous proposer un service de réparation et de révision à la hauteur de votre garde-temps. Montre mécanique à remontage manuel, montre automatique, ou montre avec complications, nous prenons soin de tous types de garde-temps.</p>
