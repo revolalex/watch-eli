@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import DaytonaImg from '../img/daytona.jpeg'
-import VenteImg from '../img/achat.jpg'
+// import VenteImg from '../img/achat.jpg'
+// import ApService from '../img/ap_service.jpg'
 import ServiceBreitling from"../img/serviceBreitling.jpg"
 import SpeedmasterImg from '../img/speedmaster.jpg'
-import ApService from '../img/ap_service.jpg'
 import "./CardLine.css"
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
