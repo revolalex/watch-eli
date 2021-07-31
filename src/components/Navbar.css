@@ -2,12 +2,11 @@
   height: 30px;
   width: 30px;
 }
-@media  (max-width: 900px) {
+/* @media  (max-width: 900px) {
   #nav-bar-desktop{
     display: none;
   }
-  
-}
+} */
 
 .nav-link {
   font-weight: bold;

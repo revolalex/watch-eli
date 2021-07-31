@@ -2,6 +2,14 @@
   padding-top: 15px;
 }
 
+.select-lang{
+  background: #2C2C29;
+}
+
+select.select-lang {
+  color: var(--gold-color)!important;
+}
+
 
 /* icone start left */
 div.container-nav-burger {
@@ -13,7 +21,6 @@ div.container-nav-burger {
     display: none;
   }
 } */
-
 
 .nav-link .active {
   color: var(--gold-color);

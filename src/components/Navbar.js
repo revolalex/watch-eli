@@ -4,7 +4,7 @@ import i18n from '../i18n';
 import watch from '../img/watch.png'
 import './Navbar.css'
 import { withTranslation } from 'react-i18next';
-import "./Navbar.css"
+
 
 class Navbar extends Component {
     constructor(props) {
@@ -39,10 +39,15 @@ class Navbar extends Component {
                             <li><Link to={'/contact'} className="nav-link">{t("contact")}</Link></li>
                         </ul>
                         {/* todo make to left if bigscreen */}
-                        <div className="lang-switch"> 
+                        <div className="lang-switch">
                             <select value={this.state.value} onChange={this.handleChange}>
-                                <option value="fr">🇫🇷</option>
-                                <option value="en">🇬🇧</option>
+                                <option value="fr">
+                                    {/* 🇫🇷 */}
+                                    Fr
+                                </option>
+                                <option value="en">
+                                    Eng{/* 🇬🇧 */}
+                                </option>
                             </select>
                         </div>
 

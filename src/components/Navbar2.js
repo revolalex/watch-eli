@@ -3,9 +3,18 @@ import './Navbar2.css'
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import watch from '../img/watch.png'
+import i18n from '../i18n';
 
 class Navbar2 extends Component {
-    state = {}
+    constructor(props) {
+        super(props);
+        this.state = { value: '' }
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+        i18n.changeLanguage(event.target.value)
+    }
     render() {
         const t = this.props.t
         return (
@@ -26,7 +35,7 @@ class Navbar2 extends Component {
                                 </div>
                             </p>
                             <Link id="logoText" to={'/'} classNameName="nav-link">
-                                <img style={{height: "25px", marginLeft: "10px", marginRight: "10px"}} src={watch} alt="logo watch" />
+                                <img style={{ height: "25px", marginLeft: "10px", marginRight: "10px" }} src={watch} alt="logo watch" />
                                 &nbsp;Watchiz
                             </Link>
 
@@ -38,6 +47,13 @@ class Navbar2 extends Component {
                     <nav>
                         <div id="navbarNavDropdown" className="navbar-collapse collapse text-center">
                             <ul id="main-menu" className="navbar-nav">
+                                <li
+                                    data-toggle="collapse"
+                                    data-target="#navbarNavDropdown"
+                                    aria-controls="navbarNavDropdown"
+                                >
+                                    <Link to={'/'} classNameName="nav-link">{t("home")}</Link>
+                                </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
@@ -72,9 +88,15 @@ class Navbar2 extends Component {
                                     <Link to={'/contact'} classNameName="nav-link">{t("contact")}</Link>
                                 </li>
                                 <div classNameName="lang-switch">
-                                    <select value={this.state.value} onChange={this.handleChange}>
-                                        <option value="fr">🇫🇷</option>
-                                        <option value="en">🇬🇧</option>
+                                    <select value={this.state.value} onChange={this.handleChange} className="select-lang" >
+                                        <option value="fr">
+                                            {/* 🇫🇷 */}
+                                            Français
+                                        </option>
+                                        <option value="en">
+                                            {/* 🇬🇧 */}
+                                            English
+                                        </option>
                                     </select>
                                 </div>
                             </ul>

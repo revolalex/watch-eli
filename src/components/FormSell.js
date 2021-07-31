@@ -18,8 +18,8 @@ class FormSell extends Component {
         return (
             <section className="contact">
                 <div className="content">
-                    <h2>Contact Us </h2>
-                    <p>Let us know how can we help.</p>
+                    <h2>{t("form-sell-contact-us")}</h2>
+                    <p>{t("form-sell-help")}</p>
                 </div>
                 <div className="container-contact">
                     <div className="contactInfo">
@@ -27,7 +27,7 @@ class FormSell extends Component {
                             <div className="icon"><i className="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                             <div className="text">
-                                <h3>Address</h3>
+                                <h3>{t("form-sell-adress")}</h3>
                                 <p>Malad Mumbai West 40064 Maharashtra <br /> India</p>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ class FormSell extends Component {
                             <div className="icon"><i className="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div className="text">
-                                <h3>Phone</h3>
+                                <h3>{t("form-sell-phone")}</h3>
                                 <p>+919321975387</p>
                             </div>
                         </div>
