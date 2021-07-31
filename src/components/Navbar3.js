@@ -20,7 +20,6 @@ class Navbar3 extends Component {
         i18n.changeLanguage(event.target.value)
     }
     onNavClick() {
-        console.log('tt')
         this.setState({
             showNvbar: !this.state.showNvbar
         })
@@ -40,26 +39,26 @@ class Navbar3 extends Component {
                     <nav>
                         <div id="nav-links">
                             <ul>
-                                <li className="shadow-text-gold nav-link" style={{ paddingTop: "1em" }}><Link className={this.state.showNvbar ? "menu-closed" : ""} to={'/'}>{t("home")}</Link></li>
-                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
-                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
-                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
-                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/about'} className="nav-link">{t("navbar-about")}</Link></li>
-                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link></li>
-                                
+                                <li onClick={this.onNavClick} style={{ paddingTop: "1em" }}><Link className={this.state.showNvbar ? "menu-closed" : ""} to={'/'}>{t("home")}</Link></li>
+                                <li onClick={this.onNavClick}><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
+                                <li onClick={this.onNavClick}><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
+                                <li onClick={this.onNavClick}><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
+                                <li onClick={this.onNavClick}><Link to={'/about'} className="nav-link">{t("navbar-about")}</Link></li>
+                                <li onClick={this.onNavClick}><Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link></li>
+
                             </ul>
-                            
+                            <select className="select-lang" value={this.state.lang} onChange={this.handleChange}>
+                                <option value="fr">
+                                    Fr
+                                </option>
+                                <option value="en">
+                                    Eng
+                                </option>
+                            </select>
+
 
                         </div>
                     </nav>
-                    <select className="select-lang" value={this.state.lang} onChange={this.handleChange}>
-                                        <option value="fr">
-                                            Fr
-                                        </option>
-                                        <option value="en">
-                                            Eng
-                                        </option>
-                                    </select>
                 </div>
             </div>
         )
