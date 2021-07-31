@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import i18n from '../i18n';
 import watch from '../img/watch.png'
-import './Navbar.css'
+import './css/Navbar.css'
 import { withTranslation } from 'react-i18next';
 
 
@@ -31,7 +31,7 @@ class Navbar extends Component {
                     </button>
                     <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto nav-fill">
-                            <li className="shadow-text-gold nav-link"><Link to={'/'}>{t("home")}</Link></li>
+                            <li><Link to={'/'} className="shadow-text-gold nav-link active">{t("home")}</Link></li>
                             <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                             <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
                             <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>

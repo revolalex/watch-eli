@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css'
+import './css/Footer.css'
 import { withTranslation } from 'react-i18next';
 import watch from"../img/watch.png"
 import ExternaLinks from '../utils/socialMedia.js'

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
-import './TextAnimate.css'
+import './css/TextAnimate.css'
 
 class TextAnimate extends React.Component {
     render() {

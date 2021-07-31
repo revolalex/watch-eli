@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Navbar2.css'
+import './css/Navbar2.css'
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import watch from '../img/watch.png'

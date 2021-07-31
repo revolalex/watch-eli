@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import './Navbar3.css'
+import './css/Navbar3.css'
 import { withTranslation } from 'react-i18next';
 import i18n from '../i18n';
 

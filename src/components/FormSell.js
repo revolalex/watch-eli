@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './FormSell.css'
+import './css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";

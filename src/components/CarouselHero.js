@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import "./CarouselHero.css"
+import "./css/CarouselHero.css"
 // import ServiceImg from '../img/service.jpg'
 // import HorlogerImg from '../img/horloger.jpg'
 // import WatchmakerImg from '../img/watchmaker.jpg'

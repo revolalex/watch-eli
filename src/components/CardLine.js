@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DaytonaImg from '../img/daytona.jpeg'
 import ServiceBreitling from"../img/serviceBreitling.jpg"
 import SpeedmasterImg from '../img/speedmaster.jpg'
-import "./CardLine.css"
+import "./css/CardLine.css"
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
