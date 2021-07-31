@@ -4,7 +4,7 @@ import i18n from '../i18n';
 import watch from '../img/watch.png'
 import './Navbar.css'
 import { withTranslation } from 'react-i18next';
-
+import "./Navbar.css"
 
 class Navbar extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class Navbar extends Component {
     render() {
         const t = this.props.t
         return (
-            <nav className="navbar navbar-dark navbar-expand-sm bg-dark sticky-top">
+            <nav id="nav-bar-desktop" className="navbar navbar-dark navbar-expand-sm bg-dark sticky-top">
                 <div class="container">
                     <a href="/" class="navbar-brand logo-text">
                         <img className="logoWatch" src={watch} alt="logo watch" /> &nbsp;

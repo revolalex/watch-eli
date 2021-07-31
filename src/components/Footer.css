@@ -193,7 +193,7 @@ ul {
 
 .copyright-text p a {
   /* color: #ff5e14; */
-  color: #A2845C
+  color: var(--gold-color)
 }
 
 .footer-menu li {
@@ -203,7 +203,7 @@ ul {
 
 .footer-menu li:hover a {
   /* color: #ff5e14; */
-  color: #A2845C
+  color: var(--gold-color) !important
 }
 
 .footer-menu li a {

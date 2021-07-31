@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import Counter from "../components/Counter"
+import FormSell from '../components/FormSell'
+
 
 class Contact extends Component {
     
     render() {
         return (
             <div>
-                <h2>Contact</h2>
-                <p>{this.props.t("welcome")}</p>
-                <Counter to= "2555"/>
+                <FormSell/>
             </div>
         );
     }

@@ -1,6 +1,12 @@
 .logoWatch {
-  height: 55px;
-  width: 55px;
+  height: 30px;
+  width: 30px;
+}
+@media  (max-width: 900px) {
+  #nav-bar-desktop{
+    display: none;
+  }
+  
 }
 
 .nav-link {
@@ -12,25 +18,9 @@
   color: var(--gold-color)
 }
 
-/* #navbarCollapse a {
-  font-size: 32px;
-} */
-
-/* #navbarCollapse li {
-  padding: 20px;
-} */
-
 .logo-text {
-  /* font-size: 42px;
-  font-weight: bold; */
   color: var(--gold-color) !important;
 }
-
-/* .lang-switch select {
-  font-size: 32px;
-  height: 52px;
-  width: 52px;
-} */
 a:hover{
   color:var(--gold-color) !important
 }

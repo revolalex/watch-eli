@@ -7,6 +7,7 @@ import Buy from './pages/Buy'
 import Sell from './pages/Sell'
 import Service from './pages/Service'
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 import Footer from './components/Footer';
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +19,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar />
+          <Navbar2 className="navbar-mobile" />
+          {/* <Navbar className="navbar-desktop" /> */}
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/contact' component={Contact} />
