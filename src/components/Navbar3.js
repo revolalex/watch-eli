@@ -32,7 +32,7 @@ class Navbar3 extends Component {
                     <nav>
                         <div id="nav-links">
                             <ul>
-                            <li className="shadow-text-gold nav-link"><Link to={'/'}>{t("home")}</Link></li>
+                            <li className="shadow-text-gold nav-link" style={{paddingTop: "1em"}}><Link to={'/'}>{t("home")}</Link></li>
                             <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                             <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
                             <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>

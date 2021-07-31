@@ -1,6 +1,136 @@
-@media (max-width: 1250px) {
-  
+/* Iphone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
 }
+
+/* Iphone 11 pro */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+}
+
+/* Iphone 11 pro max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+}
+
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+    
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+
+}
+
+/* iPhone 6+, 7+ and 8+ */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+}
+
+/* Windows Phone */
+
+@media screen and (device-width: 480px) and (device-height: 800px) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+
+}
+
+/* ----------- Galaxy S6 ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
+  #nav-links ul a {
+    padding-left: 5em !important;
+  }
+
+  .bar {
+    right: 5%;
+    top: 5%;
+  }
+
+  #menu-btn {
+    top: 0% !important;
+    right: 10% !important;
+
+  }
+
+}
+
+
 body {
   overflow: hidden;
 }
