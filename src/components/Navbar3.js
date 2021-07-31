@@ -2,15 +2,23 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar3.css'
 import { withTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 class Navbar3 extends Component {
     constructor(props) {
         super(props);
-        this.state = { showNvbar: false }
+        this.state = {
+            showNvbar: true,
+            lang: "fr"
+        }
         this.onNavClick = this.onNavClick.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
-    
 
+    handleChange(event) {
+        this.setState({ lang: event.target.value });
+        i18n.changeLanguage(event.target.value)
+    }
     onNavClick() {
         console.log('tt')
         this.setState({
@@ -32,15 +40,26 @@ class Navbar3 extends Component {
                     <nav>
                         <div id="nav-links">
                             <ul>
-                            <li className="shadow-text-gold nav-link" style={{paddingTop: "1em"}}><Link to={'/'}>{t("home")}</Link></li>
-                            <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
-                            <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
-                            <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("about")}</Link></li>
-                            <li><Link to={'/contact'} className="nav-link">{t("contact")}</Link></li>
+                                <li className="shadow-text-gold nav-link" style={{ paddingTop: "1em" }}><Link className={this.state.showNvbar ? "menu-closed" : ""} to={'/'}>{t("home")}</Link></li>
+                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
+                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
+                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
+                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/about'} className="nav-link">{t("navbar-about")}</Link></li>
+                                <li className={this.state.showNvbar ? "menu-closed" : ""}><Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link></li>
+                                
                             </ul>
+                            
+
                         </div>
                     </nav>
+                    <select className="select-lang" value={this.state.lang} onChange={this.handleChange}>
+                                        <option value="fr">
+                                            Fr
+                                        </option>
+                                        <option value="en">
+                                            Eng
+                                        </option>
+                                    </select>
                 </div>
             </div>
         )

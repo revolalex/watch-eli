@@ -56,7 +56,7 @@
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   #nav-links ul a {
     padding-left: 5em !important;
-    
+
   }
 
   .bar {
@@ -131,6 +131,8 @@
 }
 
 
+
+
 body {
   overflow: hidden;
 }
@@ -195,7 +197,7 @@ nav {
   padding-left: 50px;
   transition: all 300ms ease-in;
   position: relative;
-
+  font-size: 30px;
 }
 
 #nav-links a::after {
