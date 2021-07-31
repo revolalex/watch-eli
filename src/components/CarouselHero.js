@@ -14,7 +14,7 @@ import ApImg from '../img/ap.jpg'
 class CarouselHero extends Component {
     render() {
         return (
-            <div>
+            <div className="carousel-div">
                 <Carousel className="carousel-hero" variant="dark">
                     <Carousel.Item>
                         <img

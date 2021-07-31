@@ -1,8 +1,6 @@
-:root {
-  --gold-color: #A2845C;
-  /* to use ex => color: var(--gold-color) */
+.carousel-div{
+  z-index: 100;
 }
-
 .img-carousel {
   object-fit: cover;
   top: 0;

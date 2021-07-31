@@ -31,7 +31,7 @@ class Navbar extends Component {
                     </button>
                     <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto nav-fill">
-                            <li className="shadow-text-gold"><Link to={'/'} className="nav-link">{t("home")}</Link></li>
+                            <li className="shadow-text-gold nav-link"><Link to={'/'}>{t("home")}</Link></li>
                             <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                             <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
                             <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
