@@ -34,7 +34,7 @@ class Navbar2 extends Component {
                                     <span></span><span></span><span></span><span></span><span></span><span></span>
                                 </div>
                             </p>
-                            <Link id="logoText" to={'/'} classNameName="nav-link">
+                            <Link id="logoText" to={'/'} className="nav-link">
                                 <img style={{ height: "25px", marginLeft: "10px", marginRight: "10px" }} src={watch} alt="logo watch" />
                                 &nbsp;Watchiz
                             </Link>
@@ -52,42 +52,42 @@ class Navbar2 extends Component {
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/'} classNameName="nav-link">{t("navbar-home")}</Link>
+                                    <Link to={'/'} className="nav-link">{t("navbar-home")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/buy'} classNameName="nav-link">{t("buy")}</Link>
+                                    <Link to={'/buy'} className="nav-link">{t("buy")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown">
-                                    <Link to={'/sell'} classNameName="nav-link">{t("sell")}
+                                    <Link to={'/sell'} className="nav-link">{t("sell")}
                                     </Link></li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown">
-                                    <Link to={'/service'} classNameName="nav-link">{t("service")}</Link>
+                                    <Link to={'/service'} className="nav-link">{t("service")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/about'} classNameName="nav-link">{t("navbar-about")}</Link>
+                                    <Link to={'/about'} className="nav-link">{t("navbar-about")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/contact'} classNameName="nav-link">{t("navbar-contact")}</Link>
+                                    <Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link>
                                 </li>
-                                <div classNameName="lang-switch">
+                                <div className="lang-switch">
                                     <select value={this.state.value} onChange={this.handleChange} className="select-lang" >
                                         <option value="fr">
                                             {/* 🇫🇷 */}

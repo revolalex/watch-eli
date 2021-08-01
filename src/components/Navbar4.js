@@ -29,13 +29,13 @@ class Navbar4 extends Component {
             <div>
                 <div id="wrapper-navbar">
                     <header>
-                        <div class="navbar navbar-expand-md">
-                            <div class="container">
-                                <a href="/" class="navbar-brand" style={{ color: "var(--gold-color)" }}>
+                        <div className="navbar navbar-expand-md">
+                            <div className="container">
+                                <a href="/" className="navbar-brand" style={{ color: "var(--gold-color)" }}>
                                     <img className="logoWatch" src={watch} alt="logo watch" style={{ height: "35px" }} /> &nbsp;
                                     Watchiz
                                 </a>
-                                <button class="navbar-toggler collapsed"
+                                <button className="navbar-toggler collapsed"
                                     type="button" data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
@@ -48,8 +48,8 @@ class Navbar4 extends Component {
                             </div>
                         </div>
                         <nav>
-                            <div id="navbarNavDropdown" class="navbar-collapse collapse text-center">
-                                <ul id="main-menu" class="navbar-nav">
+                            <div id="navbarNavDropdown" className="navbar-collapse collapse text-center">
+                                <ul id="main-menu" className="navbar-nav">
                                     <li data-toggle="collapse"
                                         data-target="#navbarNavDropdown"
                                         aria-controls="navbarNavDropdown">
@@ -80,9 +80,9 @@ class Navbar4 extends Component {
                                         aria-controls="navbarNavDropdown">
                                         <Link to={'/contact'} className="nav-link">{t("navbar-contact")}</Link>
                                     </li>
-                                    <li style={{color: "var(--gold-color)", fontSize: "30px"}}>
-                                        <Button className="lang-button" variant="outline-primary" value='fr' onClick={this.handleChange}>🇫🇷 Fra</Button> / 
-                                        <Button className="lang-button"  variant="outline-primary" value='en' onClick={this.handleChange}>🇬🇧 Eng</Button>
+                                    <li style={{ color: "var(--gold-color)", fontSize: "30px" }}>
+                                        <Button className="lang-button" variant="outline-primary" value='fr' onClick={this.handleChange}>🇫🇷 Fra</Button> /
+                                        <Button className="lang-button" variant="outline-primary" value='en' onClick={this.handleChange}>🇬🇧 Eng</Button>
                                     </li>
                                 </ul>
 

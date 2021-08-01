@@ -6,14 +6,14 @@ class TextAnimate extends React.Component {
     render() {
         return (
             <div>
-                <div class="containerT">
-                    <div class="box">
-                        <div class="title">
-                            <span class="block"></span>
+                <div className="containerT">
+                    <div className="box">
+                        <div className="title">
+                            <span className="block"></span>
                             <h1>{this.props.textOne}<span></span></h1>
                         </div>
-                        <div class="role">
-                            <div class="block"></div>
+                        <div className="role">
+                            <div className="block"></div>
                             <p>{this.props.textTwo}</p>
                         </div>
                     </div>

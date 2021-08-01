@@ -20,34 +20,34 @@ class CardLine extends Component {
         const t = this.props.t
         return (
             <div className="container card-line-container">
-                <section class="container mt-5 mb-5">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100" data-aos="zoom-in" >
-                                <img src={SpeedmasterImg} class="card-img-top img-from-card" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">{t("buy")}</h5>
-                                    <p class="card-text">{t("card-buy-text")}</p>
+                <section className="container mt-5 mb-5">
+                    <div className="row row-cols-1 row-cols-md-3 g-4">
+                        <div className="col">
+                            <div className="card h-100" data-aos="zoom-in" >
+                                <img src={SpeedmasterImg} className="card-img-top img-from-card" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{t("buy")}</h5>
+                                    <p className="card-text">{t("card-buy-text")}</p>
                                     <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100" data-aos="zoom-in" >
-                                <img src={DaytonaImg} class="card-img-top img-from-card" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">{t("sell")}</h5>
-                                    <p class="card-text">{t("card-sell-text")}</p>
+                        <div className="col">
+                            <div className="card h-100" data-aos="zoom-in" >
+                                <img src={DaytonaImg} className="card-img-top img-from-card" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{t("sell")}</h5>
+                                    <p className="card-text">{t("card-sell-text")}</p>
                                     <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100" data-aos="zoom-in" >
-                                <img src={ServiceBreitling} class="card-img-top img-from-card" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">{t("service")}</h5>
-                                    <p class="card-text">{t("card-service-text")}</p>
+                        <div className="col">
+                            <div className="card h-100" data-aos="zoom-in" >
+                                <img src={ServiceBreitling} className="card-img-top img-from-card" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{t("service")}</h5>
+                                    <p className="card-text">{t("card-service-text")}</p>
                                     <p><Link to={'/service'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>

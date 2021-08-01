@@ -14,7 +14,7 @@ class Home extends Component {
       <div>
         <CarouselHero />
         <CardLine />
-        <div class="parallax"></div>
+        <div className="parallax"></div>
       </div>
     );
   }

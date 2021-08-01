@@ -28,10 +28,10 @@ class Navbar3 extends Component {
         const t = this.props.t
         return (
             <div>
-                <div id="menu-btn" class="menu-opened" onClick={this.onNavClick}>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div id="menu-btn" className="menu-opened" onClick={this.onNavClick}>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
                 </div>
                 <div id="nav-wrapper" className={this.state.showNvbar ? "menu-closed" : ""}>
 

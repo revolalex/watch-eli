@@ -21,16 +21,16 @@ class Navbar extends Component {
         const t = this.props.t
         return (
             <nav id="nav-bar-desktop" className="navbar navbar-dark navbar-expand-sm bg-dark sticky-top">
-                <div class="container">
-                    <a href="/" class="navbar-brand logo-text">
+                <div className="container">
+                    <a href="/" className="navbar-brand logo-text">
                         <img className="logoWatch" src={watch} alt="logo watch" /> &nbsp;
                         Watchiz
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div id="navbarCollapse" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto nav-fill">
+                    <div id="navbarCollapse" className="collapse navbar-collapse">
+                        <ul className="navbar-nav ml-auto nav-fill">
                             <li><Link to={'/'} className="shadow-text-gold nav-link active">{t("navbar-home")}</Link></li>
                             <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                             <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
