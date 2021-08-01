@@ -3,13 +3,14 @@ import './css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Image, Container, Row, Col } from 'react-bootstrap'
+import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
 import breitlingLogo from "../img/logo/breitling.png"
 import zenithLogo from "../img/logo/zenithLogo.png"
 import cartierLogo from '../img/logo/cartier.svg'
 import hubloLogo from '../img/logo/hublot.png'
 import omegaLogo from '../img/logo/omega.svg'
 import rolexLogo from '../img/logo/rolex.png'
+
 
 class FormSell extends Component {
     constructor(props) {
@@ -19,15 +20,21 @@ class FormSell extends Component {
             modele: '',
             set: '',
             photo: '',
-            condition: null
+            condition: 3
         }
         this.breitlingClick = this.breitlingClick.bind(this);
+        this.breguetClick = this.breguetClick.bind(this);
         this.rolexClick = this.rolexClick.bind(this);
         this.cartierClick = this.cartierClick.bind(this);
         this.hublotClick = this.hublotClick.bind(this);
         this.omegaClick = this.omegaClick.bind(this);
-        this.apClick = this.apClick.bind(this);
+        this.zenithClick = this.zenithClick.bind(this);
         this.handleCondition = this.handleCondition.bind(this)
+        this.handleBrandInput = this.handleBrandInput.bind(this)
+        this.handleModelInput = this.handleModelInput.bind(this)
+        this.handlePhoto = this.handlePhoto.bind(this)
+        this.handleSendButton = this.handleSendButton.bind(this)
+        this.conditionText = this.conditionText.bind(this)
 
     }
     componentDidMount() {
@@ -38,6 +45,11 @@ class FormSell extends Component {
     breitlingClick() {
         this.setState({
             brand: 'Breitling'
+        })
+    }
+    breguetClick() {
+        this.setState({
+            brand: 'Breguet'
         })
     }
     omegaClick() {
@@ -60,13 +72,66 @@ class FormSell extends Component {
             brand: 'Rolex'
         })
     }
-    apClick() {
+    zenithClick() {
         this.setState({
-            brand: 'Audemars piguet'
+            brand: 'Zenith'
         })
-
     }
-    handleCondition(event){
+
+
+    handleBrandInput(event) {
+        this.setState({
+            brand: event.target.value
+        })
+    }
+    handleModelInput(event) {
+        this.setState({
+            modele: event.target.value
+        })
+    }
+
+    handleCondition(event) {
+        this.setState({
+            condition: event.target.value
+        })
+        console.log(event.target.value)
+    }
+    /* eslint-disable */
+    conditionText(t) {
+        let textToreturn;
+        if (this.state.condition == 0) {
+            textToreturn = t('condition-0')
+        }
+        if (this.state.condition == 1) {
+            textToreturn = t('condition-1')
+        }
+        if (this.state.condition == 2) {
+            textToreturn = t('condition-2')
+        }
+        if (this.state.condition == 3) {
+            textToreturn = t('condition-3')
+        }
+        if (this.state.condition == 4) {
+            textToreturn = t('condition-4')
+        }
+        if (this.state.condition == 5) {
+            textToreturn = t('condition-5')
+        }
+        if (this.state.condition == 6) {
+            textToreturn = t('condition-10')
+        }
+
+        return textToreturn
+    }
+
+    handlePhoto(event) {
+        this.setState({
+            photo: event.target.files
+        })
+    }
+    handleSendButton(e) {
+        e.preventDefault();
+        console.log(this.state)
     }
 
     render() {
@@ -77,6 +142,7 @@ class FormSell extends Component {
                     <h2>{t("form-sell-title")}</h2>
                     <p>{t("form-sell-sub-title")}</p>
                 </div>
+                {/* container on left */}
                 <div className="container-contact">
                     <div className="contactInfo">
                         <div className="box" data-aos="fade-right" >
@@ -105,13 +171,13 @@ class FormSell extends Component {
                                 <p>{t("form-sell-step3.1")}</p>
                             </div>
                         </div>
-
-
                     </div>
+
+                    {/* container on right */}
                     <div className="contactform" data-aos="fade-left">
                         <form>
-                            <h2>Send Message </h2>
-                            <br/>
+                            <h2>{t('form-sell-your-watch')}</h2>
+                            <br />
                             <div className="inputBox">
                                 <Container>
                                     <Row>
@@ -122,48 +188,63 @@ class FormSell extends Component {
                                             <Image src={omegaLogo} style={{ height: "40px" }} onClick={this.omegaClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image src={rolexLogo} style={{ height: "58px" }} onClick={this.rolexClick} />
+                                            <Image src={cartierLogo} style={{ height: "30px" }} onClick={this.cartierClick} />
                                         </Col>
                                     </Row>
                                     <br />
                                     <Row>
                                         <Col xs={6} md={4}>
-                                            <Image src={cartierLogo} style={{ height: "30px" }} onClick={this.cartierClick} />
+                                            <Image src={rolexLogo} style={{ height: "60px" }} onClick={this.rolexClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
                                             <Image src={hubloLogo} style={{ height: "40px" }} onClick={this.hublotClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image src={zenithLogo} style={{ height: "40px" }} onClick={this.aplick} />
+                                            <Image src={zenithLogo} style={{ height: "40px" }} onClick={this.zenithClick} />
                                         </Col>
                                     </Row>
                                     <br />
                                 </Container>
-                                <input type="text" name="" required="required" value={this.state.brand} />
-                                <span>Brand</span>
+                                <input type="text" name="" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
+                                <span>{t('form-sell-brand')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="" required="required" />
-                                <span>Model</span>
+                                <input type="text" name="" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                                <span>{t('form-sell-model')}</span>
                             </div>
-                            <br/>
-                            <div className="">
-                                <label for="customRange" className="form-label">Watch Conditions : {this.state.condition}</label>
-                                <input type="range" className="form-range" min="0" max="10" step="1" id="customRange" onChange={this.handleCondition} value={this.state.condition}/>
-                            </div>
+                            <br />
+                            {/* Range Condition */}
                             <div className="inputBox">
-
-                                <input required="required"></input>
-                                <span>Original box & paper</span>
+                                <OverlayTrigger
+                                    placement="right"
+                                    delay={{ show: 250, hide: 400 }}
+                                    overlay={<Tooltip id="button-tooltip-2">{t('form-sell-tooltip-condition')}</Tooltip>}
+                                >
+                                    <label for="customRange" className="form-label">{t('form-sell-condition')} : {this.conditionText(t)}</label>
+                                </OverlayTrigger>
+                                {/* <label for="customRange" className="form-label">{t('form-sell-condition')} : {this.state.condition}</label> */}
+                                <input type="range" className="form-range" min="0" max="5" step="1" id="customRange" onChange={this.handleCondition} value={this.state.condition} style={{ border: "none" }} />
                             </div>
-
-                            {/* ICI ALEX TEST FILE INPUT */}
+                            <br />
+                            {/* Photo */}
                             <div className="inputBox">
-                                <input type="file" name="" required="required" placeholder="photo" />
+                                <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} onChange={this.handlePhoto} />
+                                <span>{t('form-sell-photo')}</span>
                             </div>
-
+                            <br />
+                            {/* Select box and paper */}
+                            <div>
+                                <span>{t('form-sell-box-paper')}</span><br /><br />
+                                <Form.Select>
+                                    <option>{t('form-sell-box')}</option>
+                                    <option>{t('form-sell-paper')}</option>
+                                    <option>{t('form-sell-paper-and-box')}</option>
+                                    <option>{t('form-sell-nothing')}</option>
+                                </Form.Select>
+                            </div>
+                            {/* Send Button */}
                             <div className="inputBox">
-                                <input type="submit" name="" value="Send" />
+                                <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />
                             </div>
 
 

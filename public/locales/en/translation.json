@@ -30,6 +30,24 @@
     "form-sell-step2": "Receive your offer",
     "form-sell-step2.1": "We'll pay you cash before you ship your watch, or we'll provide you a bank direct deposit afterwards",
     "form-sell-step3": "Ships us your watch",
-    "form-sell-step3.1": "Form quote to cash in less than 24 hours"
+    "form-sell-step3.1": "Form quote to cash in less than 24 hours",
+    "form-sell-your-watch": "Your Watch",
+    "form-sell-brand": "Brand",
+    "form-sell-model": "Model",
+    "form-sell-photo": "Picture",
+    "form-sell-condition": "Condition",
+    "form-sell-box-paper": "Original box, papers ",
+    "form-sell-box": "Box",
+    "form-sell-paper": "Papers",
+    "form-sell-paper-and-box": "Box and papers",
+    "form-sell-nothing": "Nothing",
+    "send": "Send",
+    "form-sell-tooltip-condition": "Evaluate the condition of your watch, 10 for perfect, 0 for not working",
+    "condition-0": "To restore",
+    "condition-1": "Working",
+    "condition-2": "Average condition",
+    "condition-3": "medium condition",
+    "condition-4": "Excellent condition",
+    "condition-5": "Perfect or new"
 
 }
