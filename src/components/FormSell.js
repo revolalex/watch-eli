@@ -66,9 +66,16 @@ class FormSell extends Component {
                                 <textarea required="required"></textarea>
                                 <span>Message</span>
                             </div>
+                            {/* ICI ALEX TEST FILE INPUT */}
+                            <div className="inputBox">
+                                <input type="file" name="" required="required" placeholder="photo" />
+                            </div>
+
                             <div className="inputBox">
                                 <input type="submit" name="" value="Send" />
                             </div>
+
+
                         </form>
                     </div>
                 </div>
