@@ -39,7 +39,7 @@ class Navbar3 extends Component {
                     <nav>
                         <div id="nav-links">
                             <ul>
-                                <li onClick={this.onNavClick} style={{ paddingTop: "1em" }}><Link className={this.state.showNvbar ? "menu-closed" : ""} to={'/'}>{t("home")}</Link></li>
+                                <li onClick={this.onNavClick} style={{ paddingTop: "1em" }}><Link className={this.state.showNvbar ? "menu-closed" : ""} to={'/'}>{t("navbar-home")}</Link></li>
                                 <li onClick={this.onNavClick}><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                                 <li onClick={this.onNavClick}><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
                                 <li onClick={this.onNavClick}><Link to={'/service'} className="nav-link">{t("service")}</Link></li>

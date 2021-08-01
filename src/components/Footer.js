@@ -107,12 +107,12 @@ class Footer extends Component {
                             <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                                 <div className="footer-menu">
                                     <ul>
-                                        <li><Link to={'/'} className="nav-link active">{t("home")}</Link></li>
+                                        <li><Link to={'/'} className="nav-link active">{t("navbar-home")}</Link></li>
                                         <li><Link to={'/buy'} className="nav-link active">{t("buy")}</Link></li>
                                         <li><Link to={'/sell'} className="nav-link active">{t("sell")}</Link></li>
                                         <li><Link to={'/service'} className="nav-link active">{t("service")}</Link></li>
-                                        <li><Link to={'/about'} className="nav-link active">{t("about")}</Link></li>
-                                        <li><Link to={'/contact'} className="nav-link active">{t("contact")}</Link></li>
+                                        <li><Link to={'/about'} className="nav-link active">{t("navbar-about")}</Link></li>
+                                        <li><Link to={'/contact'} className="nav-link active">{t("navbar-contact")}</Link></li>
                                     </ul>
                                 </div>
                             </div>

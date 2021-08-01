@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "./css/CarouselHero.css"
-// import ServiceImg from '../img/service.jpg'
-// import HorlogerImg from '../img/horloger.jpg'
-// import WatchmakerImg from '../img/watchmaker.jpg'
-// import AchatImg from '../img/achat.jpg'
+
 import SubmarinerImg from '../img/submariner.jpg'
 import BachelorImg from '../img/bachelor.jpg'
 import PatekImg from '../img/patek.jpg'

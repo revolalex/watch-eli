@@ -52,7 +52,7 @@ class Navbar2 extends Component {
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/'} classNameName="nav-link">{t("home")}</Link>
+                                    <Link to={'/'} classNameName="nav-link">{t("navbar-home")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
@@ -78,14 +78,14 @@ class Navbar2 extends Component {
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/about'} classNameName="nav-link">{t("about")}</Link>
+                                    <Link to={'/about'} classNameName="nav-link">{t("navbar-about")}</Link>
                                 </li>
                                 <li
                                     data-toggle="collapse"
                                     data-target="#navbarNavDropdown"
                                     aria-controls="navbarNavDropdown"
                                 >
-                                    <Link to={'/contact'} classNameName="nav-link">{t("contact")}</Link>
+                                    <Link to={'/contact'} classNameName="nav-link">{t("navbar-contact")}</Link>
                                 </li>
                                 <div classNameName="lang-switch">
                                     <select value={this.state.value} onChange={this.handleChange} className="select-lang" >

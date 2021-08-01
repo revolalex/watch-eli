@@ -31,12 +31,12 @@ class Navbar extends Component {
                     </button>
                     <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto nav-fill">
-                            <li><Link to={'/'} className="shadow-text-gold nav-link active">{t("home")}</Link></li>
+                            <li><Link to={'/'} className="shadow-text-gold nav-link active">{t("navbar-home")}</Link></li>
                             <li><Link to={'/buy'} className="nav-link">{t("buy")}</Link></li>
                             <li><Link to={'/sell'} className="nav-link">{t("sell")}</Link></li>
                             <li><Link to={'/service'} className="nav-link">{t("service")}</Link></li>
-                            <li><Link to={'/about'} className="nav-link">{t("about")}</Link></li>
-                            <li><Link to={'/contact'} className="nav-link">{t("contact")}</Link></li>
+                            <li><Link to={'/about'} className="nav-link">{t("navbar-about")}</Link></li>
+                            <li><Link to={'/contact'} className="nav-link">{t("navbar-home")}</Link></li>
                         </ul>
                         {/* todo make to left if bigscreen */}
                         <div className="lang-switch">
