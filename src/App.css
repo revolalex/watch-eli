@@ -1,4 +1,5 @@
 :root{
   --gold-color: #A2845C;
   /* to use ex => color: var(--gold-color) */
+  --background-color: #2C2C29;
 }
