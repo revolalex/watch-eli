@@ -22,9 +22,14 @@
     "card-buy-text": "Watchiz offers you a selection of new or second-hand timepieces that are both rare and iconic to the delight of watch enthusiasts and collectors as well. All our parts are authenticated and certified by watchmaking experts to guarantee our buyers impeccable quality and original parts.",
     "card-sell-text": "Do you want to part with your watch in order to acquire a new one or do you simply want to resell one of your recent or collector's watches? At Watchiz, we take back your timepiece after expertise of the model, its reference, and its condition.",
     "card-service-text": "We works hand in hand with the largest watch manufacturers to offer you a repair and overhaul service to match your timepiece. Mechanical watch with manual winding, automatic watch, or watch with complications, we take care of all types of timepieces.",
-    "form-sell-phone": "Phone",
-    "form-sell-adress": "Adress",
-    "form-sell-contact-us": "Contact Us",
-    "form-sell-help": "Let us know how can we help."
+    "form-sell-title": "Sell your watch",
+    "form-sell-sub-title": "Tell us about your watch",
+    "form-sell-help": "Let us know how can we help.",
+    "form-sell-step1": "Give us information",
+    "form-sell-step1.1": "Describe your watch, the brand, condition, paper, etc..",
+    "form-sell-step2": "Receive your offer",
+    "form-sell-step2.1": "We'll pay you cash before you ship your watch, or we'll provide you a bank direct deposit afterwards",
+    "form-sell-step3": "Ships us your watch",
+    "form-sell-step3.1": "Form quote to cash in less than 24 hours"
 
 }

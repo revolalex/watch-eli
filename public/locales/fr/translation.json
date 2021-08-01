@@ -20,8 +20,13 @@
     "card-buy-text": "Watchiz vous propose une sélection de garde-temps neufs ou d’occasion à la fois rares et iconiques pour le plus grand bonheur des passionnés d’horlogerie mais aussi des collectionneurs. Toutes nos pièces sont authentifiées et certifiées par des experts horlogers afin de garantir à nos acheteurs une qualité irréprochable et des pièces d’origine.",
     "card-sell-text": "Vous souhaitez vous séparer de votre montre afin d’en acquérir une nouvelle ou vous souhaitez tout simplement revendre une de vos montres récentes ou de collection ? Chez Watchiz, nous reprenons votre garde-temps après expertise du modèle, de sa référence, et de son état.",
     "card-service-text": "Nous travaillons main dans la main avec les plus grandes manufactures horlogères afin de vous proposer un service de réparation et de révision à la hauteur de votre garde-temps. Montre mécanique à remontage manuel, montre automatique, ou montre avec complications, nous prenons soin de tous types de garde-temps.",
-    "form-sell-phone": "Téléphone",
-    "form-sell-adress": "Adresse",
-    "form-sell-contact-us": "Contact Us",
-    "form-sell-help": "Let us know how can we help."
+    "form-sell-title": "Vendez votre montre",
+    "form-sell-sub-title": "Décrivez la nous",
+    "form-sell-help": "Comment peut on vous aidez",
+    "form-sell-step1": "Renseigner le formulaire",
+    "form-sell-step1.1": "Décrivez la montre, marque, état, document, boite, etc...",
+    "form-sell-step2": "Recevez notre offres",
+    "form-sell-step2.1": "Nous vous paierons en espèces avant d'expédier votre montre, ou nous vous fournirons un dépôt bancaire direct par la suite",
+    "form-sell-step3": "Envoyer nous votre montre",
+    "form-sell-step3.1": "Paiement en moins de 24 heures"
 }

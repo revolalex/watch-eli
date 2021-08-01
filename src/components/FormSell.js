@@ -18,33 +18,33 @@ class FormSell extends Component {
         return (
             <section className="contact">
                 <div className="content">
-                    <h2>{t("form-sell-contact-us")}</h2>
-                    <p>{t("form-sell-help")}</p>
+                    <h2>{t("form-sell-title")}</h2>
+                    <p>{t("form-sell-sub-title")}</p>
                 </div>
                 <div className="container-contact">
                     <div className="contactInfo">
                         <div className="box" data-aos="fade-right" >
-                            <div className="icon"><i className="fa fa-map-marker" aria-hidden="true"></i>
+                            <div className="icon"><i className="far fa-file-image" aria-hidden="true"></i>
                             </div>
                             <div className="text">
-                                <h3>{t("form-sell-adress")}</h3>
-                                <p>Malad Mumbai West 40064 Maharashtra <br /> India</p>
+                                <h3>{t("form-sell-step1")}</h3>
+                                <p>{t("form-sell-step1.1")}</p>
                             </div>
                         </div>
                         <div className="box" data-aos="fade-right" >
-                            <div className="icon"><i className="fa fa-phone" aria-hidden="true"></i>
+                            <div className="icon"><i className="far fa-file-signature" aria-hidden="true"></i>
                             </div>
                             <div className="text">
-                                <h3>{t("form-sell-phone")}</h3>
-                                <p>+919321975387</p>
+                                <h3>{t("form-sell-step2")}</h3>
+                                <p>{t("form-sell-step2.1")}</p>
                             </div>
                         </div>
                         <div className="box" data-aos="fade-right" >
-                            <div className="icon"><i className="fa fa-envelope" aria-hidden="true"></i>
+                            <div className="icon"><i className="fab fa-ups" aria-hidden="true"></i>
                             </div>
                             <div className="text">
-                                <h3>Email</h3>
-                                <p>contact@sitesoch.com</p>
+                                <h3>{t("form-sell-step3")}</h3>
+                                <p>{t("form-sell-step3.1")}</p>
                             </div>
                         </div>
 
@@ -55,16 +55,21 @@ class FormSell extends Component {
                             <h2>Send Message </h2>
                             <div className="inputBox">
                                 <input type="text" name="" required="required" />
-                                <span>Name</span>
+                                <span>Brand</span>
                             </div>
                             <div className="inputBox">
                                 <input type="text" name="" required="required" />
-                                <span>Email</span>
+                                <span>Model</span>
                             </div>
                             <div className="inputBox">
 
-                                <textarea required="required"></textarea>
-                                <span>Message</span>
+                                <input required="required"></input>
+                                <span>Condition</span>
+                            </div>
+                            <div className="inputBox">
+
+                                <input required="required"></input>
+                                <span>Original box & paper</span>
                             </div>
                             {/* ICI ALEX TEST FILE INPUT */}
                             <div className="inputBox">
