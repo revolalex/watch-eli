@@ -181,26 +181,25 @@ class FormSell extends Component {
                             <div className="inputBox">
                                 <Container>
                                     <Row>
+                                        
                                         <Col xs={6} md={4}>
-                                            <Image src={breitlingLogo} style={{ height: "40px" }} onClick={this.breitlingClick} />
+                                            <Image className="brand-logo" thumbnail src={rolexLogo} onClick={this.rolexClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image src={omegaLogo} style={{ height: "40px" }} onClick={this.omegaClick} />
+                                            <Image className="brand-logo" thumbnail src={omegaLogo} onClick={this.omegaClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image src={cartierLogo} style={{ height: "30px" }} onClick={this.cartierClick} />
-                                        </Col>
-                                    </Row>
-                                    <br />
-                                    <Row>
-                                        <Col xs={6} md={4}>
-                                            <Image src={rolexLogo} style={{ height: "60px" }} onClick={this.rolexClick} />
+                                            <Image className="brand-logo" thumbnail src={hubloLogo} onClick={this.hublotClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image src={hubloLogo} style={{ height: "40px" }} onClick={this.hublotClick} />
+                                            <Image className="brand-logo" thumbnail src={zenithLogo} onClick={this.zenithClick} />
                                         </Col>
+                                        <Col xs={6} md={4} >
+                                            <Image className="brand-logo" thumbnail src={breitlingLogo} onClick={this.breitlingClick} />
+                                        </Col>
+                                        
                                         <Col xs={6} md={4}>
-                                            <Image src={zenithLogo} style={{ height: "40px" }} onClick={this.zenithClick} />
+                                            <Image className="brand-logo" thumbnail src={cartierLogo} onClick={this.cartierClick} />
                                         </Col>
                                     </Row>
                                     <br />
