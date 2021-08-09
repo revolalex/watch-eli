@@ -3,7 +3,7 @@ import './css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
+import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
 import breitlingLogo from "../img/logo/breitling.png"
 import zenithLogo from "../img/logo/zenithLogo.png"
 import cartierLogo from '../img/logo/cartier.svg'
@@ -144,6 +144,7 @@ class FormSell extends Component {
         const t = this.props.t
         return (
             <section className="contact">
+                <Card>
                 <div className="title-div">
                     <div>
                         <h1>{t('form-sell-titre')}</h1>
@@ -154,8 +155,10 @@ class FormSell extends Component {
                     </div>
 
                 </div>
+                </Card>
                 <div className="container-contact">
                     {/* container on left */}
+                    
                     <div className="contactInfo">
                         <div className="box" >
                             <div className="icon">
