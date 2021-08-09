@@ -152,10 +152,10 @@ class FormSell extends Component {
                             {t('form-sell-intro')}
                         </p>
                     </div>
-                    
+
                 </div>
-                {/* container on left */}
                 <div className="container-contact">
+                    {/* container on left */}
                     <div className="contactInfo">
                         <div className="box" >
                             <div className="icon">
@@ -197,7 +197,6 @@ class FormSell extends Component {
                             </div>
                         </div>
                     </div>
-
                     {/* container on right */}
                     <div className="contactform">
                         <form>
@@ -206,7 +205,6 @@ class FormSell extends Component {
                             <div className="inputBox">
                                 <Container>
                                     <Row>
-
                                         <Col xs={6} md={4}>
                                             <Image className="brand-logo" thumbnail src={rolexLogo} onClick={this.rolexClick} />
                                         </Col>
@@ -270,10 +268,9 @@ class FormSell extends Component {
                             <div className="inputBox">
                                 <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />
                             </div>
-
-
                         </form>
                     </div>
+
                 </div>
             </section>
 
