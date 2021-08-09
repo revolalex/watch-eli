@@ -45,9 +45,9 @@ class Navbar extends Component {
                         <Container className="container">
                             <div >
                                 <Nav className="navbar-nav ml-auto nav-fill">
-                                    <NavLink><Link to={'/buy'} className="nav-link">{t("buy")}</Link></NavLink>&emsp;&emsp;
-                                    <NavLink><Link to={'/sell'} className="nav-link">{t("sell")}</Link></NavLink>&emsp;&emsp;
-                                    <NavLink><Link to={'/service'} className="nav-link">{t("service")}</Link></NavLink>&emsp;&emsp;
+                                    <NavLink><Link to={'/buy'} className="nav-link">{t("buy")}</Link></NavLink>&emsp;
+                                    <NavLink><Link to={'/sell'} className="nav-link">{t("sell")}</Link></NavLink>&emsp;
+                                    <NavLink><Link to={'/service'} className="nav-link">{t("service")}</Link></NavLink>&emsp;
                                     <NavDropdown title="Liens" style={{ padding: ".5em", fontSize: "1.1em " }}>
                                         <NavDropdown.Item><Link to={'/trade'} className="nav-link dropdown-link"> Echange</Link></NavDropdown.Item>
                                         <NavDropdown.Item><Link to={'/contact'} className="nav-link dropdown-link">{t("navbar-contact")}</Link></NavDropdown.Item>
