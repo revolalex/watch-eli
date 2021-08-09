@@ -1,5 +1,18 @@
-:root{
-  --gold-color: #A2845C;
+:root {
+  --gold-color: #c59454;
   /* to use ex => color: var(--gold-color) */
-  --background-color: #2C2C29;
+  --background-color: #3b3b37;
+  --text-on-background: #dadada;
 }
+body{
+  background-color: rgb(240, 238, 235) !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display: =swap');
+
+*{
+	/* margin: 0;
+	padding: 0;
+	box-sizing: border-box; */
+	font-family: 'Poppins',sans-serif;
+} 

@@ -26,9 +26,9 @@
     "form-sell-sub-title": "Tell us about your watch",
     "form-sell-help": "Let us know how can we help.",
     "form-sell-step1": "Give us information",
-    "form-sell-step1.1": "Describe your watch, the brand, condition, paper, etc..",
+    "form-sell-step1.1": "A member of our team will contact you within 48 hours",
     "form-sell-step2": "Receive your offer",
-    "form-sell-step2.1": "We'll pay you cash before you ship your watch, or we'll provide you a bank direct deposit afterwards",
+    "form-sell-step2.1": "Receive your personal offer",
     "form-sell-step3": "Ships us your watch",
     "form-sell-step3.1": "Form quote to cash in less than 24 hours",
     "form-sell-your-watch": "Your Watch",
@@ -48,6 +48,11 @@
     "condition-2": "Average condition",
     "condition-3": "medium condition",
     "condition-4": "Excellent condition",
-    "condition-5": "Perfect or new"
+    "condition-5": "Perfect or new",
+    "form-sell-titre": "Get the best price for your watch",
+    "form-sell-sous-titre": "Make room in your collection, sell your watch in three clicks. ",
+    "form-sell-intro": "Our specialists offer you free expertise, as well as personalized advice to maximize the value of your watch. Our goal is to support you transparently through a simple, fast and secure process.",
+    "form-sell-money": "Receive your payment by bank transfer",
+    "form-sell-money-titre": "Receive your money"
 
 }

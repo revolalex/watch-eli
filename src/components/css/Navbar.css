@@ -1,18 +1,49 @@
 .logoWatch {
+
   height: 30px;
   width: 30px;
 }
+.tel-header{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 16px !important;
+}
+
+.logo-nav-div{
+  justify-content: center;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+
+
+
+
+
+.lang-switch{
+  font-size: 1.1em;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+}
+
 .shadow-text-gold a{
   color:var(--gold-color) !important;
 }
-/* @media  (max-width: 900px) {
-  #nav-bar-desktop{
-    display: none;
-  }
-} */
 
 .nav-link {
+  font-size: 1.1em;
   font-weight: bold;
+  color: var(--text-on-background) ;
+}
+
+.active{
+  color:var(--gold-color) !important;
+}
+
+.dropdown-link{
+  color: rgb(34, 33, 33) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -21,6 +52,7 @@
 }
 
 .logo-text {
+  font-size: 2em !important;;
   color: var(--gold-color) !important;
 }
 a:hover{
@@ -30,4 +62,5 @@ a:hover{
   color:var(--gold-color) !important
 
 }
+
 

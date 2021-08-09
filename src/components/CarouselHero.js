@@ -6,6 +6,7 @@ import SubmarinerImg from '../img/submariner.jpg'
 import BachelorImg from '../img/bachelor.jpg'
 import PatekImg from '../img/patek.jpg'
 import ApImg from '../img/ap.jpg'
+import GoogleAvis from './GoogleAvis';
 
 
 class CarouselHero extends Component {
@@ -22,7 +23,7 @@ class CarouselHero extends Component {
                         />
                         <Carousel.Caption>
                             <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <p>Watchiz la passion horlogère</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -34,7 +35,7 @@ class CarouselHero extends Component {
                         />
                         <Carousel.Caption>
                             <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Vous ne la porter plus, vendez la</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -45,8 +46,8 @@ class CarouselHero extends Component {
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5>Achat</h5>
+                            <p>Watchiz le spécialiste CPO</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -62,6 +63,7 @@ class CarouselHero extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                <GoogleAvis/>
             </div>
 
         )

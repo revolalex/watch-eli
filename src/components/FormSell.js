@@ -11,6 +11,12 @@ import hubloLogo from '../img/logo/hublot.png'
 import omegaLogo from '../img/logo/omega.svg'
 import rolexLogo from '../img/logo/rolex.png'
 
+import formIcon from '../img/icones/formIcon.png'
+import estimIcon from '../img/icones/estimIcon.png'
+import shipIcon from '../img/icones/shipIcon.png'
+import checkIcon from "../img/icones/check.png"
+
+
 
 class FormSell extends Component {
     constructor(props) {
@@ -138,50 +144,69 @@ class FormSell extends Component {
         const t = this.props.t
         return (
             <section className="contact">
-                <div className="content">
-                    <h2>{t("form-sell-title")}</h2>
-                    <p>{t("form-sell-sub-title")}</p>
+                <div className="title-div">
+                    <div>
+                        <h1>{t('form-sell-titre')}</h1>
+                        <h5>Faites de la place dans votre collection, vendez votre montre en trois clics.</h5>
+                        <p>
+                            {t('form-sell-intro')}
+                        </p>
+                    </div>
+                    
                 </div>
                 {/* container on left */}
                 <div className="container-contact">
                     <div className="contactInfo">
-                        <div className="box" data-aos="fade-right" >
+                        <div className="box" >
                             <div className="icon">
-                                <i className="far fa-file-image" aria-hidden="true"></i>
+                                <img src={formIcon} />
+                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                             </div>
                             <div className="text">
                                 <h3>{t("form-sell-step1")}</h3>
                                 <p>{t("form-sell-step1.1")}</p>
                             </div>
                         </div>
-                        <div className="box" data-aos="fade-right" >
+                        <div className="box" >
                             <div className="icon">
-                                <i className="far fa-file-signature" aria-hidden="true"></i>
+                                <img src={estimIcon} />
+                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                             </div>
                             <div className="text">
                                 <h3>{t("form-sell-step2")}</h3>
                                 <p>{t("form-sell-step2.1")}</p>
                             </div>
                         </div>
-                        <div className="box" data-aos="fade-right" >
-                            <div className="icon"><i className="fab fa-ups" aria-hidden="true"></i>
+                        <div className="box">
+                            <div className="icon">
+                                <img src={shipIcon} />
+                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                             </div>
                             <div className="text">
                                 <h3>{t("form-sell-step3")}</h3>
                                 <p>{t("form-sell-step3.1")}</p>
                             </div>
                         </div>
+                        <div className="box">
+                            <div className="icon">
+                                <img src={checkIcon} />
+                            </div>
+                            <div className="text">
+                                <h3>{t("form-sell-money-titre")}</h3>
+                                <p>{t("form-sell-money")}</p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* container on right */}
-                    <div className="contactform" data-aos="fade-left">
+                    <div className="contactform">
                         <form>
                             <h2>{t('form-sell-your-watch')}</h2>
                             <br />
                             <div className="inputBox">
                                 <Container>
                                     <Row>
-                                        
+
                                         <Col xs={6} md={4}>
                                             <Image className="brand-logo" thumbnail src={rolexLogo} onClick={this.rolexClick} />
                                         </Col>
@@ -197,7 +222,7 @@ class FormSell extends Component {
                                         <Col xs={6} md={4} >
                                             <Image className="brand-logo" thumbnail src={breitlingLogo} onClick={this.breitlingClick} />
                                         </Col>
-                                        
+
                                         <Col xs={6} md={4}>
                                             <Image className="brand-logo" thumbnail src={cartierLogo} onClick={this.cartierClick} />
                                         </Col>

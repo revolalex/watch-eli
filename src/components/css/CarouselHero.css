@@ -20,9 +20,9 @@
   color: white;
 }
 
-.carousel-indicators .active {
+/* .carousel-indicators .active {
   border: 1px ridge var(--gold-color) !important;
-}
+} */
 
 .carousel-indicators button {
   background-color: var(--gold-color) !important;

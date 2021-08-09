@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Buy from './pages/Buy'
-import Sell from './pages/Sell'
+import Buy from './pages/Sell'
+import Sell from './pages/Buy'
 import Service from './pages/Service'
-import Navbar4 from './components/Navbar4';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Trade from'./pages/Trade'
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,8 +18,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Navbar4 />
+          <Navbar/>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/contact' component={Contact} />
@@ -26,9 +26,9 @@ class App extends Component {
             <Route path='/buy' component={Buy} />
             <Route path='/sell' component={Sell} />
             <Route path='/service' component={Service} />
+            <Route path='/trade' component={Trade} />
           </Switch>
           <Footer />
-        </div>
       </Router>
     );
   }
