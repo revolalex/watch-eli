@@ -7,6 +7,14 @@
 .title-div {
   text-align: center;
 }
+.text p{
+  background-color: rgba(240, 238, 235, 0.5);
+  font-weight: bold;
+}
+.text h3{
+  font-weight: bold !important;
+}
+
 
 
 .title-div h1 {
@@ -21,6 +29,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url(../../img/iwc.jpg) no-repeat center center fixed;
   /* background: url(../../img/bg\ -\ copie.jpg) no-repeat center center fixed; */
   /* background: url(../../img/navitimer.jpg) no-repeat center center fixed; */
   background-repeat: no-repeat;

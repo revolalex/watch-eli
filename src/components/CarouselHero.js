@@ -3,9 +3,11 @@ import Carousel from 'react-bootstrap/Carousel'
 import "./css/CarouselHero.css"
 
 import SubmarinerImg from '../img/submariner.jpg'
+import NavitimerImg from '../img/navitimer.jpg'
 import BachelorImg from '../img/bachelor.jpg'
-import PatekImg from '../img/patek.jpg'
-import ApImg from '../img/ap.jpg'
+// import PatekImg from '../img/patek.jpg'
+// import ApImg from '../img/ap.jpg'
+import ReversoImg from '../img/reversoVerte.jpg'
 import GoogleAvis from './GoogleAvis';
 
 
@@ -22,32 +24,32 @@ class CarouselHero extends Component {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h5>First slide label</h5>
-                            <p>Watchiz la passion horlogère</p>
+                            <h4 className="goldText">une équipe professionnelle</h4>
+                            <h5 className="goldText">Watchiz la passion horlogère.</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={ApImg}
+                            src={ReversoImg}
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h5>Second slide label</h5>
-                            <p>Vous ne la porter plus, vendez la</p>
+                            <h4 className="goldText">Watchiz le spécialiste CPO</h4>
+                            <h5 className="goldText">Trouver le modèle de vos rêves.</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={PatekImg}
+                            src={NavitimerImg}
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <h5>Achat</h5>
-                            <p>Watchiz le spécialiste CPO</p>
+                            <h4 className="goldText">Echangez votre montre</h4>
+                            <h5 className="goldText">Vous ne la porter plus, echangez la!</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -58,8 +60,8 @@ class CarouselHero extends Component {
                             alt="Fourth slide"
                         />
                         <Carousel.Caption>
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h4 className="goldText">Services</h4>
+                            <h5 className="goldText">Nous travaillons avec les plus grandes manufactures.</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

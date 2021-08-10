@@ -230,12 +230,16 @@ class FormSell extends Component {
                                     </Row>
                                     <br />
                                 </Container>
-                                <input type="text" name="" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
+                                <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                                 <span>{t('form-sell-brand')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                                <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
                                 <span>{t('form-sell-model')}</span>
+                            </div>
+                            <div className="inputBox">
+                                <input type="text" name="comment" required="required"  value={this.state.model} onChange={this.handleModelInput} />
+                                <span>{t('form-sell-comment')}</span>
                             </div>
                             <br />
                             {/* Range Condition */}

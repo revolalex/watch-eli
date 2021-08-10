@@ -7,18 +7,11 @@
   left: 0;
   height: 400px;
 }
-
-.carousel-hero p {
-  color: white;
+.goldText{
+  color: var(--gold-color);
+  font-weight: bold;
 }
 
-.carousel-hero h5 {
-  color: white;
-}
-
-.carousel-hero span {
-  color: white;
-}
 
 /* .carousel-indicators .active {
   border: 1px ridge var(--gold-color) !important;
