@@ -21,10 +21,12 @@
   color: var(--gold-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 650px) {
   /* Specific to this particular image */
   .contact {
-    background: url(../../img/iwcSmall.jpg) no-repeat center center fixed;
+    background: url(../../img/iwcSmall.jpg);
+    background-size: contain;
+    object-fit: none;
 
   }
 }
