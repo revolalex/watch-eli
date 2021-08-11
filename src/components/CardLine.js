@@ -25,7 +25,9 @@ class CardLine extends Component {
                 <section className="container mt-5 mb-5">
                     <div className="row row-cols-1 row-cols-md-3 g-4">
                         <div className="col">
-                            <div className="card h-100" data-aos="zoom-in" >
+                            <div className="card h-100"
+                            // data-aos="zoom-in" 
+                            >
                                 <img src={SpeedmasterImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy")}</h5>
@@ -35,7 +37,9 @@ class CardLine extends Component {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card h-100" data-aos="zoom-in" >
+                            <div className="card h-100" 
+                            // data-aos="zoom-in" 
+                            >
                                 <img src={BreitlingImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("sell")}</h5>
@@ -45,7 +49,9 @@ class CardLine extends Component {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card h-100" data-aos="zoom-in" >
+                            <div className="card h-100" 
+                            // data-aos="zoom-in" 
+                            >
                                 <img src={ServiceImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("service")}</h5>

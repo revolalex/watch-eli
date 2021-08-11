@@ -21,13 +21,7 @@
   color: var(--gold-color);
 }
 
-@media screen and (max-width: 650px) {
-  /* Specific to this particular image */
-  .contact {
-    background: url(../../img/longinesDiver.jpg)no-repeat center center fixed!important;
-    position: fixed;
-  }
-}
+
 
 .contact {
   position: relative;
@@ -37,7 +31,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../../img/cartier.jpeg) no-repeat center center fixed;
+  background: url(../../img/iwc.jpg) no-repeat center center fixed;
   /* background: url(../../img/bg\ -\ copie.jpg) no-repeat center center fixed; */
   /* background: url(../../img/navitimer.jpg) no-repeat center center fixed; */
   background-repeat: no-repeat;

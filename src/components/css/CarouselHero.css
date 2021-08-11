@@ -8,6 +8,8 @@
   height: 400px;
 }
 .goldText{
+  -webkit-text-stroke-width: .9px;
+  -webkit-text-stroke-color: rgb(109, 70, 13);
   color: var(--gold-color);
   font-weight: bold;
 }
