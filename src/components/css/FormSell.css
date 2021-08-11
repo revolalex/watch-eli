@@ -8,7 +8,7 @@
   text-align: center;
 }
 .text p{
-  background-color: rgba(240, 238, 235, 0.5);
+  background-color: rgba(240, 238, 235, 0.6);
   font-weight: bold;
 }
 .text h3{
@@ -24,7 +24,8 @@
 @media screen and (max-width: 650px) {
   /* Specific to this particular image */
   .contact {
-    background: url(../../img/cartier.jpeg)no-repeat center center fixed!important;;
+    background: url(../../img/longinesDiver.jpg)no-repeat center center fixed!important;
+    position: fixed;
   }
 }
 
