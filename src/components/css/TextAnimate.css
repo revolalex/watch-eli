@@ -30,7 +30,8 @@
     display: flex;
   }
   .containerT .box .title h1 {
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
+    font-family: 'Dancing Script', cursive;
     color: var(--gold-color) !important;
     font-size: 32px;
     -webkit-animation: mainFadeIn 2s forwards;
@@ -43,6 +44,7 @@
     position: relative;
   }
   .containerT .box .title h1 span {
+    
     width: 0px;
     height: 0px;
     -webkit-border-radius: 50%;
@@ -85,6 +87,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    
   }
   
   /* Animation */

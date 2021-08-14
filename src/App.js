@@ -6,8 +6,8 @@ import Contact from './pages/Contact';
 import Buy from './pages/Sell'
 import Sell from './pages/Buy'
 import Service from './pages/Service'
-import Navbar5 from './components/navbar5';
-import Footer from './components/Footer';
+import Navbar5 from './components/Global/navbar5';
+import Footer from './components/Global/Footer';
 import Trade from './pages/Trade'
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';

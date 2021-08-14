@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import "./css/CarouselHero.css"
+import "../css/CarouselHero.css"
 
 import GoogleAvis from './GoogleAvis';
-import AchatSlide from '../img/carousel/achat-slide.jpeg'
-import SubmarinerImg from '../img/submariner.jpg'
-import Echange from '../img/carousel/echange.jpeg'
-import Collection from '../img/carousel/collection.jpg'
-import VenteSlide from '../img/carousel/vente-slide.jpeg'
+import AchatSlide from '../../img/carousel/achat-slide.jpeg'
+import SubmarinerImg from '../../img/submariner.jpg'
+import Echange from '../../img/carousel/echange.jpeg'
+import Collection from '../../img/carousel/collection.jpg'
+import VenteSlide from '../../img/carousel/vente-slide.jpeg'
 
 
-// import BachelorImg from '../img/bachelor.jpg'
-// import EchangeSlide from '../img/carousel/echange-slide.jpeg'
-// import ReversoImg from '../img/reversoVerte.jpg'
-// import NavitimerImg from '../img/navitimer.jpg'
-// import Milgauss from '../img/carousel/milgauss.jpeg'
-// import EchangeSlide from '../img/carousel/echange-slide.jpeg'
 
 
 class CarouselHero extends Component {

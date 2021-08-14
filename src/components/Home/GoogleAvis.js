@@ -1,6 +1,6 @@
 import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
-import './css/GoogleAvis.css'
+import '../css/GoogleAvis.css'
 import { Image, Row, Col } from 'react-bootstrap'
 
 class GoogleAvis extends Component {

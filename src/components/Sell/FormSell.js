@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
-import './css/FormSell.css'
+import '../css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
-import breitlingLogo from "../img/logo/breitling.png"
-import zenithLogo from "../img/logo/zenithLogo.png"
-
-import hubloLogo from '../img/logo/hublot.png'
-
-
-import omega from '../img/logo2/omega.png'
-import rolex from '../img/logo2/rolex.png'
-import cartier from "../img/logo2/cartier.png"
-
-import formIcon from '../img/icones/formIcon.png'
-import estimIcon from '../img/icones/estimIcon.png'
-import shipIcon from '../img/icones/shipIcon.png'
-import checkIcon from "../img/icones/check.png"
+import breitlingLogo from "../../img/logo/breitling.png"
+import zenithLogo from "../../img/logo/zenithLogo.png"
+import hubloLogo from '../../img/logo/hublot.png'
+import omega from '../../img/logo2/omega.png'
+import rolex from '../../img/logo2/rolex.png'
+import cartier from "../../img/logo2/cartier.png"
+import formIcon from '../../img/icones/formIcon.png'
+import estimIcon from '../../img/icones/estimIcon.png'
+import shipIcon from '../../img/icones/shipIcon.png'
+import checkIcon from "../../img/icones/check.png"
 
 
 

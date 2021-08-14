@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import DaytonaImg from '../img/daytona.jpeg'
 // import ServiceBreitling from"../img/serviceBreitling.jpg"
-import SpeedmasterImg from '../img/speedmaster2.jpg'
-import Tag from '../img/tag1.jpg'
-import BreitlingImg from '../img/breitlingDeus2.jpg'
-import ServiceImg from '../img/service.jpeg'
-import "./css/CardLine.css"
+import SpeedmasterImg from '../../img/speedmaster2.jpg'
+import Tag from '../../img/tag1.jpg'
+import BreitlingImg from '../../img/breitlingDeus2.jpg'
+import ServiceImg from '../../img/service.jpeg'
+import "../css/CardLine.css"
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +38,7 @@ class CardLine extends Component {
                             </div>
                         </div>
                         <div className="col card-shadow">
-                            <div className="card h-100" 
+                            <div className="card h-100"
                             // data-aos="zoom-in" 
                             >
                                 <img src={BreitlingImg} className="card-img-top img-from-card" alt="..." />
@@ -50,7 +50,7 @@ class CardLine extends Component {
                             </div>
                         </div>
                         <div className="col card-shadow">
-                            <div className="card h-100" 
+                            <div className="card h-100"
                             // data-aos="zoom-in" 
                             >
                                 <img src={Tag} className="card-img-top img-from-card" alt="..." />
@@ -62,7 +62,7 @@ class CardLine extends Component {
                             </div>
                         </div>
                         <div className="col card-shadow">
-                            <div className="card h-100" 
+                            <div className="card h-100"
                             // data-aos="zoom-in" 
                             >
                                 <img src={ServiceImg} className="card-img-top img-from-card" alt="..." />
