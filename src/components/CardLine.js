@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import DaytonaImg from '../img/daytona.jpeg'
 // import ServiceBreitling from"../img/serviceBreitling.jpg"
 import SpeedmasterImg from '../img/speedmaster2.jpg'
+import Tag from '../img/tag1.jpg'
 import BreitlingImg from '../img/breitlingDeus2.jpg'
 import ServiceImg from '../img/service.jpeg'
 import "./css/CardLine.css"
@@ -23,8 +24,8 @@ class CardLine extends Component {
         return (
             <div className="container card-line-container">
                 <section className="container mt-5 mb-5">
-                    <div className="row row-cols-1 row-cols-md-3 g-4">
-                        <div className="col">
+                    <div className="row row-cols-1 row-cols-md-2 g-4">
+                        <div className="col card-shadow">
                             <div className="card h-100"
                             // data-aos="zoom-in" 
                             >
@@ -36,7 +37,7 @@ class CardLine extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col card-shadow">
                             <div className="card h-100" 
                             // data-aos="zoom-in" 
                             >
@@ -48,7 +49,19 @@ class CardLine extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col card-shadow">
+                            <div className="card h-100" 
+                            // data-aos="zoom-in" 
+                            >
+                                <img src={Tag} className="card-img-top img-from-card" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Echange</h5>
+                                    <p className="card-text">Blabla a faire</p>
+                                    <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col card-shadow">
                             <div className="card h-100" 
                             // data-aos="zoom-in" 
                             >

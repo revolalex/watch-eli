@@ -1,12 +1,18 @@
-.card-line-container{
-    /* padding-top: 80px; */
-    padding-bottom: 80px;
+.card-line-container {
+  /* padding-top: 80px; */
+  padding-bottom: 80px;
 }
 
-.img-from-card{
-    height: 200px;
-    object-fit: cover;
+.img-from-card {
+  height: 200px;
+  object-fit: cover;
 }
-.cardLink{
-    color: var(--text-on-background)
+
+.cardLink {
+  color: var(--text-on-background)
+}
+
+.card-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
