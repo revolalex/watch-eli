@@ -34,14 +34,14 @@
 
 @media screen and (max-width: 640px) {
   .nav-link {
-    font-size: 1em;
+    font-size: .8em;
   }
   .majuscule-title{
     font-size: 1.2em;
     font-family: 'Dancing Script', cursive;
   }
   .logo-nav-div {
-    font-size: 1em;
+    font-size: .9em;
   }
 
 }
