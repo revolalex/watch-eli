@@ -6,6 +6,7 @@
 }
 
 .logo-nav-div {
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -29,4 +30,18 @@
 .majuscule-title{
   font-size: 1.5em;
   font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (max-width: 640px) {
+  .nav-link {
+    font-size: 1em;
+  }
+  .majuscule-title{
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+  }
+  .logo-nav-div {
+    font-size: 1em;
+  }
+
 }
