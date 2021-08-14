@@ -1,0 +1,10 @@
+
+@media screen and (min-width: 600px) {
+    .my-mobile-nav {
+        display: none;
+      }
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: white !important;
+}

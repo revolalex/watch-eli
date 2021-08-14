@@ -5,6 +5,12 @@
   width: 40px;
 }
 
+@media screen and (max-width: 601px) {
+  .big-screen-nav {
+      display: none;
+    }
+}
+
 .logo-nav-div {
   align-items: center;
   display: flex;
