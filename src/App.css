@@ -1,11 +1,20 @@
 :root {
-  --gold-color: #c59454;
+  --gold-color: #111010;
   /* to use ex => color: var(--gold-color) */
-  --background-color: #3b3b37;
-  --text-on-background: #dadada;
+  /* #3b3b37;  */
+  --background-color: #f5f3ed;
+  
+  --text-on-background: #111010;
+  /* --background-color-body: #F0EEEB; */
+
+  --background-color-body: #ffffff;
+
+  --vert-color: #2D6B56;
+
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
-  background-color: rgb(240, 238, 235) !important;
+  background-color: var(--background-color-body)!important;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display: =swap');
@@ -14,5 +23,6 @@ body{
 	/* margin: 0;
 	padding: 0;
 	box-sizing: border-box; */
-	font-family: 'Poppins',sans-serif;
+	/* font-family: 'Poppins',sans-serif; */
+  font-family: 'Roboto', sans-serif;
 } 

@@ -16,12 +16,9 @@
 }
 
 
-
 .title-div h1 {
   color: var(--gold-color);
 }
-
-
 
 .contact {
   position: relative;
@@ -31,25 +28,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../../img/iwc.jpg) no-repeat center center fixed;
-  /* background: url(../../img/bg\ -\ copie.jpg) no-repeat center center fixed; */
-  /* background: url(../../img/navitimer.jpg) no-repeat center center fixed; */
-  background-repeat: no-repeat;
-  background-size: cover ;
   height: 100%;
-  overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
 }
-/* @media (max-width: 991px) {
-  .contact {
-    background: url(../../img/iwcSmal.jpeg) no-repeat center center fixed;
-    
-    background-size: cover;
-  }
-} */
 
 .brand-logo {
   margin-top: 15px;

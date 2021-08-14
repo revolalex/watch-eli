@@ -31,7 +31,7 @@ class Navbar4 extends Component {
                     <header>
                         <div className="navbar navbar-expand-md">
                             <div className="container">
-                                <a href="/" className="navbar-brand" style={{ color: "var(--gold-color)" }}>
+                                <a href="/" className="navbar-brand" style={{ color: "var(--text-on-background)" }}>
                                     <img className="logoWatch" src={watch} alt="logo watch" style={{ height: "35px" }} /> &nbsp;
                                     Watchiz
                                 </a>

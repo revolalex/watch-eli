@@ -6,10 +6,13 @@ import "aos/dist/aos.css";
 import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
 import breitlingLogo from "../img/logo/breitling.png"
 import zenithLogo from "../img/logo/zenithLogo.png"
-import cartierLogo from '../img/logo/cartier.svg'
+
 import hubloLogo from '../img/logo/hublot.png'
-import omegaLogo from '../img/logo/omega.svg'
-import rolexLogo from '../img/logo/rolex.png'
+
+
+import omega from '../img/logo2/omega.png'
+import rolex from '../img/logo2/rolex.png'
+import cartier from "../img/logo2/cartier.png"
 
 import formIcon from '../img/icones/formIcon.png'
 import estimIcon from '../img/icones/estimIcon.png'
@@ -145,20 +148,20 @@ class FormSell extends Component {
         return (
             <section className="contact">
                 <Card>
-                <div className="title-div">
-                    <div>
-                        <h1>{t('form-sell-titre')}</h1>
-                        <h5>Faites de la place dans votre collection, vendez votre montre en trois clics.</h5>
-                        <p>
-                            {t('form-sell-intro')}
-                        </p>
-                    </div>
+                    <div className="title-div">
+                        <div>
+                            <h1>{t('form-sell-titre')}</h1>
+                            <h5>Faites de la place dans votre collection, vendez votre montre en trois clics.</h5>
+                            <p>
+                                {t('form-sell-intro')}
+                            </p>
+                        </div>
 
-                </div>
+                    </div>
                 </Card>
                 <div className="container-contact">
                     {/* container on left */}
-                    
+
                     <div className="contactInfo">
                         <div className="box" >
                             <div className="icon">
@@ -209,10 +212,10 @@ class FormSell extends Component {
                                 <Container>
                                     <Row>
                                         <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={rolexLogo} onClick={this.rolexClick} />
+                                            <Image className="brand-logo" thumbnail src={rolex} onClick={this.rolexClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={omegaLogo} onClick={this.omegaClick} />
+                                            <Image className="brand-logo" thumbnail src={omega} onClick={this.omegaClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
                                             <Image className="brand-logo" thumbnail src={hubloLogo} onClick={this.hublotClick} />
@@ -225,7 +228,7 @@ class FormSell extends Component {
                                         </Col>
 
                                         <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={cartierLogo} onClick={this.cartierClick} />
+                                            <Image className="brand-logo" thumbnail src={cartier} onClick={this.cartierClick} />
                                         </Col>
                                     </Row>
                                     <br />
@@ -238,7 +241,7 @@ class FormSell extends Component {
                                 <span>{t('form-sell-model')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="comment" required="required"  value={this.state.model} onChange={this.handleModelInput} />
+                                <input type="text" name="comment" required="required" value={this.state.model} onChange={this.handleModelInput} />
                                 <span>{t('form-sell-comment')}</span>
                             </div>
                             <br />

@@ -28,16 +28,6 @@
   flex-direction: row !important;
 }
 
-.shadow-text-gold a{
-  color:var(--gold-color) !important;
-}
-
-.nav-link {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: var(--text-on-background) ;
-}
-
 .active{
   color:var(--gold-color) !important;
 }
@@ -60,7 +50,11 @@ a:hover{
 }
 .nav-link .active{
   color:var(--gold-color) !important
-
+}
+.nav-link {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--text-on-background)!important ;
 }
 
 

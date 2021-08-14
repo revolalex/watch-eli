@@ -16,7 +16,7 @@ ul {
 
 .single-cta i {
   /* color: #ff5e14; */
-  color: var(--gold-color);
+  color: var(--text-on-background);
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -29,7 +29,7 @@ ul {
 }
 
 .cta-text h4 {
-  color: #fff;
+  color: var(--text-on-background);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -70,7 +70,7 @@ ul {
 }
 
 .footer-social-icon span {
-  color: #fff;
+  color: var(--text-on-background);
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -113,7 +113,7 @@ ul {
 }
 
 .footer-widget-heading h3 {
-  color: #fff;
+  color: var(--text-on-background);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -126,16 +126,16 @@ ul {
   left: 0;
   bottom: -15px;
   height: 2px;
-  width: 50px;
-  /* background: #ff5e14; */
-  background: var(--gold-color);
+  width: 25%;
+  background: var(--vert-color);
+  /* background: var(--gold-color); */
 }
 
 .footer-widget ul li {
   display: inline-block;
-  float: left;
   width: 50%;
   margin-bottom: 12px;
+  float: left;
 }
 
 .footer-widget ul li a:hover {
@@ -158,7 +158,7 @@ ul {
   padding: 14px 28px;
   background: var(--background-color);
   border: 1px solid #2E2E2E;
-  color: #fff;
+  color: var(--text-on-background);
 }
 
 .subscribe-form button {
@@ -215,11 +215,6 @@ ul {
 }
 
 #logoText{
-  color: white;
+  color: var(--text-on-background);
   font-size: 28px;
-}
-
-.nav-link .active{
-  color:var(--gold-color) !important
-
 }

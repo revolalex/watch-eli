@@ -2,13 +2,20 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "./css/CarouselHero.css"
 
-import SubmarinerImg from '../img/submariner.jpg'
-import NavitimerImg from '../img/navitimer.jpg'
-import BachelorImg from '../img/bachelor.jpg'
-// import PatekImg from '../img/patek.jpg'
-// import ApImg from '../img/ap.jpg'
-import ReversoImg from '../img/reversoVerte.jpg'
 import GoogleAvis from './GoogleAvis';
+import AchatSlide from '../img/carousel/achat-slide.jpeg'
+import SubmarinerImg from '../img/submariner.jpg'
+import Echange from '../img/carousel/echange.jpeg'
+import Collection from '../img/carousel/collection.jpg'
+import VenteSlide from '../img/carousel/vente-slide.jpeg'
+
+
+// import BachelorImg from '../img/bachelor.jpg'
+// import EchangeSlide from '../img/carousel/echange-slide.jpeg'
+// import ReversoImg from '../img/reversoVerte.jpg'
+// import NavitimerImg from '../img/navitimer.jpg'
+// import Milgauss from '../img/carousel/milgauss.jpeg'
+// import EchangeSlide from '../img/carousel/echange-slide.jpeg'
 
 
 class CarouselHero extends Component {
@@ -16,35 +23,51 @@ class CarouselHero extends Component {
         return (
             <div className="carousel-div">
                 <Carousel className="carousel-hero" variant="dark">
+                    {/* intro */}
                     <Carousel.Item>
                         <img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={BachelorImg}
+                            src={Collection}
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h4 className="goldText">une équipe professionnelle</h4>
-                            <h5 className="goldText">Watchiz la passion horlogère.</h5>
+                            <h4 className="goldText">Watches Paris, le specialiste CPO</h4>
+                            <h5 className="goldText">Obtenez le meilleur prix pour votre montre.</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    {/* Achat */}
                     <Carousel.Item>
                         <img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={ReversoImg}
+                            src={AchatSlide}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h4 className="goldText">Nos modéles</h4>
+                            <h5 className="goldText">Trouvez la montre de vos rêves</h5>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    {/* vente */}
+                    <Carousel.Item>
+                        <img
+                            fluid
+                            className="d-block w-100 img-carousel"
+                            src={VenteSlide}
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h4 className="goldText">Watchiz le spécialiste CPO</h4>
-                            <h5 className="goldText">Trouver le modèle de vos rêves.</h5>
+                            <h4 className="goldText">Nous rachetons votre montre</h4>
+                            <h5 className="goldText">Obtenez le meilleur prix pour votre montre.</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    {/* Echange */}
                     <Carousel.Item>
                         <img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={NavitimerImg}
+                            src={Echange}
                             alt="Third slide"
                         />
                         <Carousel.Caption>
@@ -52,6 +75,7 @@ class CarouselHero extends Component {
                             <h5 className="goldText">Vous ne la porter plus, echangez la!</h5>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    {/* Service */}
                     <Carousel.Item>
                         <img
                             fluid

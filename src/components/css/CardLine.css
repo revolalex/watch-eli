@@ -8,5 +8,5 @@
     object-fit: cover;
 }
 .cardLink{
-    color: var(--gold-color)
+    color: var(--text-on-background)
 }

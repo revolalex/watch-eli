@@ -5,6 +5,7 @@ import watch from '../img/watch.png'
 import './css/Navbar.css'
 import { withTranslation } from 'react-i18next';
 import { NavDropdown, Container, Nav, NavLink } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -36,7 +37,7 @@ class Navbar extends Component {
                         <img className="logoWatch" src={watch} alt="logo watch" />
                         &nbsp; Watchiz
                         <span className="tel-header">
-                           
+
                             <i className="fas fa-phone"></i>
                             &nbsp;(+33)0600000000
                         </span>
@@ -73,4 +74,4 @@ class Navbar extends Component {
     }
 }
 
-export default withTranslation()(Navbar);
+export default withTranslation()(withRouter(Navbar));
