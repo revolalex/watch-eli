@@ -6,8 +6,12 @@
 
 .title-div {
   text-align: center;
-  background-color: white;
-
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.my-underline{
+  text-decoration: underline;
+  text-decoration-color: var(--vert-color);
 }
 
 .text p {
@@ -21,7 +25,7 @@
 
 
 .title-div h1 {
-  color: var(--gold-color);
+  color: var(--text-on-background);
 }
 
 .contact {
@@ -159,7 +163,7 @@
 
 .contactform .inputBox input[type="submit"] {
   width: 100px;
-  background: #263849;
+  background: var(--vert-color) !important;
   color: #fff;
   border: none;
   cursor: pointer;

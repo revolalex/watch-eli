@@ -5,15 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
 import breitlingLogo from "../../img/logo/breitling.png"
-import zenithLogo from "../../img/logo/zenithLogo.png"
+// import zenithLogo from "../../img/logo/zenithLogo.png"
 import hubloLogo from '../../img/logo/hublot.png'
 import omega from '../../img/logo2/omega.png'
 import rolex from '../../img/logo2/rolex.png'
 import cartier from "../../img/logo2/cartier.png"
-import formIcon from '../../img/icones/formIcon.png'
-import estimIcon from '../../img/icones/estimIcon.png'
-import shipIcon from '../../img/icones/shipIcon.png'
-import checkIcon from "../../img/icones/check.png"
+import tagHeuerIcon from "../../img/logo2/tag-heuer.png"
+import SellDetail from './SellDetail';
 
 
 
@@ -33,7 +31,7 @@ class FormSell extends Component {
         this.cartierClick = this.cartierClick.bind(this);
         this.hublotClick = this.hublotClick.bind(this);
         this.omegaClick = this.omegaClick.bind(this);
-        this.zenithClick = this.zenithClick.bind(this);
+        this.tagHeuerClick = this.tagHeuerClick.bind(this);
         this.handleCondition = this.handleCondition.bind(this)
         this.handleBrandInput = this.handleBrandInput.bind(this)
         this.handleModelInput = this.handleModelInput.bind(this)
@@ -77,9 +75,9 @@ class FormSell extends Component {
             brand: 'Rolex'
         })
     }
-    zenithClick() {
+    tagHeuerClick() {
         this.setState({
-            brand: 'Zenith'
+            brand: 'Tag Heuer'
         })
     }
 
@@ -143,7 +141,7 @@ class FormSell extends Component {
         const t = this.props.t
         return (
             <section className="contact">
-                <Card>
+                <Card >
                     <div className="title-div">
                         <div>
                             <h1>{t('form-sell-titre')}</h1>
@@ -157,51 +155,12 @@ class FormSell extends Component {
                 </Card>
                 <div className="container-contact">
                     {/* container on left */}
-                    <div className="contactInfo">
-                        <div className="box" >
-                            <div className="icon">
-                                <img src={formIcon} />
-                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
-                            </div>
-                            <div className="text">
-                                <h3>{t("form-sell-step1")}</h3>
-                                <p>{t("form-sell-step1.1")}</p>
-                            </div>
-                        </div>
-                        <div className="box" >
-                            <div className="icon">
-                                <img src={estimIcon} />
-                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
-                            </div>
-                            <div className="text">
-                                <h3>{t("form-sell-step2")}</h3>
-                                <p>{t("form-sell-step2.1")}</p>
-                            </div>
-                        </div>
-                        <div className="box">
-                            <div className="icon">
-                                <img src={shipIcon} />
-                                <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
-                            </div>
-                            <div className="text">
-                                <h3>{t("form-sell-step3")}</h3>
-                                <p>{t("form-sell-step3.1")}</p>
-                            </div>
-                        </div>
-                        <div className="box">
-                            <div className="icon">
-                                <img src={checkIcon} />
-                            </div>
-                            <div className="text">
-                                <h3>{t("form-sell-money-titre")}</h3>
-                                <p>{t("form-sell-money")}</p>
-                            </div>
-                        </div>
-                    </div>
+                    <SellDetail/>
+                 
                     {/* container on right */}
                     <div className="contactform">
                         <form>
-                            <h2>{t('form-sell-your-watch')}</h2>
+                            <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <br />
                             <div className="inputBox">
                                 <Container>
@@ -216,7 +175,7 @@ class FormSell extends Component {
                                             <Image className="brand-logo" thumbnail src={hubloLogo} onClick={this.hublotClick} />
                                         </Col>
                                         <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={zenithLogo} onClick={this.zenithClick} />
+                                            <Image className="brand-logo" thumbnail src={tagHeuerIcon} onClick={this.tagHeuerClick} />
                                         </Col>
                                         <Col xs={6} md={4} >
                                             <Image className="brand-logo" thumbnail src={breitlingLogo} onClick={this.breitlingClick} />
