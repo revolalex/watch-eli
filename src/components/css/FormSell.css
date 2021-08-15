@@ -6,12 +6,16 @@
 
 .title-div {
   text-align: center;
+  background-color: white;
+
 }
-.text p{
+
+.text p {
   background-color: rgba(240, 238, 235, 0.6);
   font-weight: bold;
 }
-.text h3{
+
+.text h3 {
   font-weight: bold !important;
 }
 

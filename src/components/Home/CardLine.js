@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import DaytonaImg from '../img/daytona.jpeg'
-// import ServiceBreitling from"../img/serviceBreitling.jpg"
 import SpeedmasterImg from '../../img/speedmaster2.jpg'
 import Tag from '../../img/tag1.jpg'
 import BreitlingImg from '../../img/breitlingDeus2.jpg'
@@ -10,6 +8,7 @@ import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
+import VvmTooltip from './VvmTooltip';
 
 class CardLine extends Component {
     componentDidMount() {
@@ -19,7 +18,9 @@ class CardLine extends Component {
             duration: 2000
         });
     }
+
     render() {
+
         const t = this.props.t
         return (
             <div className="container card-line-container">
@@ -32,7 +33,10 @@ class CardLine extends Component {
                                 <img src={SpeedmasterImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy")}</h5>
-                                    <p className="card-text">{t("card-buy-text")}</p>
+                                    <p className="card-text">
+                                    <VvmTooltip/>
+                                        {t("card-buy-text")}
+                                    </p>
                                     <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
@@ -55,9 +59,9 @@ class CardLine extends Component {
                             >
                                 <img src={Tag} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">Echange</h5>
-                                    <p className="card-text">Blabla a faire</p>
-                                    <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
+                                    <h5 className="card-title">{t('navbar-trade')}</h5>
+                                    <p className="card-text">{t('card-trade-text')}</p>
+                                    <p><Link to={'/trade'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>

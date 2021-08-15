@@ -147,7 +147,7 @@ class FormSell extends Component {
                     <div className="title-div">
                         <div>
                             <h1>{t('form-sell-titre')}</h1>
-                            <h5>Faites de la place dans votre collection, vendez votre montre en trois clics.</h5>
+                            <h5>{t('form-sell-sous-titre')}</h5>
                             <p>
                                 {t('form-sell-intro')}
                             </p>
@@ -157,7 +157,6 @@ class FormSell extends Component {
                 </Card>
                 <div className="container-contact">
                     {/* container on left */}
-
                     <div className="contactInfo">
                         <div className="box" >
                             <div className="icon">
