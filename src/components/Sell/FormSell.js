@@ -3,15 +3,10 @@ import '../css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Image, Container, Row, Col, OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
-import breitlingLogo from "../../img/logo/breitling.png"
-// import zenithLogo from "../../img/logo/zenithLogo.png"
-import hubloLogo from '../../img/logo/hublot.png'
-import omega from '../../img/logo2/omega.png'
-import rolex from '../../img/logo2/rolex.png'
-import cartier from "../../img/logo2/cartier.png"
-import tagHeuerIcon from "../../img/logo2/tag-heuer.png"
+import { OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
 import SellDetail from './SellDetail';
+import BrandLogo from './BrandLogo';
+
 
 
 
@@ -25,13 +20,8 @@ class FormSell extends Component {
             photo: '',
             condition: 3
         }
-        this.breitlingClick = this.breitlingClick.bind(this);
-        this.breguetClick = this.breguetClick.bind(this);
-        this.rolexClick = this.rolexClick.bind(this);
-        this.cartierClick = this.cartierClick.bind(this);
-        this.hublotClick = this.hublotClick.bind(this);
-        this.omegaClick = this.omegaClick.bind(this);
-        this.tagHeuerClick = this.tagHeuerClick.bind(this);
+
+        this.onBrandLogoClick = this.onBrandLogoClick.bind(this);
         this.handleCondition = this.handleCondition.bind(this)
         this.handleBrandInput = this.handleBrandInput.bind(this)
         this.handleModelInput = this.handleModelInput.bind(this)
@@ -45,42 +35,11 @@ class FormSell extends Component {
             duration: 2000
         });
     }
-    breitlingClick() {
+    onBrandLogoClick(e) {
         this.setState({
-            brand: 'Breitling'
+            brand: e.target.alt
         })
     }
-    breguetClick() {
-        this.setState({
-            brand: 'Breguet'
-        })
-    }
-    omegaClick() {
-        this.setState({
-            brand: 'Omega'
-        })
-    }
-    hublotClick() {
-        this.setState({
-            brand: 'Hublot'
-        })
-    }
-    cartierClick() {
-        this.setState({
-            brand: 'Cartier'
-        })
-    }
-    rolexClick() {
-        this.setState({
-            brand: 'Rolex'
-        })
-    }
-    tagHeuerClick() {
-        this.setState({
-            brand: 'Tag Heuer'
-        })
-    }
-
 
     handleBrandInput(event) {
         this.setState({
@@ -92,7 +51,6 @@ class FormSell extends Component {
             modele: event.target.value
         })
     }
-
     handleCondition(event) {
         this.setState({
             condition: event.target.value
@@ -155,38 +113,14 @@ class FormSell extends Component {
                 </Card>
                 <div className="container-contact">
                     {/* container on left */}
-                    <SellDetail/>
-                 
+                    <SellDetail />
                     {/* container on right */}
                     <div className="contactform">
                         <form>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <br />
                             <div className="inputBox">
-                                <Container>
-                                    <Row>
-                                        <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={rolex} onClick={this.rolexClick} />
-                                        </Col>
-                                        <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={omega} onClick={this.omegaClick} />
-                                        </Col>
-                                        <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={hubloLogo} onClick={this.hublotClick} />
-                                        </Col>
-                                        <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={tagHeuerIcon} onClick={this.tagHeuerClick} />
-                                        </Col>
-                                        <Col xs={6} md={4} >
-                                            <Image className="brand-logo" thumbnail src={breitlingLogo} onClick={this.breitlingClick} />
-                                        </Col>
-
-                                        <Col xs={6} md={4}>
-                                            <Image className="brand-logo" thumbnail src={cartier} onClick={this.cartierClick} />
-                                        </Col>
-                                    </Row>
-                                    <br />
-                                </Container>
+                                <BrandLogo onBrandLogoClick={this.onBrandLogoClick}/>                     
                                 <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                                 <span>{t('form-sell-brand')}</span>
                             </div>

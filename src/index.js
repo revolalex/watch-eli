@@ -5,11 +5,12 @@ import App from './App';
 import './i18n';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={null}>
-      <App />
-    </Suspense>
+      <Suspense fallback={null}>
+        <App />
+      </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

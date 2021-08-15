@@ -1,11 +1,12 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { withRouter } from "react-router";
 import watch from '../../img/watch.png'
-import '../css/navbar5.css'
+import '../css/navbar.css'
 import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';
 import NavbarMobile from "./NavbarMobile";
+
 
 class Navbar5 extends Component {
     constructor(props) {
@@ -68,38 +69,11 @@ class Navbar5 extends Component {
                             </div>
                         </Navbar.Collapse>
                     </Navbar>
-
-
-                    {/* <Navbar className="my-navbar">
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Container>
-                            <Nav activeKey={pathname} className="mr-auto">
-                                <Nav.Link href="/">{t('navbar-home')}</Nav.Link>
-                                <Nav.Link href="/buy">{t("buy")}</Nav.Link>
-                                <Nav.Link href="/trade">{t("navbar-trade")}</Nav.Link>
-                                <Nav.Link href="/sell">{t("sell")}</Nav.Link>
-                                <Nav.Link href="/service">{t("service")}</Nav.Link>
-                                <Nav.Link href="/about">{t("navbar-about")}</Nav.Link>
-                                <Nav.Link href="/contact">{t("navbar-contact")}</Nav.Link>
-                            </Nav>
-                            <div>
-                                <select value={this.state.value} onChange={this.handleChange}>
-                                    <option value="fr">
-                                        🇫🇷
-                                    </option>
-                                    <option value="en">
-                                        🇬🇧
-                                    </option>
-                                </select>
-                            </div>
-                        </Container>
-                    </Navbar.Collapse>
-                </Navbar> */}
                 </div>
             </div>
         );
     }
 }
+
 
 export default withTranslation()(withRouter(Navbar5))

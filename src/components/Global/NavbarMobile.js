@@ -1,7 +1,7 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { withRouter } from "react-router";
 import watch from '../../img/watch.png'
-import '../css/navbar5.css'
+import '../css/navbar.css'
 import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';

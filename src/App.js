@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Buy from './pages/Sell'
 import Sell from './pages/Buy'
 import Service from './pages/Service'
-import Navbar5 from './components/Global/navbar5';
+import Navbar from './components/Global/navbar';
 import Footer from './components/Global/Footer';
 import Trade from './pages/Trade'
 import "./App.css"
@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar5 />
+        <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
