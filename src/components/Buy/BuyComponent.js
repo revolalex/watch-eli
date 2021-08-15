@@ -8,9 +8,11 @@ class BuyComponent extends Component {
     render() {
         return (
             <div>
-                <p>Trouvez le modèle de vos rêves en visitant notre boutique en ligne via la plateforme sécurisée Chrono24 et achetez l’esprit tranquille.
+                <p>
+                    Trouvez le modèle de vos rêves en visitant notre boutique en ligne via la plateforme sécurisée Chrono24 et achetez l’esprit tranquille.
                     Nous vendons uniquement des montres 100% certifiées authentiques et garanties minimum 12 mois.
-                    Notre sélection de montres( link chrono24)</p>
+                    Notre sélection de montres( link chrono24)
+                </p>
             </div>
         );
     }

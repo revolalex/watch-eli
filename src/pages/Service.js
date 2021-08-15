@@ -5,9 +5,10 @@ import TextAnimate from '../components/Service/TextAnimate';
 
 class Service extends Component {
   render() {
+    const imageSource = "https://s3-eu-west-1.amazonaws.com/poslux-wordpress/wp-content/uploads/sites/2/2019/02/06011845/IWC-Hero-21.jpg"
     return (
       <div>
-        <JumbotronImage imgSrc="https://s3-eu-west-1.amazonaws.com/poslux-wordpress/wp-content/uploads/sites/2/2019/02/06011845/IWC-Hero-21.jpg"/>
+        <JumbotronImage imgSrc={imageSource}/>
         <h2>Service</h2>
         <TextAnimate textOne="VVM" textTwo="emotion dealer"/>
       </div>

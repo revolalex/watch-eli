@@ -1,0 +1,19 @@
+.parallax {
+    /* The image used */
+    /* https://i0.wp.com/luxe.net/wp-content/uploads/2014/10/RM038_front-Richard-Mille.jpg?fit=1121%2C916&ssl=1 */
+    background-image: url("https://cdn-s-www.estrepublicain.fr/images/EB483BE0-916B-49EC-B911-310CAAC2E062/NW_raw/rolex-et-l-horlogerie-de-luxe-plus-generalement-sont-dans-l-oeil-du-cyclone-du-front-de-gauche-photo-dr-1433141154.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .parallax {
+      display: none;
+    }
+  }

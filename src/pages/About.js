@@ -8,8 +8,6 @@ class About extends Component {
     return (
       <div>
         <JumbotronImage imgSrc="https://www.time4diamonds.com/wp/wp-content/uploads/2020/10/5.jpg" />
-        
-
         <h2>About</h2>
         <CardHorizontal/>
       </div>
