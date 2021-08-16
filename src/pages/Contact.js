@@ -15,13 +15,6 @@ class Contact extends Component {
                 <JumbotronImage imgSrc="https://secure-journal.hautehorlogerie.org/wp-content/uploads/2021/04/IWC-Pilots-Watch-Chronograph-41-e.jpg" />
                 <ContactForm/>
                 <SocialMedia/>
-               
-                <br />
-                <br />
-                <br />
-               
-               
-
             </div>
         );
     }
