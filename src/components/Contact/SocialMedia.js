@@ -28,7 +28,7 @@ class SocialMedia extends Component {
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a twitter-a" href="https://twitter.com/">
-                                <i className="fab fa-twitter">
+                                <i className="fab fa-twitter social-media-icone">
                                 </i>
                             </a>
                         </li>
