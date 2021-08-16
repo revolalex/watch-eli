@@ -7,7 +7,7 @@ import { Card, Container } from 'react-bootstrap';
 class BuyComponent extends Component {
     state = {}
     render() {
-        const t = this.props.t
+        // const t = this.props.t
         return (
             <div>
                 <br/>
