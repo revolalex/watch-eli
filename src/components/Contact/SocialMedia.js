@@ -10,19 +10,19 @@ class SocialMedia extends Component {
                     <ul className="social-media-ul">
                         <li className="social-media-li">
                             <a className="social-media-a linkedin-a" href="https://www.linkedin.com/">
-                                <i className="fab fa-linkedin-in">
+                                <i className="fab fa-linkedin-in social-media-icone">
                                 </i>
                             </a>
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a facebook-a" href="https://www.facebook.com/">
-                                <i className="fab fa-facebook-f">
+                                <i className="fab fa-facebook-f social-media-icone">
                                 </i>
                             </a>
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a instagram-a" href="https://www.instagram.com/">
-                                <i className="fab fa-instagram">
+                                <i className="fab fa-instagram social-media-icone">
                                 </i>
                             </a>
                         </li>
@@ -34,7 +34,7 @@ class SocialMedia extends Component {
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a youtube-a" href="https://youtube.com/">
-                                <i className="fab fa-youtube">
+                                <i className="fab fa-youtube social-media-icone">
                                 </i>
                             </a>
                         </li>

@@ -10,13 +10,13 @@ class SocialMediaSmallScreen extends Component {
                     <ul className="social-media-ul">
                         <li className="social-media-li">
                             <a className="social-media-a instagram-a" href="https://www.instagram.com/">
-                                <i className="fab fa-instagram">
+                                <i className="fab fa-instagram social-media-icone">
                                 </i>
                             </a>
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a twitter-a" href="https://twitter.com/">
-                                <i className="fab fa-twitter">
+                                <i className="fab fa-twitter social-media-icone">
                                 </i>
                             </a>
                         </li>
@@ -28,13 +28,13 @@ class SocialMediaSmallScreen extends Component {
                     <ul className="social-media-ul">
                         <li className="social-media-li">
                             <a className="social-media-a youtube-a" href="https://youtube.com/">
-                                <i className="fab fa-youtube">
+                                <i className="fab fa-youtube social-media-icone">
                                 </i>
                             </a>
                         </li>
                         <li className="social-media-li">
                             <a className="social-media-a facebook-a" href="https://www.facebook.com/">
-                                <i className="fab fa-facebook-f">
+                                <i className="fab fa-facebook-f social-media-icone">
                                 </i>
                             </a>
                         </li>
