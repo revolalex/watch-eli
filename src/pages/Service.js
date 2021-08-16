@@ -3,6 +3,7 @@ import { withTranslation } from 'react-i18next';
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import TextAnimate from '../components/Service/TextAnimate';
 
+
 class Service extends Component {
   render() {
     const imageSource = "https://s3-eu-west-1.amazonaws.com/poslux-wordpress/wp-content/uploads/sites/2/2019/02/06011845/IWC-Hero-21.jpg"

@@ -26,7 +26,7 @@ class Navbar5 extends Component {
         const t = this.props.t
         return (
             <div>
-                <NavbarMobile/>
+                <NavbarMobile />
                 <div className="sticky-top big-screen-nav">
                     <div className="logo-nav-div">
                         <span className="logo-police">
