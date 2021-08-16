@@ -7,7 +7,7 @@ class Chrono24 extends Component {
     state = {}
     render() {
         return (
-            <Container>
+            <Container style={{textAlign:"center", padding:"10vh"}}>
                 <div  id="chrono24-div">
                     <a href="https://www.chrono24.fr/">
                         <img id="chrono24-img" src={chrono24} alt="chrono24" />

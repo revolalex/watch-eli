@@ -12,7 +12,7 @@ class Buy extends Component {
         <br/>
         <BuyComponent />
         <br/>
-        <Chrono24/>
+        <Chrono24 />
         
       </div>
     );
