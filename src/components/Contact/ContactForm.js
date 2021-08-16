@@ -42,7 +42,7 @@ class ContactForm extends Component {
             <div className="container-contact">
                 <div className="contactform">
                     <form>
-                        <h2 className="my-underline">Contact</h2>
+                        <h2 className="my-underline" style={{textAlign: "center"}}>Contact</h2>
                         <br />
                         <div className="inputBox">
                             <input type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />

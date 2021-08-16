@@ -6,6 +6,8 @@ class SocialMedia extends Component {
     render() {
         return (
             <div className="social-media-big-screen">
+                <h2 className="my-underline" style={{textAlign: "center"}}>Social Média</h2>
+                <br/><br/>
                 <div className="social-media-div">
                     <ul className="social-media-ul">
                         <li className="social-media-li">
