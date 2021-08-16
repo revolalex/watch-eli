@@ -6,7 +6,7 @@ class VvmTooltip extends Component {
     render() {
         return (
             <span>
-                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Vendez Votre Montre</Tooltip>}>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Vendez-Votre-Montre.com</Tooltip>}>
                     <span className="d-inline-block" 
                     style={{ 
                         color:"var(--vert-color)",
