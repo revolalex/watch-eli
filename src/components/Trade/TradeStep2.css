@@ -1,0 +1,38 @@
+.trade-first-div{
+    background-color: rgb(163, 163, 151);
+}
+
+.main-trade-step-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.trade-step-card {
+  color: white;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 30px 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.trade-card-container {
+  margin: 10px;
+}
+
+.trade-div-titre{
+  color: white;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
