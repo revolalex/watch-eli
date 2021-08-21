@@ -6,16 +6,19 @@ import JumbotronImage from '../components/Sell/JumbotronImage';
 import TradeCard from '../components/Trade/TradeCard';
 import TradeStep2 from '../components/Trade/TradeStep2';
 import Parralax from '../components/Home/Parralax';
+import { arrayOfImages } from '../utils/WatchImgUrl';
 
 
 class Trade extends Component {
     state = {}
     render() {
-        const imgUrl="https://watch-our.com/wp-content/uploads/product-images/15924.jpg"
+
+        var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
+        const imgUrl = randomItem
         return (
             <div>
                 <JumbotronImage imgSrc=" https://i.ytimg.com/vi/NoRstEITESg/maxresdefault.jpg" />
-                <br/>
+                <br />
                 <Container>
                     <TitreCard
                         titre={"Echangez votre montre "}
@@ -24,9 +27,9 @@ class Trade extends Component {
                     />
                 </Container>
                 <TradeCard />
-                <br/>
-                <TradeStep2/>
-                <Parralax imgUrl={imgUrl}/>
+                <br />
+                <TradeStep2 />
+                <Parralax imgUrl={imgUrl} />
             </div>
         );
     }

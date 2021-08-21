@@ -5,20 +5,26 @@ import BuyCard from '../components/Buy/BuyCard';
 import BuyCard2 from '../components/Buy/BuyCard2';
 import BuyTitre from '../components/Buy/BuyTitre';
 import Parralax from '../components/Home/Parralax';
+import { arrayOfImages } from '../utils/WatchImgUrl';
+
 
 
 
 class Buy extends Component {
   render() {
-    const imgUrl = "https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTUyMDJTVC5PTy4xMjQwU1QuMDE=/importer/watch.png.transform.apfw.jpg"
+
+
+    var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
+    const imgUrl = randomItem
     return (
+
       <div>
         <JumbotronImage imgSrc="https://swisswatches-magazine.com/wp-content/uploads/2020/11/Cartier-Ballon-Bleu-de-Cartier-36mm-W6920046-Wristshot-Pocketshot.jpg" />
         <br />
-        <BuyTitre/>
+        <BuyTitre />
         <BuyCard />
         <BuyCard2 />
-        <Parralax imgUrl={imgUrl}/>
+        <Parralax imgUrl={imgUrl} />
       </div>
     );
   }
