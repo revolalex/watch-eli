@@ -2,6 +2,8 @@ import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import TradeHandImg from '../../img/echangeHands.jpg'
 import { withTranslation } from "react-i18next";
+import TradeForm from "./TradeForm";
+import '../css/TradeCard.css'
 
 
 class TradeCard extends Component {
@@ -12,14 +14,13 @@ class TradeCard extends Component {
             <Container>
                 <div className="card col-md-12 p-3 my-horizontal-card">
                     <div className="row ">
-                        <div className="col-md-4">
-                            <img className="w-100" alt="montre" src={TradeHandImg} />
-                        </div>
-                        <div className="col-md-8">
+                        <Card.Title className="title-card-trade">
+                            Vous ne la portez plus ?<br /> Echangez-la !
+                        </Card.Title>
+                        <img style={{ objectFit: "cover", height: "30vw" }} alt="montre" src={TradeHandImg} />
+                        <div className="col-md-12">
+                            <br />
                             <div className="card-block">
-                                <Card.Title>
-                                    Vous ne la portez plus? Echangez-la!
-                                </Card.Title>
                                 <Card.Text>
                                     Envie de changement? Votre montre passe son temps au coffre fort
                                     ou dans un tiroir? Offrez-lui une seconde vie tout en vous faisant plaisir:
@@ -28,12 +29,37 @@ class TradeCard extends Component {
                                     soigneusement restaurées ou neuves. Maximisez votre temps et votre argent
                                     en une seule opération simple et rapide!
                                 </Card.Text>
+                                <Card.Text>
+                                    STEP 1 (étape 1?)
+                                    Remplissez le formulaire
+                                    Un membre de notre équipe vous contactera dans un délai de 48 heures
+                                    (! ajouter case “commentaire” dans le formulaire) Prix désiré
+                                    Les mêmes champs que le formulaire d achat
 
-                                <a href="/" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>read more...</a>
+                                    STEP 2
+                                    *Recevez votre offre personnalisée
+
+                                    STEP 3
+                                    Sélectionnez votre nouvelle montre (*facultatif)
+
+                                    STEP 4
+                                    Nous programmons la collecte de votre montre/Expédiez votre montre/ Livraison de votre nouvelle montre
+
+                                </Card.Text>
+                                <Card.Text>
+                                    Dès la réception et expertise de votre montre, la pièce de votre choix vous sera livrée
+                                    Nos experts vous conseillent également volontiers sur les montres d’investissement du moment si vous souhaitez acheter une montre afin de la revendre (et non de la porter)
+                                    Que nous ayons le modèle disponible dans notre inventaire ou non, nous nous engageons à dénicher la montre de vos rêves...
+
+                                </Card.Text>
+                                {/* <a href="/" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>read more...</a> */}
                             </div>
                         </div>
+
+                        <TradeForm />
                     </div>
                 </div>
+
             </Container>
         );
     }

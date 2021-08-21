@@ -3,6 +3,8 @@ import { withTranslation } from 'react-i18next';
 import BuyComponent from '../components/Buy/BuyComponent';
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import BuyCard from '../components/Buy/BuyCard';
+import BuyCard2 from '../components/Buy/BuyCard2';
+
 
 
 class Buy extends Component {
@@ -13,6 +15,7 @@ class Buy extends Component {
         <br />
         <BuyComponent />
         <BuyCard />
+        <BuyCard2 />
       </div>
     );
   }

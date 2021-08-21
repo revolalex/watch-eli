@@ -1,0 +1,234 @@
+#px-how {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #262626;
+  position: relative;
+  padding: 30px 0;
+}
+
+.panel_head {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.owl-carrousel {
+  -webkit-text-size-adjust: 100%;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  margin-top: 25px;
+}
+
+.owl-stage-outer {
+  -webkit-text-size-adjust: 100%;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.owl-stage {
+  -webkit-text-size-adjust: 100%;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  cursor: grab;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-filter: blur(0);
+  height: 100%;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0s ease 0s;
+  width: 960px;
+}
+
+.steps_item {
+  -webkit-text-size-adjust: 100%;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #fff;
+  cursor: grab;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 230px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+#px-how .txt-faqs {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.panel-present {
+  padding: 30px 0;
+}
+
+.panel_ {
+  position: relative;
+}
+
+.fill-sidekick {
+  color: #fff;
+  background-color: #262626;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+}
+
+#px-how .panel_head {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .panel-present .panel_head {
+    margin-bottom: 20px;
+  }
+}
+
+.panel-present .panel_head {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+@media (min-width: 768px) {
+  #px-how .owl-carousel {
+    margin-top: 25px;
+  }
+}
+
+#px-how .owl-carousel {
+  margin-top: 18px;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  -webkit-filter: blur(0);
+  height: 100%;
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  height: 100%;
+  min-height: 1px;
+  float: left;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .disabled {
+  display: none !important;
+}
+
+@media (min-width: 960px) {
+  #px-how .owl-dots {
+    display: none;
+  }
+}
+
+.owl-carousel .disabled {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .owl-dots {
+    margin-top: 20px;
+  }
+}
+
+.owl-dots {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  line-height: 0;
+  margin-top: 16px;
+}
+
+

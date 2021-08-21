@@ -13,6 +13,17 @@ class SellDetail extends Component {
         const t = this.props.t
         return (
             <div className="contactInfo">
+
+                <div className="box">
+                    <div className="text">
+                        <img
+                            style={{ width: "90%" }}
+                            src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" alt="happy deal" />
+                    </div>
+                </div>
+
+
+
                 <div className="box" >
                     <div className="icon">
                         <img src={formIcon} alt="icones" />

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import '../css/FormSell.css'
 import { withTranslation } from 'react-i18next';
-import AOS from "aos";
+// import AOS from "aos";
 import "aos/dist/aos.css";
-import { OverlayTrigger, Tooltip, Form, Card } from 'react-bootstrap'
+import { OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
 import SellDetail from './SellDetail';
 import BrandLogo from './BrandLogo';
+import TitreCard from '../Global/TitreCard';
 
 
 
@@ -17,10 +18,12 @@ class FormSell extends Component {
             brand: '',
             modele: '',
             set: '',
-            photo: '',
-            condition: 3
+            photo: undefined,
+            condition: 3,
+            comment: ''
         }
-
+        this.handleSelectSet = this.handleSelectSet.bind(this)
+        this.handleCommentInput = this.handleCommentInput.bind(this)
         this.onBrandLogoClick = this.onBrandLogoClick.bind(this);
         this.handleCondition = this.handleCondition.bind(this)
         this.handleBrandInput = this.handleBrandInput.bind(this)
@@ -30,14 +33,19 @@ class FormSell extends Component {
         this.conditionText = this.conditionText.bind(this)
 
     }
-    componentDidMount() {
-        AOS.init({
-            duration: 2000
-        });
-    }
+    // componentDidMount() {
+    //     AOS.init({
+    //         duration: 2000
+    //     });
+    // }
     onBrandLogoClick(e) {
         this.setState({
             brand: e.target.alt
+        })
+    }
+    handleSelectSet(event) {
+        this.setState({
+            set: event.target.value
         })
     }
 
@@ -56,6 +64,13 @@ class FormSell extends Component {
             condition: event.target.value
         })
         console.log(event.target.value)
+    }
+    handleCommentInput(event) {
+        this.setState({
+            comment: event.target.value
+        })
+        console.log(event.target.value)
+
     }
     /* eslint-disable */
     conditionText(t) {
@@ -99,18 +114,12 @@ class FormSell extends Component {
         const t = this.props.t
         return (
             <section className="contact">
-                <Card >
-                    <div className="title-div">
-                        <div>
-                            <h1>{t('form-sell-titre')}</h1>
-                            <h5>{t('form-sell-sous-titre')}</h5>
-                            <p>
-                                {t('form-sell-intro')}
-                            </p>
-                        </div>
+                <TitreCard
+                    titre={t('form-sell-titre')}
+                    sousTitre={t('form-sell-sous-titre')}
+                    cardText={t('form-sell-intro')}
+                />
 
-                    </div>
-                </Card>
                 <div className="container-contact">
                     {/* container on left */}
                     <SellDetail />
@@ -120,7 +129,7 @@ class FormSell extends Component {
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <br />
                             <div className="inputBox">
-                                <BrandLogo onBrandLogoClick={this.onBrandLogoClick}/>                     
+                                <BrandLogo onBrandLogoClick={this.onBrandLogoClick} />
                                 <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                                 <span>{t('form-sell-brand')}</span>
                             </div>
@@ -129,7 +138,7 @@ class FormSell extends Component {
                                 <span>{t('form-sell-model')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="comment" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                                <input type="text" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
                                 <span>{t('form-sell-comment')}</span>
                             </div>
                             <br />
@@ -148,14 +157,14 @@ class FormSell extends Component {
                             <br />
                             {/* Photo */}
                             <div className="inputBox">
-                                <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} onChange={this.handlePhoto} />
+                                <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} value={this.state.photo} onChange={this.handlePhoto} />
                                 <span>{t('form-sell-photo')}</span>
                             </div>
                             <br />
                             {/* Select box and paper */}
                             <div>
                                 <span>{t('form-sell-box-paper')}</span><br /><br />
-                                <Form.Select>
+                                <Form.Select value={this.state.set} onChange={this.handleSelectSet}>
                                     <option>{t('form-sell-box')}</option>
                                     <option>{t('form-sell-paper')}</option>
                                     <option>{t('form-sell-paper-and-box')}</option>
