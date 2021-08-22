@@ -4,6 +4,9 @@ import estimIcon from '../../img/icones/estimIcon.png'
 import shipIcon from '../../img/icones/shipIcon.png'
 import checkIcon from "../../img/icones/check.png"
 import { withTranslation } from 'react-i18next';
+import TooltipPerso from '../Global/TooltipPerso'
+// import PopOverPerso from "../Global/PopOverPerso";
+
 
 
 
@@ -44,13 +47,26 @@ class SellDetail extends Component {
                         <p>{t("form-sell-step2.1")}</p>
                     </div>
                 </div>
+                {/* ici */}
+                {/*  */}
                 <div className="box">
                     <div className="icon">
                         <img src={shipIcon} alt="icones" />
                         <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
-                        <h3>{t("form-sell-step3")}</h3>
+                        <h3>
+                            {t("form-sell-step3")}&nbsp;
+                            <TooltipPerso
+                                abrevation={<i className="fal fa-info-circle" />}
+                                traduction={"L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."}
+                            />
+                            {/* <PopOverPerso
+                                button={<i className="fal fa-info-circle" />}
+                                titre="Expédition Information"
+                                text="L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."
+                            /> */}
+                        </h3>
                         <p>{t("form-sell-step3.1")}</p>
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 import { Component } from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
+/**
+ * props: traduction
+ * pros: abrevation
+ */
 class TooltipPerso extends Component {
     state = {}
     render() {

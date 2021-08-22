@@ -16,7 +16,7 @@ class TradeCard extends Component {
                 <div className="card col-md-12 p-3 my-horizontal-card">
                     <div className="row ">
                         <Card.Title className="title-card-trade">
-                            Vous ne la portez plus ?
+                            Vous ne la portez plus,
                         </Card.Title>
                         <Card.Title className="title-card-trade">
                             Echangez-la !
