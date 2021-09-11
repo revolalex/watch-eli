@@ -9,9 +9,12 @@
 
   --background-color-body: #ffffff;
 
-  --vert-color: #2D6B56;
+  /* --vert-color: #2D6B56; */
+  --vert-color: #4b4b4b;
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
   background-color: var(--background-color-body)!important;
@@ -24,5 +27,6 @@ body{
 	padding: 0;
 	box-sizing: border-box; */
 	/* font-family: 'Poppins',sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Nunito', sans-serif;
 } 

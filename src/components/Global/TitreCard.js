@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Card } from "react-bootstrap";
+import '../css/TitreCard.css'
 
 /**
  * @props : titre, sousTitre, cardText

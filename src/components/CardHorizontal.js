@@ -3,10 +3,6 @@ import { withTranslation } from 'react-i18next';
 import './css/CardHorizontal.css'
 
 class CardHorizontal extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
     render() {
         return (
             <div className="container">

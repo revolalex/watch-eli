@@ -4,6 +4,7 @@ import FormSell from '../components/Sell/FormSell'
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
+import BrandContainer from '../components/Global/BrandContainer';
 
 
 
@@ -17,6 +18,7 @@ class Sell extends Component {
       <div>
         <JumbotronImage imgSrc={imageSource} />
         <FormSell />
+        <BrandContainer/>
         <Parralax imgUrl={imgUrl}/>
       </div>
     );

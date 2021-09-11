@@ -4,11 +4,6 @@
   color: rgb(34, 96, 231);
 }
 
-.title-div {
-  text-align: center;
-  background-color: var(--background-color);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 .my-underline{
   text-decoration: underline;
   text-decoration-color: var(--vert-color);
@@ -23,11 +18,6 @@
   font-weight: bold !important;
 }
 
-
-.title-div h1 {
-  color: var(--text-on-background);
-}
-
 .contact {
   position: relative;
   height: 100vh;
@@ -37,12 +27,6 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
-}
-
-.brand-logo {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  max-height: 70px;
 }
 
 .contact .content {
@@ -189,4 +173,32 @@
   .contactform {
     width: 100%;
   }
+}
+
+
+
+
+
+
+
+.brand-logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-height: 70px;
+}
+.brand-logo-rolex{
+  background-image: url(../../img/logo2/rolex.png);
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.brand-logo-omega{
+  background-image: url(../../img/logo2/omega.png);
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

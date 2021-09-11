@@ -1,0 +1,11 @@
+.title-div {
+  text-align: center;
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-width: 100vw;
+
+}
+
+.title-div h1 {
+  color: var(--text-on-background);
+}

@@ -30,7 +30,7 @@ class SellDetail extends Component {
                 <div className="box" >
                     <div className="icon">
                         <img src={formIcon} alt="icones" />
-                        <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
+                        <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
                         <h3>{t("form-sell-step1")}</h3>
@@ -40,7 +40,7 @@ class SellDetail extends Component {
                 <div className="box" >
                     <div className="icon">
                         <img src={estimIcon} alt="icones" />
-                        <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
+                        <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
                         <h3>{t("form-sell-step2")}</h3>
@@ -52,7 +52,7 @@ class SellDetail extends Component {
                 <div className="box">
                     <div className="icon">
                         <img src={shipIcon} alt="icones" />
-                        <i class="fad fa-long-arrow-alt-down arrow-down-icon"></i>
+                        <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
                         <h3>

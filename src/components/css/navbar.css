@@ -1,3 +1,17 @@
+@media screen and (min-width: 601px) {
+  .tel-header{
+    position: absolute;
+    right: 20px;
+  }
+}
+/* navlink in middle */
+#basic-navbar-nav{
+  justify-content: space-evenly;
+}
+.select-lang{
+  background-color: #F6F3ED
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .logo-watch {
@@ -10,6 +24,7 @@
       display: none;
     }
 }
+
 
 .logo-nav-div {
   align-items: center;

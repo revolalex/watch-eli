@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import { Container } from 'react-bootstrap';
 import TitreCard from '../Global/TitreCard';
 
 
@@ -11,7 +10,6 @@ class BuyTitre extends Component {
         // const t = this.props.t
         return (
             <div>
-                <Container>
                     <TitreCard
                         titre={"Trouvez la montre de vos rêves"}
                         sousTitre={"Visitez notre boutique en ligne"}
@@ -20,7 +18,6 @@ class BuyTitre extends Component {
                         }
 
                     />
-                </Container>
             </div>
         );
     }

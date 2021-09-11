@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../css/FormSell.css'
 import { withTranslation } from 'react-i18next';
-// import AOS from "aos";
-import "aos/dist/aos.css";
 import { OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
 import SellDetail from './SellDetail';
 import BrandLogo from './BrandLogo';
@@ -33,14 +31,15 @@ class FormSell extends Component {
         this.conditionText = this.conditionText.bind(this)
 
     }
-    // componentDidMount() {
-    //     AOS.init({
-    //         duration: 2000
-    //     });
-    // }
-    onBrandLogoClick(e) {
+    onBrandLogoClick2(e) {
         this.setState({
-            brand: e.target.alt
+            brand: e.target.attributes[1].value
+        })
+    }
+    onBrandLogoClick(e) {
+        console.log(e.target.id)
+        this.setState({
+            brand: e.target.id
         })
     }
     handleSelectSet(event) {
@@ -124,7 +123,7 @@ class FormSell extends Component {
                     {/* container on left */}
                     <SellDetail />
                     {/* container on right */}
-                    <div className="contactform">
+                    <div className="contactform card">
                         <form>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <br />
@@ -136,10 +135,6 @@ class FormSell extends Component {
                             <div className="inputBox">
                                 <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
                                 <span>{t('form-sell-model')}</span>
-                            </div>
-                            <div className="inputBox">
-                                <input type="text" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
-                                <span>{t('form-sell-comment')}</span>
                             </div>
                             <br />
                             {/* Range Condition */}
@@ -170,6 +165,10 @@ class FormSell extends Component {
                                     <option>{t('form-sell-paper-and-box')}</option>
                                     <option>{t('form-sell-nothing')}</option>
                                 </Form.Select>
+                            </div>
+                            <div className="inputBox">
+                                <textarea type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
+                                <span>{t('form-sell-comment')}</span>
                             </div>
                             {/* Send Button */}
                             <div className="inputBox">
