@@ -6,6 +6,7 @@ import TradeCard from '../components/Trade/TradeCard';
 import TradeStep2 from '../components/Trade/TradeStep2';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
+import BrandContainer from '../components/Global/BrandContainer';
 
 
 class Trade extends Component {
@@ -26,6 +27,7 @@ class Trade extends Component {
                 <TradeCard />
                 <br />
                 <TradeStep2 />
+                <BrandContainer/>
                 <Parralax imgUrl={imgUrl} />
             </div>
         );
