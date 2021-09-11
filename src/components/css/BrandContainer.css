@@ -64,7 +64,7 @@
   }
 
   .brand-container {
-    padding: 20px;
+    padding: 0px;
     margin-bottom: 20px;
   }
 
@@ -73,10 +73,10 @@
   }
 }
 
-.brand-container {
+/* .brand-container {
   padding: 80px;
   margin-bottom: 80px;
-}
+} */
 
 .col-md-3 {
   padding: 20px;
