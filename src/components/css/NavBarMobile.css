@@ -1,10 +1,16 @@
-
 @media screen and (min-width: 600px) {
-    .my-mobile-nav {
-        display: none;
-      }
+  .my-mobile-nav {
+    display: none;
+  }
 }
 
-.dropdown-item.active, .dropdown-item:active{
-    background-color: white !important;
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    font-size: 0.8em;
+  }
 }
