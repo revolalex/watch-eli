@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Buy from './pages/Sell'
 import Sell from './pages/Buy'
@@ -21,7 +21,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
-          <Route path='/about' component={About} />
+          <Route path='/blog' component={Blog} />
           <Route path='/buy' component={Buy} />
           <Route path='/sell' component={Sell} />
           <Route path='/service' component={Service} />

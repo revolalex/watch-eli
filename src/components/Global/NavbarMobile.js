@@ -50,7 +50,7 @@ class NavbarMobile extends Component {
                             <Nav.Link href="/sell">{t("buy")}</Nav.Link>
                             <Nav.Link href="/trade">{t("navbar-trade")}</Nav.Link>
                             <Nav.Link href="/service">{t("service")}</Nav.Link>
-                            <Nav.Link href="/about">{t("navbar-blog")}</Nav.Link>
+                            <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
                             {/* <NavDropdown title="Link" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/service">{t("service")}</NavDropdown.Item>
                                 <NavDropdown.Item href="/about">{t("navbar-about")}</NavDropdown.Item>

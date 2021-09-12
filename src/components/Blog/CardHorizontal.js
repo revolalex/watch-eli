@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import './css/CardHorizontal.css'
+import '../css/CardHorizontal.css'
 
 class CardHorizontal extends Component {
     render() {

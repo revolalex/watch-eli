@@ -3,6 +3,10 @@
     position: absolute;
     right: 20px;
   }
+  .mr-auto{
+    width: 80%;
+    justify-content: space-between;
+  }
 }
 /* navlink in middle */
 #basic-navbar-nav{
@@ -11,6 +15,7 @@
 .select-lang{
   background-color: #F6F3ED
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -46,7 +51,7 @@
 }
 
 .nav-link {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .majuscule-title{
   font-size: 1.5em;
