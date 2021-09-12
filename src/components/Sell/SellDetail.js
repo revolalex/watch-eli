@@ -20,7 +20,7 @@ class SellDetail extends Component {
                 <div className="box">
                     <div className="text">
                         <img
-                            style={{ width: "65%" }}
+                            style={{ width: "90%"}}
                             src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" alt="happy deal" />
                     </div>
                 </div>
@@ -82,7 +82,7 @@ class SellDetail extends Component {
                 <div className="box">
                     <div className="text">
                         <img
-                            style={{ width: "90%" }}
+                            style={{ width: "90%"}}
                             src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" alt="happy deal" />
                     </div>
                 </div>

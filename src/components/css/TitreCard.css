@@ -1,11 +1,17 @@
 .title-div {
   text-align: center;
   background-color: var(--background-color);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   min-width: 100vw;
+  padding-top: 20px;
 
 }
 
 .title-div h1 {
   color: var(--text-on-background);
+}
+
+.title-div p{
+  padding-left: 20px;
+  padding-right: 20px;
 }
