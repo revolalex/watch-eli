@@ -18,8 +18,9 @@ class Sell extends Component {
       <div>
         <JumbotronImage imgSrc={imageSource} />
         <FormSell />
-        <BrandContainer/>
+        
         <Parralax imgUrl={imgUrl}/>
+        <BrandContainer/>
       </div>
     );
   }

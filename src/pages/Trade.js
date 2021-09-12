@@ -27,8 +27,8 @@ class Trade extends Component {
                 <TradeCard />
                 <br />
                 <TradeStep2 />
-                <BrandContainer/>
                 <Parralax imgUrl={imgUrl} />
+                <BrandContainer/>
             </div>
         );
     }
