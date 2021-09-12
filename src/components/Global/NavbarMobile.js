@@ -27,14 +27,14 @@ class NavbarMobile extends Component {
             <div className="my-mobile-nav">
                 <div className="sticky-top">
                     <div className="logo-nav-div">
-                        <span className="logo-police">
+                    <span className="logo-police">
                             <img className="logo-watch" src={watch} alt="logo watch" />
-                            <span className="majuscule-title">V</span>
-                            endre
+                            <span className="majuscule-title">W</span>
+                            atch
                             <span className="majuscule-title">M</span>
-                            a
-                            <span className="majuscule-title">M</span>
-                            ontre.com
+                            arket
+                            <span className="majuscule-title">C</span>
+                            lub
                         </span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />

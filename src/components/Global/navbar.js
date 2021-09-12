@@ -8,6 +8,7 @@ import i18n from '../../i18n';
 import NavbarMobile from "./NavbarMobile";
 
 
+
 class Navbar5 extends Component {
     constructor(props) {
         super(props);
@@ -31,12 +32,12 @@ class Navbar5 extends Component {
                     <div className="logo-nav-div">
                         <span className="logo-police">
                             <img className="logo-watch" src={watch} alt="logo watch" />
-                            <span className="majuscule-title">V</span>
-                            endre
+                            <span className="majuscule-title">W</span>
+                            atch
                             <span className="majuscule-title">M</span>
-                            a
-                            <span className="majuscule-title">M</span>
-                            ontre.com
+                            arket
+                            <span className="majuscule-title">C</span>
+                            lub
                         </span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />

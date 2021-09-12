@@ -21,7 +21,6 @@ class Buy extends Component {
 
       <div>
         <JumbotronImage imgSrc="https://swisswatches-magazine.com/wp-content/uploads/2020/11/Cartier-Ballon-Bleu-de-Cartier-36mm-W6920046-Wristshot-Pocketshot.jpg" />
-        <br />
         <BuyTitre />
         <BuyCard />
         <BuyCard2 />

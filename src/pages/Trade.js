@@ -18,17 +18,16 @@ class Trade extends Component {
         return (
             <div>
                 <JumbotronImage imgSrc=" https://i.ytimg.com/vi/NoRstEITESg/maxresdefault.jpg" />
-                <br />
-                    <TitreCard
-                        titre={"Echangez votre montre "}
-                        sousTitre={"C'est trés simple et vous serez sastifait"}
-                        cardText={"Envie de changement? Votre montre passe son temps au coffre fort ou dans un tiroir? Offrez-lui une seconde vie tout en vous faisant plaisir"}
-                    />
+                <TitreCard
+                    titre={"Echangez votre montre "}
+                    sousTitre={"C'est trés simple et vous serez sastifait"}
+                    cardText={"Envie de changement? Votre montre passe son temps au coffre fort ou dans un tiroir? Offrez-lui une seconde vie tout en vous faisant plaisir"}
+                />
                 <TradeCard />
                 <br />
                 <TradeStep2 />
                 <Parralax imgUrl={imgUrl} />
-                <BrandContainer/>
+                <BrandContainer />
             </div>
         );
     }

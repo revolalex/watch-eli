@@ -2,16 +2,27 @@
   margin-top: 15px;
   margin-bottom: 15px;
   max-height: 70px;
+
 }
 
-.brand-logo-form{
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding: 10px;
+.brand-logo-form {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  border: solid #918c8c 1px;
+  width: 30% !important;
+  margin: 4px;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
+  transform: scale(0.9);
+}
+
+.brand-logo-form:hover{
+  transform: scale(0.95);
 }
 
 .brand-logo-rolex {
@@ -29,24 +40,50 @@
 .brand-logo-tagheuer {
   background-image: url(../../img/logo2/tag-heuer.png);
 }
-.brand-logo-breitling{
-    background-image: url(../../img/logo/breitling.png);
+
+.brand-logo-breitling {
+  background-image: url(../../img/logo/breitling.png);
 }
-.brand-logo-iwc{
-    background-image: url(../../img/logo2/iwc.png);
+
+.brand-logo-iwc {
+  background-image: url(../../img/logo2/iwc.png);
 }
-.brand-logo-cartier{
-    background-image: url(../../img/logo2/cartier.png);
+
+.brand-logo-cartier {
+  background-image: url(../../img/logo2/cartier.png);
 }
-.brand-logo-longines{
-    background-image: url(../../img/logo2/Longines-logo-2021.png);
+
+.brand-logo-longines {
+  background-image: url(../../img/logo2/Longines-logo-2021.png);
 }
-.brand-logo-audemars{
-    background-image: url(../../img/logo2/ap.png);
+
+.brand-logo-audemars {
+  background-image: url(../../img/logo2/ap.png);
 }
-.brand-logo-jaeger{
-    background-image: url(../../img/logo2/jaeger.png);
+
+.brand-logo-jaeger {
+  background-image: url(../../img/logo2/jaeger.png);
 }
-.brand-logo-patek{
-    background-image: url(../../img/logo2/Patek_Philippe_logo.png);
+
+.brand-logo-patek {
+  background-image: url(../../img/logo2/Patek_Philippe_logo.png);
+}
+
+.brand-logo-autre {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .brand-logo-form {
+    margin:0;
+    height: 60px;
+    margin: 2px;
+  }
+  .brand-logo-autre{
+    line-height: 3.4;
+  }
+
 }

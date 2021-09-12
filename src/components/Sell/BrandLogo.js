@@ -19,6 +19,7 @@ class BrandLogo extends Component {
                     <Col xs={6} md={4} className="brand-logo-longines brand-logo-form" onClick={this.props.onBrandLogoClick} id="Longines"></Col>
                     <Col xs={6} md={4} className="brand-logo-audemars brand-logo-form" onClick={this.props.onBrandLogoClick} id="Audemars Piguet"></Col>
                     <Col xs={6} md={4} className="brand-logo-cartier brand-logo-form" onClick={this.props.onBrandLogoClick} id="Cartier"></Col>
+                    <Col xs={6} md={4} className="brand-logo-autre brand-logo-form" onClick={this.props.onBrandLogoClick} id="Autre">Autre</Col>
                 </Row>
             </Container>
         );
