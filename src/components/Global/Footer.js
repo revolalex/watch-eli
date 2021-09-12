@@ -17,7 +17,7 @@ class Footer extends Component {
                 <div className="container">
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
-                            <div className="col-xl-4 col-md-4 mb-30">
+                            {/* <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
                                     <i className="fas fa-map-marker-alt"></i>
                                     <div className="cta-text">
@@ -25,13 +25,14 @@ class Footer extends Component {
                                         <span>10 avennue daumesnel 75008 Paris</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
-                                        <h4>{t("footer-call-us")}</h4>
-                                        <span>(+33)0600000000</span>
+                                        <br/>
+                                        {/* <h4>{t("footer-call-us")}</h4> */}
+                                        <span className="span-footer">(+33)0600000000</span>
                                     </div>
                                 </div>
                             </div>
@@ -39,8 +40,9 @@ class Footer extends Component {
                                 <div className="single-cta">
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
-                                        <h4>{t("footer-mail-us")}</h4>
-                                        <span>eli@info.com</span>
+                                        <br/>
+                                        {/* <h4>{t("footer-mail-us")}</h4> */}
+                                        <span className="span-footer">eli@info.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -50,22 +52,23 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-xl-4 col-lg-4 mb-50">
                                 <div className="footer-widget">
-                                    <div className="footer-logo">
+                                    {/* <div className="footer-logo">
                                         <p href="index.html" id="logoText"><img src={watch} className="img-fluid logoFooterText" id="logoFooter"  alt="logo" /> Watchiz </p>
-                                    </div>
-                                    <div className="footer-text">
+                                    </div> */}
+                                    {/* <div className="footer-text">
                                         <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                                             elit,Lorem ipsum dolor sit amet.</p>
-                                    </div>
+                                    </div> */}
                                     <div className="footer-social-icon">
                                         <span>{t("footer-follow-us")}</span>
                                         <a href={ExternaLinks.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook-f facebook-bg"></i></a>
                                         <a href={ExternaLinks.twitter} target="_blank" rel="noreferrer"><i className="fab fa-twitter twitter-bg"></i></a>
                                         <a href={ExternaLinks.google} target="_blank" rel="noreferrer"><i className="fab fa-google-plus-g google-bg"></i></a>
+                                        <a href={ExternaLinks.chrono24} target="_blank" rel="noreferrer"><img style={{borderRadius: "50%", height:"42px"}} src="https://play-lh.googleusercontent.com/xWvqbtU9fO6_yyJoblxvsp6-MtMRtWYgBuVRQ9JTKbERYLQ4Mk8znN0l_crr9RImTw=s180" alt="Chrono 24"/></a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            {/* <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">
                                         <h3>{t("footer-useful-links")}</h3>
@@ -76,7 +79,7 @@ class Footer extends Component {
                                         <li><a href={ExternaLinks.youtube} className="nav-link" target="_blank" rel="noreferrer">Youtube</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">

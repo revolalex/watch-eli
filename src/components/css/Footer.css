@@ -17,9 +17,13 @@ ul {
 .single-cta i {
   /* color: #ff5e14; */
   color: var(--text-on-background);
-  font-size: 30px;
+  font-size: 40px;
   float: left;
   margin-top: 8px;
+}
+
+.span-footer{
+  font-size: 1.3em !important;
 }
 
 .cta-text {

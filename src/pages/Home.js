@@ -21,8 +21,9 @@ class Home extends Component {
       <div>
         <CarouselHero />
         <CardLine />
-        <BrandContainer/>
+        
         <Parralax imgUrl={imgUrl}/>
+        <BrandContainer/>
       </div>
     );
   }
