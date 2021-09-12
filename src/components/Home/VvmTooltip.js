@@ -6,14 +6,14 @@ class VvmTooltip extends Component {
     render() {
         return (
             <span>
-                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Vendez-Votre-Montre.com</Tooltip>}>
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Watch Market Club</Tooltip>}>
                     <span className="d-inline-block" 
                     style={{ 
                         color:"var(--vert-color)",
                         fontWeight: "900"
                     }}
                     >
-                        V.V.M
+                        W.M.C
                     </span>
                 </OverlayTrigger>
 

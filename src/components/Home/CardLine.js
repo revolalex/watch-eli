@@ -32,7 +32,7 @@ class CardLine extends Component {
                             >
                                 <img src={SpeedmasterImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t("buy")}</h5>
+                                    <h5 className="card-title">{t("buy-card")}</h5>
                                     <p className="card-text">
                                     <VvmTooltip/>
                                         {t("card-buy-text")}
@@ -47,7 +47,7 @@ class CardLine extends Component {
                             >
                                 <img src={BreitlingImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t("sell")}</h5>
+                                    <h5 className="card-title">{t("sell-card")}</h5>
                                     <p className="card-text">{t("card-sell-text")}</p>
                                     <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>

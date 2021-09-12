@@ -8,7 +8,7 @@ import AchatSlide from '../../img/carousel/achat-slide.jpeg'
 import SubmarinerImg from '../../img/submariner.jpg'
 import Echange from '../../img/carousel/echange.jpeg'
 import Collection from '../../img/carousel/collection.jpg'
-import VenteSlide from '../../img/carousel/vente-slide.jpeg'
+import VenteSlide from '../../img/carousel/venteslide.jpeg'
 
 
 
@@ -29,7 +29,7 @@ class CarouselHero extends Component {
                         /></a>
                         <Carousel.Caption>
                             <h4 className="goldText">{t('caroussel-slide1-Title')}</h4>
-                            <h5 className="goldText">{t('caroussel-slide1-Texte')}</h5>
+                            {/* <h5 className="goldText">{t('caroussel-slide1-Texte')}</h5> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* Achat */}
@@ -42,7 +42,7 @@ class CarouselHero extends Component {
                         /></a>
                         <Carousel.Caption>
                             <h4 className="goldText">{t('caroussel-slide2-Title')}</h4>
-                            <h5 className="goldText">{t('caroussel-slide2-Texte')}</h5>
+                            {/* <h5 className="goldText">{t('caroussel-slide2-Texte')}</h5> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* vente */}
@@ -55,7 +55,7 @@ class CarouselHero extends Component {
                         /></a>
                         <Carousel.Caption>
                             <h4 className="goldText">{t('caroussel-slide3-Title')}</h4>
-                            <h5 className="goldText">{t('caroussel-slide3-Texte')}</h5>
+                            {/* <h5 className="goldText">{t('caroussel-slide3-Texte')}</h5> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* Echange */}
@@ -68,7 +68,7 @@ class CarouselHero extends Component {
                         /></a>
                         <Carousel.Caption>
                             <h4 className="goldText">{t('caroussel-slide4-Title')}</h4>
-                            <h5 className="goldText">{t('caroussel-slide4-Texte')}</h5>
+                            {/* <h5 className="goldText">{t('caroussel-slide4-Texte')}</h5> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* Service */}
@@ -81,7 +81,7 @@ class CarouselHero extends Component {
                         /></a>
                         <Carousel.Caption>
                             <h4 className="goldText">{t('caroussel-slide5-Title')}</h4>
-                            <h5 className="goldText">{t('caroussel-slide5-Texte')}</h5>
+                            {/* <h5 className="goldText">{t('caroussel-slide5-Texte')}</h5> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
