@@ -27,25 +27,35 @@ class TradeCard extends Component {
                             <div className="card-block">
                                 <Container>
                                     <Card.Text>
-                                        Envie de changement? Votre montre passe son temps au coffre fort
+                                        {/* Envie de changement? Votre montre passe son temps au coffre fort
                                         ou dans un tiroir? Offrez-lui une seconde vie tout en vous faisant plaisir:
                                         échangez-la simplement et rapidement de manière sécurisée. Nous expertisons
                                         votre montre gratuitement, et vous proposons en échange une sélection de pièces
                                         soigneusement restaurées ou neuves. Maximisez votre temps et votre argent
-                                        en une seule opération simple et rapide!
+                                        en une seule opération simple et rapide! */}
+                                        WMC vous propose la solution echange. Comment ca marche:
+                                        WCM vous assiste en proposant une reprise de votre montre en
+                                        l’état au profit du nouveau modèle de votre choix.
+                                        WMC évalue votre montre et vous offre un devis gratuit afin
+                                        de vous faire profiter d’une offre financièrement attractive
+                                        et d’un gain de temps en réalisant deux opérations en une.
+
                                     </Card.Text>
                                     <Card.Text>
-                                        Dès la réception et expertise de votre montre, la pièce de votre choix vous sera livrée
+                                        {/* Dès la réception et expertise de votre montre, la pièce de votre choix vous sera livrée
                                         Nos experts vous conseillent également volontiers sur les montres d’investissement du moment si vous souhaitez acheter une montre afin de la revendre (et non de la porter)
-                                        Que nous ayons le modèle disponible dans notre inventaire ou non, nous nous engageons à dénicher la montre de vos rêves...
+                                        Que nous ayons le modèle disponible dans notre inventaire ou non, nous nous engageons à dénicher la montre de vos rêves... */}
+                                        Remplissez le formulaire ci-dessous, un membre de notre équipe
+                                        vous contactera dans un délai de 48 heures afin d’établir
+                                        un devis gratuit pour procéder à l’échange de votre montre.
                                     </Card.Text>
                                 </Container>
                             </div>
                         </div>
-                        <TradeForm />
+
                     </div>
                 </div>
-
+                <TradeForm />
             </Container>
         );
     }

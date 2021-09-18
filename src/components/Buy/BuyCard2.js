@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
-import TooltipPerso from '../Global/TooltipPerso'
+import VvmTooltip from "../Home/VvmTooltip";
+
 
 
 
@@ -22,9 +23,11 @@ class BuyCard2 extends Component {
                                     {t('buy-card2-title')}
                                 </Card.Title>
                                 <Card.Text>
-                                    {t('buy-card2-text-part1')}
+                                    {/* {t('buy-card2-text-part1')}
                                     <TooltipPerso abrevation="C.P.O" traduction="Certified Pre Own" />
-                                    {t('buy-card2-text-part2')}
+                                    {t('buy-card2-text-part2')} */}
+                                    En quête d’une pièce rare ou exceptionnelle? N'hésitez pas à nous contacter directement,&nbsp;<VvmTooltip />
+                                    &nbsp;s’engage à trouver votre prochaine montre grâce à notre réseau mondial de professionnels.
                                 </Card.Text>
                                 <a href="/contact" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
                             </div>

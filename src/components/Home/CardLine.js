@@ -34,7 +34,7 @@ class CardLine extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy-card")}</h5>
                                     <p className="card-text">
-                                    <VvmTooltip/>
+                                        <VvmTooltip />
                                         {t("card-buy-text")}
                                     </p>
                                     <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>
@@ -43,7 +43,6 @@ class CardLine extends Component {
                         </div>
                         <div className="col card-shadow">
                             <div className="card h-100"
-                            // data-aos="zoom-in" 
                             >
                                 <img src={BreitlingImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
@@ -55,25 +54,46 @@ class CardLine extends Component {
                         </div>
                         <div className="col card-shadow">
                             <div className="card h-100"
-                            // data-aos="zoom-in" 
                             >
                                 <img src={Tag} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t('navbar-trade')}</h5>
-                                    <p className="card-text">{t('card-trade-text')}</p>
-                                    <p><Link to={'/trade'} className="active cardLink">{t("card-more-info")}</Link></p>
+                                    <p className="card-text">
+                                        {/* {t('card-trade-text')} */}
+                                        WMC vous propose d’échanger simplement, rapidement et de manière sécurisée.
+                                        Nous expertisons votre montre gratuitement pour reprise et vous proposons
+                                        une sélection de pièces soigneusement restaurées ou neuves.
+                                        Maximisez votre temps et votre argent en une seule opération simple et rapide!
+
+                                    </p>
+                                    <p>
+                                        <Link to={'/trade'} className="active cardLink">
+                                            {t("card-more-info")}
+                                        </Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className="col card-shadow">
                             <div className="card h-100"
-                            // data-aos="zoom-in" 
                             >
                                 <img src={ServiceImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("service")}</h5>
-                                    <p className="card-text">{t("card-service-text")}</p>
-                                    <p><Link to={'/service'} className="active cardLink">{t("card-more-info")}</Link></p>
+                                    <p className="card-text">
+                                        {/* {t("card-service-text")} */}
+                                        Montres mécaniques à remontage manuel ou automatique,
+                                        modèles à complications ou simple échange de pile,
+                                        nos maîtres horlogers assurent la maintenance de tous
+                                        types de montres dans le plus grand détail afin de vous
+                                        proposer un service de réparation, révision et entretien
+                                        à la hauteur de vos attentes.
+                                    </p>
+                                    <p>
+                                        <Link to={'/service'} className="active cardLink">
+                                            {t("card-more-info")}
+                                        </Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>

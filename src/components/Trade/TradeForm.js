@@ -21,7 +21,7 @@ class TradeForm extends Component {
     render() {
         const t = this.props.t
         return (
-            <div className="container-contact  trade-form">
+            <div className="container-contact  trade-form card p-3">
                 <div className="contactform">
                     <form>
                         <h2 className="my-underline">{t('form-sell-your-watch')}</h2>

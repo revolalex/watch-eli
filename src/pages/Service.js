@@ -28,13 +28,26 @@ class Service extends Component {
                 <div className="col-md-8">
                   <div className="card-block">
                     <h6 className="card-title">Service</h6>
-                    <p className="card-text text-justify"> Nous travaillons main dans la main avec les plus grandes manufactures
+                    <p className="card-text text-justify">
+                      {/* Nous travaillons main dans la main avec les plus grandes manufactures
                       horlogères afin de vous proposer un service de réparation et de
                       révision et entretien à la hauteur de vos attentes.
                       Montres mécaniques à remontage manuel, montres automatiques,
                       modèles à complications ou simples échanges de piles,
-                      nos techniciens horlogers assurent la maintenance de tous types de montres.</p>
-                    <a href="/" className="btn btn-success">read more...</a>
+                      nos techniciens horlogers assurent la maintenance de tous types de montres. */}
+                      Montres mécaniques à remontage manuel ou automatique, modèles à complications
+                      ou simple échange de pile, nos maîtres horlogers assurent la maintenance de tous
+                      types de montres dans le plus grand détail afin de vous proposer un service de
+                      réparation, révision et entretien à la hauteur de vos attentes.
+                      Afin de garantir le bon fonctionnement de votre montre WMC s’engage à en assurer
+                      régulièrement le service complet, comme conseillé par les fabricants.
+                      Nos horlogers s’appliquent soigneusement à  réparer, restaurer, ou
+                      remettre à neuf vos pièces préférées en respectant les standards imposés par
+                      l’industrie de la haute horlogerie.
+                      N'hésitez pas à nous contacter pour obtenir la liste complète de nos services.
+
+                    </p>
+                    {/* <a href="/" className="btn btn-success">read more...</a> */}
                   </div>
                 </div>
               </div>
