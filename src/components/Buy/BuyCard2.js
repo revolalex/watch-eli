@@ -19,6 +19,7 @@ class BuyCard2 extends Component {
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">
+                                <br/>
                                 <Card.Title>
                                     {t('buy-card2-title')}
                                 </Card.Title>

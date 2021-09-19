@@ -20,7 +20,7 @@ class SellDetail extends Component {
                 <div className="box">
                     <div className="text">
                         <img
-                            style={{ width: "90%"}}
+                            style={{ width: "90%" }}
                             src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" alt="happy deal" />
                     </div>
                 </div>
@@ -33,7 +33,14 @@ class SellDetail extends Component {
                         <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
-                        <h3>{t("form-sell-step1")}</h3>
+                        <h3>{t("form-sell-step1")}
+                            &nbsp;
+                            <TooltipPerso
+                                abrevation={<i className="fal fa-info-circle" />}
+                                traduction={"Autoriser WMC à me contacter via mes données personelles, aucune exploitation commerciale ne sera faite avec vos données"}
+                            />
+                        </h3>
+
                         <p>{t("form-sell-step1.1")}</p>
                     </div>
                 </div>
@@ -43,7 +50,14 @@ class SellDetail extends Component {
                         <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
-                        <h3>{t("form-sell-step2")}</h3>
+                        <h3>{t("form-sell-step2")}
+                            &nbsp;
+                            <TooltipPerso
+                                abrevation={<i className="fal fa-info-circle" />}
+                                traduction={"Un membre de notre équipe vous contactera dans un délai de 48 heures"}
+                            />
+                        </h3>
+
                         <p>{t("form-sell-step2.1")}</p>
                     </div>
                 </div>
@@ -82,7 +96,7 @@ class SellDetail extends Component {
                 <div className="box">
                     <div className="text">
                         <img
-                            style={{ width: "90%"}}
+                            style={{ width: "90%" }}
                             src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" alt="happy deal" />
                     </div>
                 </div>

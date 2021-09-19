@@ -8,7 +8,7 @@ import '../css/BuyCard.css'
 class BuyCard extends Component {
     state = {}
     render() {
-        const t = this.props.t
+        // const t = this.props.t
         return (
             <Container>
                 <div className="card col-md-12 p-3 my-horizontal-card">
@@ -18,8 +18,10 @@ class BuyCard extends Component {
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">
+                                <br/>
                                 <Card.Title>
-                                    {t('buy-card-title')}
+                                    {/* {t('buy-card-title')} */}
+                                    Le modèle de vos rêves en un clic sur WMC
                                 </Card.Title>
                                 <Card.Text>
                                     {/* {t('buy-card-text')} */}
@@ -41,7 +43,7 @@ class BuyCard extends Component {
                                     par des experts horlogers afin de garantir une qualité irréprochable.
                                     Nos montres 100% certifiées d’origine et garanties 16mois*.
                                 </Card.Text>
-                                <Card.Text style={{textAlign: "center"}}>Notre sélection de montres:</Card.Text>
+                                <Card.Text style={{textAlign: "center", textDecoration: "underline", fontSize: "1.2em"}}>Notre sélection de montres:</Card.Text>
                                 <Chrono24 />
                                 {/* <a href="/" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>read more...</a> */}
                             </div>

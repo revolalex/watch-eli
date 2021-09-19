@@ -57,7 +57,10 @@ class CardLine extends Component {
                             >
                                 <img src={Tag} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t('navbar-trade')}</h5>
+                                    <h5 className="card-title">
+                                        {/* {t('navbar-trade')} */}
+                                        Vous ne la portez plus? WMC Échange
+                                    </h5>
                                     <p className="card-text">
                                         {/* {t('card-trade-text')} */}
                                         WMC vous propose d’échanger simplement, rapidement et de manière sécurisée.
@@ -79,7 +82,10 @@ class CardLine extends Component {
                             >
                                 <img src={ServiceImg} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t("service")}</h5>
+                                    <h5 className="card-title">
+                                        {/* {t("service")} */}
+                                        WMC l’expertise horlogère à votre service
+                                    </h5>
                                     <p className="card-text">
                                         {/* {t("card-service-text")} */}
                                         Montres mécaniques à remontage manuel ou automatique,

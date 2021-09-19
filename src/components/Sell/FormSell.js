@@ -126,6 +126,8 @@ class FormSell extends Component {
                     <div className="contactform card">
                         <form>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
+                            <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
+
                             <br />
                             <div className="inputBox">
                                 <BrandLogo onBrandLogoClick={this.onBrandLogoClick} />

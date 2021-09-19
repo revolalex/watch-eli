@@ -5,8 +5,9 @@ import TextAnimate from '../components/Service/TextAnimate';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import Parralax from '../components/Home/Parralax';
 import BrandContainer from '../components/Global/BrandContainer';
-import service from '../img/service2.jpeg'
-import servCard from '../img/serv.jpeg'
+// import service from '../img/service2.jpeg'
+import ServiceCard from '../components/Service/ServiceCard';
+import ServiceTitre from '../components/Service/ServiceTitre';
 
 
 class Service extends Component {
@@ -16,45 +17,9 @@ class Service extends Component {
     const imgUrl = randomItem
     return (
       <div>
-        <JumbotronImage imgSrc={service} />
-
-        <div className="container">
-          <div classNameName="row">
-            <div className="card col-md-12 p-3 my-horizontal-card">
-              <div className="row ">
-                <div className="col-md-4">
-                  <img className="w-100" alt="horloger" src={servCard} />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-block">
-                    <h6 className="card-title">Service</h6>
-                    <p className="card-text text-justify">
-                      {/* Nous travaillons main dans la main avec les plus grandes manufactures
-                      horlogères afin de vous proposer un service de réparation et de
-                      révision et entretien à la hauteur de vos attentes.
-                      Montres mécaniques à remontage manuel, montres automatiques,
-                      modèles à complications ou simples échanges de piles,
-                      nos techniciens horlogers assurent la maintenance de tous types de montres. */}
-                      Montres mécaniques à remontage manuel ou automatique, modèles à complications
-                      ou simple échange de pile, nos maîtres horlogers assurent la maintenance de tous
-                      types de montres dans le plus grand détail afin de vous proposer un service de
-                      réparation, révision et entretien à la hauteur de vos attentes.
-                      Afin de garantir le bon fonctionnement de votre montre WMC s’engage à en assurer
-                      régulièrement le service complet, comme conseillé par les fabricants.
-                      Nos horlogers s’appliquent soigneusement à  réparer, restaurer, ou
-                      remettre à neuf vos pièces préférées en respectant les standards imposés par
-                      l’industrie de la haute horlogerie.
-                      N'hésitez pas à nous contacter pour obtenir la liste complète de nos services.
-
-                    </p>
-                    {/* <a href="/" className="btn btn-success">read more...</a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <JumbotronImage imgSrc="https://www.audemarspiguet.com/content/dam/ap/com/services/caring/setting-time-date.jpg.transform.apfw.jpg"/>
+        <ServiceTitre/>
+        <ServiceCard />
         <TextAnimate textOne="WMC" textTwo="Emotion Dealer" />
         <Parralax imgUrl={imgUrl} />
         <BrandContainer />
