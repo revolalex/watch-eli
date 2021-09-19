@@ -46,6 +46,10 @@ class ContactForm extends Component {
                         <br />
                         <div className="inputBox">
                             <input type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
+                            <span>Montre desirée</span>
+                        </div>
+                        <div className="inputBox">
+                            <input type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
                             <span>Name</span>
                         </div>
                         <div className="inputBox">
