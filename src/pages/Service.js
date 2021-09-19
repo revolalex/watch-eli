@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import JumbotronImage from '../components/Sell/JumbotronImage';
-import TextAnimate from '../components/Service/TextAnimate';
+// import TextAnimate from '../components/Service/TextAnimate';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import Parralax from '../components/Home/Parralax';
 import BrandContainer from '../components/Global/BrandContainer';
@@ -20,7 +20,7 @@ class Service extends Component {
         <JumbotronImage imgSrc="https://www.audemarspiguet.com/content/dam/ap/com/services/caring/setting-time-date.jpg.transform.apfw.jpg"/>
         <ServiceTitre/>
         <ServiceCard />
-        <TextAnimate textOne="WMC" textTwo="Emotion Dealer" />
+        {/* <TextAnimate textOne="WMC" textTwo="Emotion Dealer" /> */}
         <Parralax imgUrl={imgUrl} />
         <BrandContainer />
       </div>
