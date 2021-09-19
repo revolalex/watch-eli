@@ -24,7 +24,6 @@ class Trade extends Component {
                     cardText={"Envie de changement? Votre montre passe son temps au coffre fort ou dans un tiroir? Offrez-lui une seconde vie tout en vous faisant plaisir"}
                 />
                 <TradeCard />
-                <br />
                 <TradeStep2 />
                 <Parralax imgUrl={imgUrl} />
                 <BrandContainer />

@@ -1,6 +1,6 @@
 .trade-first-div{
-    background-color: rgb(163, 163, 151);
-}
+    background-color: var(--background-color);
+  }
 
 .main-trade-step-div {
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .trade-step-card {
-  color: white;
+  color: black;
   text-align: center;
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.4;
@@ -28,11 +28,16 @@
 }
 
 .trade-div-titre{
-  color: white;
+  color: black;
   text-align: center;
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.4;
   font-size: 14px;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.yourImage{
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
 }

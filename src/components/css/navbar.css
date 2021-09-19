@@ -42,6 +42,8 @@
 
 .my-navbar {
   background-color: var(--background-color);
+  /* not sure below */
+  /* justify-content: flex-start !important; */
 }
 
 .active {

@@ -15,7 +15,7 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=90;w=103, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=55;w=206 2x" alt="echange" />
+                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=90;w=103, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=55;w=206 2x" alt="echange" />
                                     </picture>
                                     <br /> <br />
                                 </div>
@@ -29,7 +29,7 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=55;w=200 2x" alt="echange" />
+                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=55;w=200 2x" alt="echange" />
                                     </picture>
                                     <br /> <br />
                                 </div>
@@ -43,21 +43,21 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=90;w=99, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=55;w=198 2x" alt="echange" />
+                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=90;w=99, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=55;w=198 2x" alt="echange" />
                                     </picture>
                                     <br /> <br />
                                 </div>
                                 <h4 >
                                     Step-3 falcutatif<br />Sélectionnez votre nouvelle montre
                                 </h4>
-                                <p>Indiquez nous le ou les modèles qui vous intéresse, nous vous proposerons alors une sélections en adéquation avec votre gout</p>
+                                <p>Indiquez nous le ou les modèles qui vous intéresse dans le commentaire, nous vous proposerons alors une sélections en adéquation avec votre gout</p>
                             </div>
                         </div>
                         <div className="trade-card-container" style={{ width: "240px" }}>
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=55;w=200 2x" alt="echange" />
+                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=55;w=200 2x" alt="echange" />
                                     </picture>
                                     <br /> <br />
                                 </div>
