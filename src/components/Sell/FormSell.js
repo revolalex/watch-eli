@@ -123,7 +123,7 @@ class FormSell extends Component {
                     {/* container on left */}
                     <SellDetail />
                     {/* container on right */}
-                    <div className="contactform card" style={{margin: "3em"}}>
+                    <div className="contactform card" style={{margin: "10vh auto;"}}>
                         <form>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
