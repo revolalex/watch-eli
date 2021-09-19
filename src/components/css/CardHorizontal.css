@@ -17,3 +17,6 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.card-title{
+  margin-top: .5em;
+}

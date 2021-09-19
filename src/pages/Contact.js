@@ -21,6 +21,7 @@ class Contact extends Component {
             <div>
                 <JumbotronImage imgSrc={imgSrc} />
                 <ContactForm />
+                <br/>
                 <SocialMedia />
                 <Parralax imgUrl={imgUrl} alt="Breguet" />
             </div>

@@ -82,6 +82,7 @@ class CardHorizontal extends Component {
                                         <a href="https://www.lecalibre.com/lexique-horloger/">
                                             Le Calibre
                                         </a>
+                                        <br/>
                                     </div>
 
                                     {/* <a href="/" className="btn btn-success">read more...</a> */}

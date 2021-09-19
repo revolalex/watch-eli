@@ -40,7 +40,7 @@ class ContactForm extends Component {
         const t = this.props.t
         return (
             <div className="container-contact">
-                <div className="contactform">
+                <div className="contactform card">
                     <form>
                         <h2 className="my-underline" style={{textAlign: "center"}}>Contact</h2>
                         <br />
