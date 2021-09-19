@@ -24,6 +24,7 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title">Comment débuter une collection de montres</h4>
+                                    <br/>
                                     <p className="card-text text-justify">
                                         De simple amateur d’horlogerie à véritable collectionneur de montres,
                                         il y a un cap qu’il n’est pas si simple de franchir. Par quoi commencer ?
@@ -37,10 +38,9 @@ class CardHorizontal extends Component {
                                         leur rareté, etc. » Voici une phrase qui correspond tout à fait aux
                                         multiples aspects que peut recouvrir une collection horlogère.
                                         Mais d’abord, quand devient-on collectionneur ?
-                                        Posséder une, deux ou trois belles montres (traduisez “à mouvement mécanique”)
-                                        fait de vous un “amateur” (et ce n’est déjà pas mal !).
+                                        Posséder une, deux ou trois belles montres fait de vous un “amateur”.
                                         Ajouter quelques pièces, lire la presse spécialisée, consulter
-                                        régulièrement my-watchsite vous permettra d’accéder au rang d’amateur éclairé.
+                                        régulièrement WatchMarketClub vous permettra d’accéder au rang d’amateur éclairé.
                                         Vous possédez plus d’une dizaine de montres ? Vous projetez d’en achetez d’autres,
                                         quitte à en revendre certaines ? Alors vous êtes collectionneur.
                                         Mais quelle que soit la catégorie dans laquelle vous vous rangez,
@@ -58,17 +58,15 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right">Le vocabulaire horloger</h4>
+                                    <br/>
                                     <p className="card-text text-justify">
                                         Pour apprécier et mieux connaître les montres, c'est toujours bien de connaître
                                         les mots qui apparaissent dans les différentes descriptions que vous pourrez
-                                        lire ou entendre. C'est pourquoi je vais faire régulièrement des vidéos sur
-                                        les termes horlogers. Cette fois les mots expliqués sont aussi les plus basiques :
+                                        lire ou entendre. C'est pourquoi nous vous conseillons cette série de vidéo. 
+                                        Cette fois les mots expliqués sont aussi les plus basiques :
                                         boîtier, couronne, boucle, aiguille, corne, verre, fond, lunettes...
-                                        Avec quelques anecdotes comme toujours ! Et certainement aussi de petites imprécisions
-                                        que les plus avertis d'entre-vous ne manqueront pas de relever.
-                                        Et je trouve cela très bien car c'est ça la vie d'une communauté autour d'une passion !
+                                        Avec quelques anecdotes!
                                         Il faut échanger, discuter, apprendre pour approfondir ses connaissances.
-                                        A tout à l'heure les toqués du tic-tac !
                                     </p>
                                     <div className="my-flex-column">
                                         <a href="https://www.hautehorlogerie.org/fr/watches-and-culture/encyclopedie/lexique-de-lhorlogerie/">
@@ -108,6 +106,7 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title">Montre d'aviation</h4>
+                                    <br/>
                                     <p className="card-text text-justify">
                                         L’aviation représente une avancée technologique des plus spectaculaires dans
                                         l’histoire de l’humanité, initiée par des personnes à la fois inventives et
@@ -150,6 +149,7 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right">Se tenir informer</h4>
+                                    <br/>
                                     <p className="card-text text-justify">
                                         Découvrez les dernières actualités du monde de l'horlogerie, des produits, des nouveautés, des événements...
                                     </p>

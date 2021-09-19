@@ -21,7 +21,7 @@ class BuyCard extends Component {
                                 <br/>
                                 <Card.Title>
                                     {/* {t('buy-card-title')} */}
-                                    Le modèle de vos rêves en un clic sur WMC
+                                    <h4>Le modèle de vos rêves en un clic sur WMC</h4>
                                 </Card.Title>
                                 <Card.Text>
                                     {/* {t('buy-card-text')} */}

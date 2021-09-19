@@ -21,7 +21,7 @@ class BuyCard2 extends Component {
                             <div className="card-block">
                                 <br/>
                                 <Card.Title>
-                                    {t('buy-card2-title')}
+                                    <h4>{t('buy-card2-title')}</h4>
                                 </Card.Title>
                                 <Card.Text>
                                     {/* {t('buy-card2-text-part1')}
