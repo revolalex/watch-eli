@@ -13,7 +13,7 @@ class CardHorizontal extends Component {
                 <div classNameName="row">
                     <div className="card col-md-12 p-3 my-horizontal-card">
                         <div className="row ">
-                            <div className="col-md-4">
+                            <div className="col-md-4 my-center-vertical">
                                 <iframe className="video-toutube"
                                     src="https://www.youtube.com/embed/zIBiG_B35-o"
                                     title="YouTube video player" frameborder="0"
