@@ -6,6 +6,7 @@ import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
 import venteDjumbo from '../img/vente/ventejumbo.jpeg'
+import LogoContainer from '../components/Global/LogoContainer';
 
 
 
@@ -19,8 +20,10 @@ class Achat extends Component {
       <div>
         <JumbotronImage imgSrc={imageSource} />
         <FormSell />
+        
         <Parralax imgUrl={imgUrl}/>
         <BrandContainer2/>
+        <LogoContainer/>
       </div>
     );
   }

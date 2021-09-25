@@ -8,6 +8,7 @@ import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
 import achatjumbo from '../img/achat/achatjumbo.jpeg'
+import LogoContainer from '../components/Global/LogoContainer';
 
 
 
@@ -27,6 +28,7 @@ class Buy extends Component {
         <BuyCard2 />
         <Parralax imgUrl={imgUrl} />
         <BrandContainer2/>
+        <LogoContainer/>
       </div>
     );
   }

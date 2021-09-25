@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import ContactForm from '../components/Contact/ContactForm';
-import SocialMedia from '../components/Contact/SocialMedia';
+// import SocialMedia from '../components/Contact/SocialMedia';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
+import LogoContainer from '../components/Global/LogoContainer';
 
 
 
@@ -21,11 +22,11 @@ class Contact extends Component {
         return (
             <div>
                 <JumbotronImage imgSrc={imgSrc} />
-                <ContactForm />
-                <br/>
-                <SocialMedia />
+                <div style={{paddingBottom: '100px', paddingTop: '100px'}}><ContactForm /></div>
+                {/* <SocialMedia /> */}
                 <Parralax imgUrl={imgUrl} alt="Breguet" />
                 <BrandContainer2/>
+                <LogoContainer/>
             </div>
         );
     }

@@ -7,6 +7,8 @@ import TradeStep2 from '../components/Trade/TradeStep2';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
+import echangeImg from '../img/echange/1.jpeg'
+import LogoContainer from '../components/Global/LogoContainer';
 
 
 class Trade extends Component {
@@ -17,7 +19,7 @@ class Trade extends Component {
         const imgUrl = randomItem
         return (
             <div>
-                <JumbotronImage imgSrc=" https://i.ytimg.com/vi/NoRstEITESg/maxresdefault.jpg" />
+                <JumbotronImage imgSrc={echangeImg} />
                 <TitreCard
                     titre={"Echangez votre montre "}
                     sousTitre={"C'est trés simple et vous serez sastifait"}
@@ -27,6 +29,7 @@ class Trade extends Component {
                 <TradeStep2 />
                 <Parralax imgUrl={imgUrl} />
                 <BrandContainer2 />
+                <LogoContainer/>
             </div>
         );
     }
