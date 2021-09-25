@@ -1,7 +1,10 @@
-.trade-first-div{
-    background-color: var(--background-color);
-    background-color: white;
-  }
+.trade-first-div {
+  background-color: var(--background-color);
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 80px;
+}
 
 .main-trade-step-div {
   display: flex;
@@ -28,7 +31,7 @@
   margin: 10px;
 }
 
-.trade-div-titre{
+.trade-div-titre {
   color: black;
   text-align: center;
   font-family: "Inter", Arial, sans-serif;
@@ -38,7 +41,8 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.yourImage{
-  -webkit-filter: invert(0%); /* Safari/Chrome */
+.yourImage {
+  -webkit-filter: invert(0%);
+  /* Safari/Chrome */
   filter: invert(0%);
 }

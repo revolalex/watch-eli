@@ -10,7 +10,7 @@ import venteDjumbo from '../img/vente/ventejumbo.jpeg'
 
 
 
-class Sell extends Component {
+class Achat extends Component {
   render() {
     const imageSource = venteDjumbo
     var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
@@ -26,4 +26,4 @@ class Sell extends Component {
   }
 }
 
-export default withTranslation()(Sell);
+export default withTranslation()(Achat);
