@@ -1,6 +1,14 @@
 import { Component } from "react";
 import { Container } from "react-bootstrap";
 import './TradeStep2.css'
+// ICONES
+import formulaireIcon from '../../img/icone/formIcon.jpeg'
+import money from '../../img/icone/money.jpeg'
+import watchIcon from '../../img/icone/watchIcon.jpeg'
+import searchIcon from '../../img/icone/searchIcon.jpeg'
+import colisIcon from '../../img/icone/colisIcon.jpeg'
+
+
 class TradeStep2 extends Component {
     state = {}
     render() {
@@ -15,7 +23,7 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=90;w=103, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_form-2015-03-10-04-49-19-383.png;quality=55;w=206 2x" alt="echange" />
+                                        <img className="yourImage" srcset={formulaireIcon} alt="icone formulaire" width="80px" />
                                     </picture>
                                     <br /> <br />
                                 </div>
@@ -29,7 +37,7 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_payment-2021-01-15-03-34-37-809.png;quality=55;w=200 2x" alt="echange" />
+                                        <img className="yourImage" srcset={money} width="80px" alt="icone argent" />
                                     </picture>
                                     <br /> <br />
                                 </div>
@@ -43,7 +51,8 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=90;w=99, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_inspect-2015-03-10-04-49-24-084.png;quality=55;w=198 2x" alt="echange" />
+                                        <img className="yourImage" srcset={watchIcon} alt="icone montre" width="80px"  />
+                                        <img className="yourImage" srcset={searchIcon} alt="recherche icones" width="80px"  />
                                     </picture>
                                     <br /> <br />
                                 </div>
@@ -57,7 +66,7 @@ class TradeStep2 extends Component {
                             <div className="trade-step-card">
                                 <div >
                                     <picture>
-                                        <img className="yourImage" srcset="https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=90;w=100, https://images.watchfinder.co.uk/images/watchfinderimages/media/views/icn_collection-2021-01-15-03-34-37-988.png;quality=55;w=200 2x" alt="echange" />
+                                        <img className="yourImage" srcset={colisIcon} alt="colis icone" width="80px" />
                                     </picture>
                                     <br /> <br />
                                 </div>

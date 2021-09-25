@@ -1,5 +1,6 @@
 .trade-first-div{
     background-color: var(--background-color);
+    background-color: white;
   }
 
 .main-trade-step-div {
@@ -38,6 +39,6 @@
 }
 
 .yourImage{
-  -webkit-filter: invert(100%); /* Safari/Chrome */
-  filter: invert(100%);
+  -webkit-filter: invert(0%); /* Safari/Chrome */
+  filter: invert(0%);
 }

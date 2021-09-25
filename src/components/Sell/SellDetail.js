@@ -1,11 +1,13 @@
 import { Component } from "react";
-import formIcon from '../../img/icones/formIcon.png'
-import estimIcon from '../../img/icones/estimIcon.png'
-import shipIcon from '../../img/icones/shipIcon.png'
-import checkIcon from "../../img/icones/check.png"
 import { withTranslation } from 'react-i18next';
 import TooltipPerso from '../Global/TooltipPerso'
-// import PopOverPerso from "../Global/PopOverPerso";
+
+
+// ICONES
+import formulaireIcon from '../../img/icone/formIcon.jpeg'
+import boxIcon from '../../img/icone/boxIcon.jpeg'
+import money from '../../img/icone/money.jpeg'
+import argent from '../../img/icone/argent.jpeg'
 
 
 
@@ -29,7 +31,7 @@ class SellDetail extends Component {
 
                 <div className="box" >
                     <div className="icon">
-                        <img src={formIcon} alt="icones" />
+                        <img src={formulaireIcon} alt="icones" width="80px" />
                         <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
@@ -46,7 +48,7 @@ class SellDetail extends Component {
                 </div>
                 <div className="box" >
                     <div className="icon">
-                        <img src={estimIcon} alt="icones" />
+                        <img src={money} alt="icones" width="80px" />
                         <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
@@ -65,7 +67,7 @@ class SellDetail extends Component {
                 {/*  */}
                 <div className="box">
                     <div className="icon">
-                        <img src={shipIcon} alt="icones" />
+                        <img src={boxIcon} alt="icones" width="80px" />
                         <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                     </div>
                     <div className="text">
@@ -86,7 +88,7 @@ class SellDetail extends Component {
                 </div>
                 <div className="box">
                     <div className="icon">
-                        <img src={checkIcon} alt="icones" />
+                        <img src={argent} alt="icones" width="80px" />
                     </div>
                     <div className="text">
                         <h3>{t("form-sell-money-titre")}</h3>
