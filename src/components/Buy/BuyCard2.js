@@ -2,20 +2,31 @@ import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
 import VvmTooltip from "../Home/VvmTooltip";
+import achatCard2 from "../../img/achat/achatCard2.jpeg"
+import achatCard21 from "../../img/achat/1.jpeg"
+import achatCard22 from "../../img/achat/3.jpeg"
+import achatCard23 from "../../img/achat/4.jpeg"
+import achatCard24 from "../../img/achat/5.jpeg"
+import achatCard25 from "../../img/achat/8.jpeg"
 
 
 
 
 class BuyCard2 extends Component {
     state = {}
+
     render() {
+        const arrayOfImages = [achatCard21, achatCard2, achatCard22, achatCard23, achatCard24, achatCard25 ]
+        var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
+        const imgUrl = randomItem
+
         const t = this.props.t
         return (
             <Container>
                 <div className="card col-md-12 p-3 my-horizontal-card">
                     <div className="row ">
                         <div className="col-md-4">
-                            <img className="w-100" alt="montre" src="https://cdn.lesrhabilleurs.com/uploads/2018/04/Montre-Cartier-Santos-2018-17-1200x900.jpg" />
+                            <img className="w-100" alt="montre" src={imgUrl} />
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">

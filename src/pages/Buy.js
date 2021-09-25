@@ -7,6 +7,7 @@ import BuyTitre from '../components/Buy/BuyTitre';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
+import achatjumbo from '../img/achat/achatjumbo.jpeg'
 
 
 
@@ -20,7 +21,7 @@ class Buy extends Component {
     return (
 
       <div>
-        <JumbotronImage imgSrc="https://swisswatches-magazine.com/wp-content/uploads/2020/11/Cartier-Ballon-Bleu-de-Cartier-36mm-W6920046-Wristshot-Pocketshot.jpg" />
+        <JumbotronImage imgSrc={achatjumbo}/>
         <BuyTitre />
         <BuyCard />
         <BuyCard2 />

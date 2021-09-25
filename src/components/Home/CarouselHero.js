@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "../css/CarouselHero.css"
 import { withTranslation } from 'react-i18next';
+import slide2 from '../../img/slide/slide2.jpeg'
+import slide3 from '../../img/slide/trade.jpeg'
+import slide5 from '../../img/slide/service1.jpeg'
+import trade from '../../img/slide/trade.webp'
 
 import GoogleAvis from './GoogleAvis';
 import AchatSlide from '../../img/carousel/achat-slide.jpeg'
@@ -37,7 +41,7 @@ class CarouselHero extends Component {
                         <a href="/sell"><img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={AchatSlide}
+                            src={slide2}
                             alt="First slide"
                         /></a>
                         <Carousel.Caption>
@@ -50,7 +54,7 @@ class CarouselHero extends Component {
                         <a href="/buy"><img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={VenteSlide}
+                            src={slide3}
                             alt="Second slide"
                         /></a>
                         <Carousel.Caption>
@@ -63,7 +67,7 @@ class CarouselHero extends Component {
                         <a href="/trade"><img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={Echange}
+                            src={trade}
                             alt="Third slide"
                         /></a>
                         <Carousel.Caption>
@@ -76,7 +80,7 @@ class CarouselHero extends Component {
                         <a href="service"><img
                             fluid
                             className="d-block w-100 img-carousel"
-                            src={SubmarinerImg}
+                            src={slide5}
                             alt="Fourth slide"
                         /></a>
                         <Carousel.Caption>

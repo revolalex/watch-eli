@@ -5,13 +5,14 @@ import JumbotronImage from '../components/Sell/JumbotronImage';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer2 from '../components/Global/BrandContainer2';
+import venteDjumbo from '../img/vente/ventejumbo.jpeg'
 
 
 
 
 class Sell extends Component {
   render() {
-    const imageSource = "https://i2.wp.com/www.luxsure.fr/wp-content/uploads/2021/04/jlc-reverso-tribute-small-seconds-green-stilllife-16x9-1-scaled.jpg?ssl=1"
+    const imageSource = venteDjumbo
     var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
     const imgUrl = randomItem
     return (

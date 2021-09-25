@@ -3,6 +3,7 @@ import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
 import Chrono24 from "./Chrono24";
 import '../css/BuyCard.css'
+import achatCard from '../../img/achat/achatCard.jpeg'
 
 
 class BuyCard extends Component {
@@ -14,7 +15,7 @@ class BuyCard extends Component {
                 <div className="card col-md-12 p-3 my-horizontal-card">
                     <div className="row ">
                         <div className="col-md-4">
-                            <img className="w-100 h-100" alt="montre" src="https://cdn.shopify.com/s/files/1/0263/1919/2169/articles/Screen_Shot_2019-08-05_at_17.36.20_1024x.png?v=1568115675" />
+                            <img className="w-100 h-100" alt="montre" src={achatCard} />
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">

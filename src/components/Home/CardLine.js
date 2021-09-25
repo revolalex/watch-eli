@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import SpeedmasterImg from '../../img/speedmaster2.jpg'
-import Tag from '../../img/tag1.jpg'
-import BreitlingImg from '../../img/breitlingDeus2.jpg'
-import ServiceImg from '../../img/service.jpeg'
+// import SpeedmasterImg from '../../img/speedmaster2.jpg'
+// import Tag from '../../img/tag1.jpg'
+// import BreitlingImg from '../../img/breitlingDeus2.jpg'
+// import ServiceImg from '../../img/service.jpeg'
 import "../css/CardLine.css"
 import { withTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
 import VvmTooltip from './VvmTooltip';
+import boxAchat from '../../img/home/boxAchat.jpeg'
+import boxEchange from '../../img/home/boxEchange.jpeg'
+import boxService from '../../img/home/boxService.jpeg'
+import boxVente from '../../img/home/boxVente.jpeg'
 
 class CardLine extends Component {
     componentDidMount() {
@@ -30,7 +34,7 @@ class CardLine extends Component {
                             <div className="card h-100"
                             // data-aos="zoom-in" 
                             >
-                                <img src={SpeedmasterImg} className="card-img-top img-from-card" alt="..." />
+                                <img src={boxAchat} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy-card")}</h5>
                                     <p className="card-text">
@@ -44,7 +48,7 @@ class CardLine extends Component {
                         <div className="col card-shadow">
                             <div className="card h-100"
                             >
-                                <img src={BreitlingImg} className="card-img-top img-from-card" alt="..." />
+                                <img src={boxVente} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("sell-card")}</h5>
                                     <p className="card-text">{t("card-sell-text")}</p>
@@ -55,7 +59,7 @@ class CardLine extends Component {
                         <div className="col card-shadow">
                             <div className="card h-100"
                             >
-                                <img src={Tag} className="card-img-top img-from-card" alt="..." />
+                                <img src={boxEchange} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         {/* {t('navbar-trade')} */}
@@ -80,7 +84,7 @@ class CardLine extends Component {
                         <div className="col card-shadow">
                             <div className="card h-100"
                             >
-                                <img src={ServiceImg} className="card-img-top img-from-card" alt="..." />
+                                <img src={boxService} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         {/* {t("service")} */}
