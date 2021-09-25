@@ -3,7 +3,7 @@ import { withTranslation } from 'react-i18next';
 import BlogTitre from '../components/Blog/BlogTitre';
 import CardHorizontal from '../components/Blog/CardHorizontal';
 import SocialMedia from '../components/Contact/SocialMedia';
-import BrandContainer from '../components/Global/BrandContainer';
+import BrandContainer2 from '../components/Global/BrandContainer2';
 import Parralax from '../components/Home/Parralax';
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import { arrayOfImages } from '../utils/WatchImgUrl';
@@ -19,7 +19,7 @@ class Blog extends Component {
         <CardHorizontal/>
         <SocialMedia/>
         <Parralax imgUrl={imgUrl}/>
-        <BrandContainer />
+        <BrandContainer2 />
       </div>
     );
   }

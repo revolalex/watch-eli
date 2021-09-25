@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import BrandContainer from '../components/Global/BrandContainer';
 import CardLine from '../components/Home/CardLine'
 import CarouselHero from '../components/Home/CarouselHero'
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import TitreCard from '../components/Global/TitreCard';
+import BrandContainer2 from '../components/Global/BrandContainer2';
 
 
 
@@ -29,7 +29,7 @@ class Home extends Component {
                 />
         <CardLine />
         <Parralax imgUrl={imgUrl}/>
-        <BrandContainer/>
+        <BrandContainer2/>
       </div>
     );
   }

@@ -5,6 +5,7 @@ import ContactForm from '../components/Contact/ContactForm';
 import SocialMedia from '../components/Contact/SocialMedia';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
+import BrandContainer2 from '../components/Global/BrandContainer2';
 
 
 
@@ -24,6 +25,7 @@ class Contact extends Component {
                 <br/>
                 <SocialMedia />
                 <Parralax imgUrl={imgUrl} alt="Breguet" />
+                <BrandContainer2/>
             </div>
         );
     }

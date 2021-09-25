@@ -6,7 +6,7 @@ import BuyCard2 from '../components/Buy/BuyCard2';
 import BuyTitre from '../components/Buy/BuyTitre';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
-import BrandContainer from '../components/Global/BrandContainer';
+import BrandContainer2 from '../components/Global/BrandContainer2';
 
 
 
@@ -24,8 +24,8 @@ class Buy extends Component {
         <BuyTitre />
         <BuyCard />
         <BuyCard2 />
-        <BrandContainer/>
         <Parralax imgUrl={imgUrl} />
+        <BrandContainer2/>
       </div>
     );
   }

@@ -4,7 +4,7 @@ import JumbotronImage from '../components/Sell/JumbotronImage';
 // import TextAnimate from '../components/Service/TextAnimate';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import Parralax from '../components/Home/Parralax';
-import BrandContainer from '../components/Global/BrandContainer';
+import BrandContainer2 from '../components/Global/BrandContainer2';
 // import service from '../img/service2.jpeg'
 import ServiceCard from '../components/Service/ServiceCard';
 import ServiceTitre from '../components/Service/ServiceTitre';
@@ -22,7 +22,7 @@ class Service extends Component {
         <ServiceCard />
         {/* <TextAnimate textOne="WMC" textTwo="Emotion Dealer" /> */}
         <Parralax imgUrl={imgUrl} />
-        <BrandContainer />
+        <BrandContainer2 />
       </div>
     );
   }
