@@ -8,11 +8,12 @@ import slide5 from '../../img/slide/service1.jpeg'
 import trade from '../../img/slide/trade.webp'
 
 import GoogleAvis from './GoogleAvis';
-import AchatSlide from '../../img/carousel/achat-slide.jpeg'
-import SubmarinerImg from '../../img/submariner.jpg'
-import Echange from '../../img/carousel/echange.jpeg'
+// import AchatSlide from '../../img/carousel/achat-slide.jpeg'
+// import SubmarinerImg from '../../img/submariner.jpg'
+// import Echange from '../../img/carousel/echange.jpeg'
+// import VenteSlide from '../../img/carousel/venteslide.jpeg'
 import Collection from '../../img/carousel/collection.jpg'
-import VenteSlide from '../../img/carousel/venteslide.jpeg'
+
 
 
 
