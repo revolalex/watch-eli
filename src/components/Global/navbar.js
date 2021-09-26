@@ -1,11 +1,12 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { withRouter } from "react-router";
-import watch from '../../img/watch.png'
+// import watch from '../../img/watch.png'
 import '../css/navbar.css'
 import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';
 import NavbarMobile from "./NavbarMobile";
+import logo from '../../img/logo.png'
 
 
 
@@ -32,13 +33,14 @@ class Navbar5 extends Component {
                 <div className="sticky-top big-screen-nav">
                     <div className="logo-nav-div">
                         <span className="logo-police">
-                            <img className="logo-watch" src={watch} alt="logo watch" />
-                            <span className="majuscule-title">W</span>
+                            <Nav.Link href="/"><img className="main-logo" src={logo} alt="logo watch" /></Nav.Link>
+
+                            {/* <span className="majuscule-title"> - W</span>
                             atch
                             <span className="majuscule-title">M</span>
                             arket
                             <span className="majuscule-title">C</span>
-                            lub
+                            lub */}
                         </span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />

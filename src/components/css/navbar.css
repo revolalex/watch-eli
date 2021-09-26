@@ -7,6 +7,7 @@
     width: 80%;
     justify-content: space-between;
   }
+
 }
 /* navlink in middle */
 #basic-navbar-nav{
@@ -16,7 +17,9 @@
   background-color: #F6F3ED
 }
 
-
+.main-logo{
+  max-height: 100px
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .logo-watch {
@@ -28,13 +31,20 @@
   .big-screen-nav {
       display: none;
     }
+    .main-logo{
+      height: 50px;
+    }
+    .logo-nav-div {
+      padding-left: 1% !important;
+    }
 }
 
 
 .logo-nav-div {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  padding-left: 9%;
   text-align: center;
   background-color: var(--background-color);
   font-size: 1.3em;
@@ -57,7 +67,8 @@
 }
 .majuscule-title{
   font-size: 1.5em;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Crimson Text', serif;
+font-family: 'Gideon Roman', cursive;
 }
 
 @media screen and (max-width: 640px) {
@@ -66,10 +77,10 @@
   }
   .majuscule-title{
     font-size: 1.2em;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Crimson Text', cursive;
   }
-  .logo-nav-div {
+  /* .logo-nav-div {
     font-size: 1.1em;
-  }
+  } */
 
 }
