@@ -6,7 +6,7 @@ import TradeCard from '../components/Trade/TradeCard';
 import TradeStep2 from '../components/Trade/TradeStep2';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
-import BrandContainer2 from '../components/Global/BrandContainer2';
+import BrandContainer from '../components/Global/BrandContainer';
 import echangeImg from '../img/echange/1.jpeg'
 import LogoContainer from '../components/Global/LogoContainer';
 
@@ -28,7 +28,7 @@ class Trade extends Component {
                 <TradeCard />
                 <TradeStep2 />
                 <Parralax imgUrl={imgUrl} />
-                <BrandContainer2 />
+                <BrandContainer />
                 <LogoContainer/>
             </div>
         );

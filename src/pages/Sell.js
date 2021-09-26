@@ -4,7 +4,7 @@ import FormSell from '../components/Sell/FormSell'
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
-import BrandContainer2 from '../components/Global/BrandContainer2';
+import BrandContainer from '../components/Global/BrandContainer';
 import venteDjumbo from '../img/vente/ventejumbo.jpeg'
 import LogoContainer from '../components/Global/LogoContainer';
 
@@ -22,7 +22,7 @@ class Achat extends Component {
         <FormSell />
         
         <Parralax imgUrl={imgUrl}/>
-        <BrandContainer2/>
+        <BrandContainer/>
         <LogoContainer/>
       </div>
     );

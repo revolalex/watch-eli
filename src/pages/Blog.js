@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import BlogTitre from '../components/Blog/BlogTitre';
 import CardHorizontal from '../components/Blog/CardHorizontal';
-import BrandContainer2 from '../components/Global/BrandContainer2';
+import BrandContainer from '../components/Global/BrandContainer';
 import LogoContainer from '../components/Global/LogoContainer';
 import Parralax from '../components/Home/Parralax';
 import JumbotronImage from '../components/Sell/JumbotronImage';
@@ -18,7 +18,7 @@ class Blog extends Component {
         <BlogTitre/>
         <CardHorizontal/>
         <Parralax imgUrl={imgUrl}/>
-        <BrandContainer2 />
+        <BrandContainer />
         <LogoContainer/>
       </div>
     );

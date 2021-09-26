@@ -4,6 +4,10 @@
   padding-top: 20px;
 }
 
+.logoIcones:hover {
+  transform: scale(1.2);
+}
+
 .evently {
   justify-content: space-evenly;
 }
@@ -14,4 +18,4 @@
 
   }
 
- }
+}

@@ -51,6 +51,7 @@
 
 .brand-container-vacheron {
   background-image: url(../../img/logo2/vacheron.png);
+  transform: scale(1.1);
 }
 
 .brand-container-tag {

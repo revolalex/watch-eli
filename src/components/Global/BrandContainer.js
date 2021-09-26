@@ -1,8 +1,8 @@
 import { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import '../css/BrandContainer2.css'
+import '../css/BrandContainer.css'
 
-class BrandContainer2 extends Component {
+class BrandContainer extends Component {
     render() {
         return <div>
             <Container className="container-spacing">
@@ -25,4 +25,4 @@ class BrandContainer2 extends Component {
     }
 }
 
-export default BrandContainer2;
+export default BrandContainer;

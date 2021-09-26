@@ -1,27 +1,16 @@
 import React, { Component } from 'react';
-// import SpeedmasterImg from '../../img/speedmaster2.jpg'
-// import Tag from '../../img/tag1.jpg'
-// import BreitlingImg from '../../img/breitlingDeus2.jpg'
-// import ServiceImg from '../../img/service.jpeg'
 import "../css/CardLine.css"
 import { withTranslation } from 'react-i18next';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
 import VvmTooltip from './VvmTooltip';
+
+// Image
 import boxAchat from '../../img/home/boxAchat.jpeg'
 import boxEchange from '../../img/home/boxEchange.jpeg'
 import boxService from '../../img/home/boxService.jpeg'
 import boxVente from '../../img/home/boxVente.jpeg'
 
 class CardLine extends Component {
-    componentDidMount() {
-        // or simply just AOS.init();
-        AOS.init({
-            // initialise with other settings
-            duration: 2000
-        });
-    }
 
     render() {
 

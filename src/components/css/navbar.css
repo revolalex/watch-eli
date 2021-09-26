@@ -1,42 +1,37 @@
 @media screen and (min-width: 601px) {
-  .tel-header{
+  .tel-header {
     position: absolute;
     right: 20px;
   }
-  .mr-auto{
+
+  .mr-auto {
     width: 80%;
     justify-content: space-between;
   }
-
-}
-/* navlink in middle */
-#basic-navbar-nav{
-  justify-content: space-evenly;
-}
-.select-lang{
-  background-color: #F6F3ED
-}
-
-.main-logo{
-  max-height: 40px
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-.logo-watch {
-  height: 40px;
-  width: 40px;
 }
 
 @media screen and (max-width: 601px) {
   .big-screen-nav {
-      display: none;
-    }
-    .main-logo{
-      height: 30px;
-    }
+    display: none;
+  }
 
+  .main-logo {
+    height: 30px;
+  }
 }
 
+/* navlink in middle */
+#basic-navbar-nav {
+  justify-content: space-evenly;
+}
+
+.select-lang {
+  background-color: #F6F3ED
+}
+
+.main-logo {
+  max-height: 40px
+}
 
 .logo-nav-div {
   align-items: center;
@@ -55,7 +50,7 @@
 }
 
 .active {
-  color: var(--vert-color)!important;
+  color: var(--vert-color) !important;
   text-decoration: underline !important;
   border-color: #a9a6a1;
 }
@@ -63,22 +58,20 @@
 .nav-link {
   font-size: 1.5em;
 }
-.majuscule-title{
+
+.majuscule-title {
   font-size: 1.5em;
   font-family: 'Crimson Text', serif;
-font-family: 'Gideon Roman', cursive;
+  font-family: 'Gideon Roman', cursive;
 }
 
 @media screen and (max-width: 640px) {
   .nav-link {
     font-size: 1em;
   }
-  .majuscule-title{
+
+  .majuscule-title {
     font-size: 1.2em;
     font-family: 'Crimson Text', cursive;
   }
-  /* .logo-nav-div {
-    font-size: 1.1em;
-  } */
-
 }

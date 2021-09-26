@@ -2,6 +2,8 @@ import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
 import VvmTooltip from "../Home/VvmTooltip";
+
+// Images
 import achatCard2 from "../../img/achat/achatCard2.jpeg"
 import achatCard21 from "../../img/achat/1.jpeg"
 import achatCard22 from "../../img/achat/3.jpeg"
