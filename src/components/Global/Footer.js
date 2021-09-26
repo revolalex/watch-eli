@@ -4,6 +4,7 @@ import '../css/Footer.css'
 import { withTranslation } from 'react-i18next';
 // import watch from"../../img/watch.png"
 import ExternaLinks from '../../utils/socialMedia.js'
+import logo from '../../img/logo.png'
 
 class Footer extends Component {
     
@@ -17,15 +18,16 @@ class Footer extends Component {
                 <div className="container">
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
-                            {/* <div className="col-xl-4 col-md-4 mb-30">
+                            <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <i className="fas fa-map-marker-alt"></i>
+                                    <img src={logo} height="80px" alt="watch market club logo"/>
                                     <div className="cta-text">
-                                        <h4>{t("footer-find-us")}</h4>
-                                        <span>10 avennue daumesnel 75008 Paris</span>
+                                        
+                                    <h4 style={{fontFamily: "font-family: 'Koh Santepheap', cursive;"}}>Watch Market Club</h4>
+
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
                                     <i className="fas fa-phone"></i>

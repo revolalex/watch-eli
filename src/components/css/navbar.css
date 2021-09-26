@@ -18,7 +18,7 @@
 }
 
 .main-logo{
-  max-height: 100px
+  max-height: 40px
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -32,11 +32,9 @@
       display: none;
     }
     .main-logo{
-      height: 50px;
+      height: 30px;
     }
-    .logo-nav-div {
-      padding-left: 1% !important;
-    }
+
 }
 
 

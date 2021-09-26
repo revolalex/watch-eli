@@ -18,6 +18,7 @@ class LogoContainer extends Component {
     render() {
         return <div>
             <Container className="container-spacing logo-container">
+                <div className="card card-logo">
                 <Row className="evently">
                     <Col xs={2} md={1}>
                         <OverlayTrigger
@@ -143,6 +144,7 @@ class LogoContainer extends Component {
 
                     </Col>
                 </Row>
+                </div>
             </Container>
         </div>;
     }

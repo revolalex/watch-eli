@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';
 import '../css/NavBarMobile.css'
-import logo from '../../img/logo.png'
+import logo2 from '../../img/logo2.png'
 
 class NavbarMobile extends Component {
     constructor(props) {
@@ -29,7 +29,7 @@ class NavbarMobile extends Component {
                 <div className="sticky-top">
                     <div className="logo-nav-div">
                         <span className="logo-police">
-                            <Nav.Link href="/"><img className="main-logo" src={logo} alt="logo watch" /></Nav.Link>
+                            <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
 
                             {/* <span className="majuscule-title">W</span>
                             atch

@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';
 import NavbarMobile from "./NavbarMobile";
-import logo from '../../img/logo.png'
+import logo2 from '../../img/logo2.png'
 
 
 
@@ -33,7 +33,7 @@ class Navbar5 extends Component {
                 <div className="sticky-top big-screen-nav">
                     <div className="logo-nav-div">
                         <span className="logo-police">
-                            <Nav.Link href="/"><img className="main-logo" src={logo} alt="logo watch" /></Nav.Link>
+                            <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
 
                             {/* <span className="majuscule-title"> - W</span>
                             atch
@@ -42,6 +42,7 @@ class Navbar5 extends Component {
                             <span className="majuscule-title">C</span>
                             lub */}
                         </span>
+                        <span style={{fontFamily: "font-family: 'Koh Santepheap', cursive;"}}>Watch Market Club</span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />
                             (+33)0600000000
