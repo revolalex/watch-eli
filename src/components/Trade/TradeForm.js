@@ -2,6 +2,7 @@ import { Component } from "react";
 import { withTranslation } from 'react-i18next';
 import '../css/TradeForm.css'
 import imgMontre from '../../img/echange/5.jpeg'
+import imgTop from '../../img/echange/3.jpeg'
 
 class TradeForm extends Component {
     constructor(props) {
@@ -46,6 +47,7 @@ class TradeForm extends Component {
         const t = this.props.t
         return (
             <div className=" card">
+                <img alt="montre" src={imgTop} class="card-img-bottom"/>
                 <div className="contactform">
                     <form>
                         <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
@@ -54,6 +56,7 @@ class TradeForm extends Component {
                             <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                             <span>{t('form-sell-brand')}</span>
                         </div>
+  
                         <div className="inputBox">
                             <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
                             <span>{t('form-sell-model')}</span>
@@ -63,7 +66,7 @@ class TradeForm extends Component {
                             <span>{t('form-sell-comment')}</span>
                         </div>
                         <br />
-                        <br />
+                        
                         {/* Photo */}
                         <div className="inputBox">
                             <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} onChange={this.handlePhoto} />
@@ -74,10 +77,9 @@ class TradeForm extends Component {
                         <div className="inputBox">
                             <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />
                         </div>
-                        
                     </form>
-                    
                 </div>
+                <br/>
                 <img alt="montre" src={imgMontre} class="card-img-bottom"/>
             </div>
         );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import FormSell from '../components/Sell/FormSell'
+import SellGlobal from '../components/Sell/SellGlobal'
 import JumbotronImage from '../components/Sell/JumbotronImage';
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
@@ -19,7 +19,7 @@ class Achat extends Component {
     return (
       <div>
         <JumbotronImage imgSrc={imageSource} />
-        <FormSell />
+        <SellGlobal />
         
         <Parralax imgUrl={imgUrl}/>
         <BrandContainer/>
