@@ -20,7 +20,7 @@ class SellDetail extends Component {
         return (
             <div className="contactInfo">
                 <Card>
-                    <img src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" class="card-img-top" alt="échange de montres" style={{padding:"10px"}}/>
+                    <img src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" class="card-img-top" alt="échange de montres"/>
                     <div className="box" >
                         <div className="icon">
                             <img src={formulaireIcon} alt="icones" width="80px" />
@@ -87,7 +87,7 @@ class SellDetail extends Component {
                             <p>{t("form-sell-money")}</p>
                         </div>
                     </div>
-                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" class="card-img-bottom" alt="serrage de main, deal" style={{padding:"10px"}}/>
+                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" class="card-img-bottom" alt="serrage de main, deal"/>
                 </Card>
             </div >
 
