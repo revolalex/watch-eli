@@ -76,8 +76,6 @@ class TradeStep2 extends Component {
                                 <p> Nous programmons la collecte de votre montre, Expédiez votre montre, Livraison de votre nouvelle montre</p>
                             </div>
                         </div>
-
-
                     </div>
                 </Container>
             </div>

@@ -1,13 +1,22 @@
 import { Component } from "react";
 import { withTranslation } from 'react-i18next';
 import '../css/TradeForm.css'
+import imgMontre from '../../img/echange/5.jpeg'
 
 class TradeForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            photo: undefined
+            photo: undefined,
+            brand: "",
+            model:"",
+            comment:""
         }
+        this.handlePhoto = this.handlePhoto.bind(this)
+        this.handleSendButton = this.handleSendButton.bind(this)
+        this.handleBrandInput = this.handleBrandInput.bind(this)
+        this.handleModelInput = this.handleModelInput.bind(this)
+        this.handleCommentInput = this.handleCommentInput.bind(this)
     }
     handlePhoto(event) {
         this.setState({
@@ -18,10 +27,25 @@ class TradeForm extends Component {
         e.preventDefault();
         console.log(this.state)
     }
+    handleBrandInput(e){
+        this.setState({
+            brand: e.target.value
+        })
+    }
+    handleModelInput(e){
+        this.setState({
+            model: e.target.value
+        })
+    }
+    handleCommentInput(e){
+        this.setState({
+            comment: e.target.value
+        })
+    }
     render() {
         const t = this.props.t
         return (
-            <div className="container-contact  trade-form card p-3">
+            <div className=" card">
                 <div className="contactform">
                     <form>
                         <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
@@ -35,7 +59,7 @@ class TradeForm extends Component {
                             <span>{t('form-sell-model')}</span>
                         </div>
                         <div className="inputBox">
-                            <input type="text" name="comment" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                            <textarea type="textarea" rows="5"  name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
                             <span>{t('form-sell-comment')}</span>
                         </div>
                         <br />
@@ -50,8 +74,11 @@ class TradeForm extends Component {
                         <div className="inputBox">
                             <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />
                         </div>
+                        
                     </form>
+                    
                 </div>
+                <img alt="montre" src={imgMontre} class="card-img-bottom"/>
             </div>
         );
     }
