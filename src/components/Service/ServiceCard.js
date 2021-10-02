@@ -42,37 +42,37 @@ class ServiceCard extends Component {
                                         <br />
                                         <Row>
                                             <Col>
-                                        <p>
-                                            Remplacement de la pile
-                                            &nbsp;<TooltipPerso
-                                                abrevation={<i className="fal fa-info-circle" />}
-                                                traduction={"Si l’aiguille des secondes de votre montre électronique ne saute plus que toutes les quatre secondes en mode EOL ou si votre montre est déjà arrêtée, il est temps de faire remplacer la pile par un détaillant spécialisé. Les étapes de travail suivantes complètent chez WMC le remplacement de la pile: Nos experts ouvrent le boîtier avec des outils spéciaux. Ils nettoient d’abord les contacts électroniques. Ils remplacent la pile, puis referment le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Les spécialistes mesurent ensuite la consommation d’énergie et effectuent un contrôle d’étanchéité selon les normes du fabricant. Ils nettoient ensuite le boîtier et le bracelet, puis vérifient et ajustent le bracelet et le fermoir, si nécessaire."}
-                                            />
-                                        </p>
-                                        <p>
-                                            Réglage d'une montre mécanique
-                                            &nbsp;<TooltipPerso
-                                                abrevation={<i className="fal fa-info-circle" />}
-                                                traduction={"Si votre montre avance ou retarde malgré des entretiens réguliers, nos conseillers ou nos horlogers s’en occuperont de manière compétente. Ils détermineront si la précision de marche peut être optimisée par un réglage. Les étapes suivantes complètent chez WMC le réglage d’une montre mécanique: Nos collaborateurs vérifient tout d’abord toutes les fonctions du mouvement. Ils ouvrent le boîtier et règlent la précision avec des outils spéciaux. Ils referment ensuite le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Ils effectuent en outre un contrôle d’étanchéité et nettoient le boîtier et le bracelet. Ils vérifient également le bracelet et le fermoir et les ajustent en conséquence. Enfin, ils vérifient la précision de marche sur un simulateur pendant 48 à 72 heure"}
-                                            />
-                                        </p>
-                                        </Col>
-                                        <Col>
-                                        <p>
-                                        Révision
-                                            &nbsp;<TooltipPerso
-                                                abrevation={<i className="fal fa-info-circle" />}
-                                                traduction={"Et faites réviser entièrement votre montre mécanique tous les quatre à six ans. Une révision tous les six à huit ans suffit pour les montres électroniques, sauf si vous remarquez que la pile n’a plus d’autonomie que pour environ six mois. Dans ce cas, il faut faire réviser rapidement votre montre. L’éventuelle remise à neuf minutieuse de l’extérieur de votre montre par des termineurs en habillage horloger diplômés est également incluse dans notre service horloger spécial. Après la révision, votre montre brille ainsi à nouveau d’un nouvel éclat."}
-                                            />
-                                        </p>
-                                        <p>
-                                            Autre
-                                            &nbsp;<TooltipPerso
-                                                abrevation={<i className="fal fa-info-circle" />}
-                                                traduction={"Peut importe votre besoins WMC vous propose une solution adaptée et personalisée"}
-                                            />
-                                        </p>
-                                        </Col>
+                                                <p>
+                                                    Remplacement de la pile
+                                                    &nbsp;<TooltipPerso
+                                                        abrevation={<i className="fal fa-info-circle" />}
+                                                        traduction={"Si l’aiguille des secondes de votre montre électronique ne saute plus que toutes les quatre secondes en mode EOL ou si votre montre est déjà arrêtée, il est temps de faire remplacer la pile par un détaillant spécialisé. Les étapes de travail suivantes complètent chez WMC le remplacement de la pile: Nos experts ouvrent le boîtier avec des outils spéciaux. Ils nettoient d’abord les contacts électroniques. Ils remplacent la pile, puis referment le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Les spécialistes mesurent ensuite la consommation d’énergie et effectuent un contrôle d’étanchéité selon les normes du fabricant. Ils nettoient ensuite le boîtier et le bracelet, puis vérifient et ajustent le bracelet et le fermoir, si nécessaire."}
+                                                    />
+                                                </p>
+                                                <p>
+                                                    Réglage d'une montre mécanique
+                                                    &nbsp;<TooltipPerso
+                                                        abrevation={<i className="fal fa-info-circle" />}
+                                                        traduction={"Si votre montre avance ou retarde malgré des entretiens réguliers, nos conseillers ou nos horlogers s’en occuperont de manière compétente. Ils détermineront si la précision de marche peut être optimisée par un réglage. Les étapes suivantes complètent chez WMC le réglage d’une montre mécanique: Nos collaborateurs vérifient tout d’abord toutes les fonctions du mouvement. Ils ouvrent le boîtier et règlent la précision avec des outils spéciaux. Ils referment ensuite le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Ils effectuent en outre un contrôle d’étanchéité et nettoient le boîtier et le bracelet. Ils vérifient également le bracelet et le fermoir et les ajustent en conséquence. Enfin, ils vérifient la précision de marche sur un simulateur pendant 48 à 72 heure"}
+                                                    />
+                                                </p>
+                                            </Col>
+                                            <Col>
+                                                <p>
+                                                    Révision
+                                                    &nbsp;<TooltipPerso
+                                                        abrevation={<i className="fal fa-info-circle" />}
+                                                        traduction={"Et faites réviser entièrement votre montre mécanique tous les quatre à six ans. Une révision tous les six à huit ans suffit pour les montres électroniques, sauf si vous remarquez que la pile n’a plus d’autonomie que pour environ six mois. Dans ce cas, il faut faire réviser rapidement votre montre. L’éventuelle remise à neuf minutieuse de l’extérieur de votre montre par des termineurs en habillage horloger diplômés est également incluse dans notre service horloger spécial. Après la révision, votre montre brille ainsi à nouveau d’un nouvel éclat."}
+                                                    />
+                                                </p>
+                                                <p>
+                                                    Autre
+                                                    &nbsp;<TooltipPerso
+                                                        abrevation={<i className="fal fa-info-circle" />}
+                                                        traduction={"Peut importe votre besoins WMC vous propose une solution adaptée et personalisée"}
+                                                    />
+                                                </p>
+                                            </Col>
                                         </Row>
                                     </div>
 

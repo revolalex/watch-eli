@@ -15,7 +15,7 @@ class BuyCard extends Component {
                 <div className="card col-md-12 p-3 my-horizontal-card">
                     <div className="row ">
                         <div className="col-md-4">
-                            <img className="w-100 h-100" alt="montre" src={achatCard} />
+                            <img className="img-fluid" alt="montre" src={achatCard} />
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">

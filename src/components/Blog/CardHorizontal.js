@@ -126,10 +126,6 @@ class CardHorizontal extends Component {
                                             Top 10 des montres d'aviateurs
                                         </a>
                                         <br />
-                                        <a href="https://www.lepoint.fr/montres/zenith/une-passion-qui-engendre-des-modeles-de-legende-29-05-2012-1991722_2875.php">
-                                            Montres de légends
-                                        </a>
-                                        <br />
                                         <a href="https://journal.hautehorlogerie.org/fr/laventure-de-la-montre-pilote-i/">
                                             Montres de pilotes part I
                                         </a>

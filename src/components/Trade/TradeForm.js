@@ -10,8 +10,8 @@ class TradeForm extends Component {
         this.state = {
             photo: undefined,
             brand: "",
-            model:"",
-            comment:""
+            model: "",
+            comment: ""
         }
         this.handlePhoto = this.handlePhoto.bind(this)
         this.handleSendButton = this.handleSendButton.bind(this)
@@ -28,17 +28,17 @@ class TradeForm extends Component {
         e.preventDefault();
         console.log(this.state)
     }
-    handleBrandInput(e){
+    handleBrandInput(e) {
         this.setState({
             brand: e.target.value
         })
     }
-    handleModelInput(e){
+    handleModelInput(e) {
         this.setState({
             model: e.target.value
         })
     }
-    handleCommentInput(e){
+    handleCommentInput(e) {
         this.setState({
             comment: e.target.value
         })
@@ -47,7 +47,7 @@ class TradeForm extends Component {
         const t = this.props.t
         return (
             <div className=" card">
-                <img alt="montre" src={imgTop} class="card-img-bottom"/>
+                <img alt="montre" src={imgTop} class="card-img-bottom" />
                 <div className="contactform">
                     <form>
                         <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
@@ -56,17 +56,17 @@ class TradeForm extends Component {
                             <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                             <span>{t('form-sell-brand')}</span>
                         </div>
-  
+
                         <div className="inputBox">
                             <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
                             <span>{t('form-sell-model')}</span>
                         </div>
                         <div className="inputBox">
-                            <textarea type="textarea" rows="5"  name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
+                            <textarea type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
                             <span>{t('form-sell-comment')}</span>
                         </div>
                         <br />
-                        
+
                         {/* Photo */}
                         <div className="inputBox">
                             <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} onChange={this.handlePhoto} />
@@ -79,8 +79,8 @@ class TradeForm extends Component {
                         </div>
                     </form>
                 </div>
-                <br/>
-                <img alt="montre" src={imgMontre} class="card-img-bottom"/>
+                <br />
+                <img alt="montre" src={imgMontre} class="card-img-bottom" />
             </div>
         );
     }
