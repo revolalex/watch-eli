@@ -19,7 +19,7 @@ class LogoContainer extends Component {
         return <div>
             <Container className="container-spacing logo-container">
                 <div className="card card-logo">
-                <Row className="evently">
+                <Row className="justifyCenter">
                     <Col xs={2} md={1}>
                         <OverlayTrigger
                             key={'top'}

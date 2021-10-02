@@ -8,8 +8,8 @@
   transform: scale(1.2);
 }
 
-.evently {
-  justify-content: space-evenly;
+.justifyCenter {
+  justify-content: center;
 }
 
 @media (max-width: 700px) {

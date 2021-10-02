@@ -48,8 +48,8 @@ class NavbarMobile extends Component {
                     <Navbar className="my-navbar">
                         <Nav activeKey={pathname} className="mr-auto">
                             <Nav.Link href="/">{t('navbar-home')}</Nav.Link>
-                            <Nav.Link href="/buy">{t("sell")}</Nav.Link>
-                            <Nav.Link href="/sell">{t("buy")}</Nav.Link>
+                            <Nav.Link href="/buy">{t("buy")}</Nav.Link>
+                            <Nav.Link href="/sell">{t("sell")}</Nav.Link>
                             <Nav.Link href="/trade">{t("navbar-trade")}</Nav.Link>
                             <Nav.Link href="/service">{t("service")}</Nav.Link>
                             <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
