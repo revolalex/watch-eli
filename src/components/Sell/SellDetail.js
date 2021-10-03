@@ -21,8 +21,14 @@ class SellDetail extends Component {
             <div className="contactInfo">
                 <img
                     src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg"
-                    style={{ paddingBottom: '40px' }}
-                    alt="échange de montres" />
+                    alt="échange de montres"
+                    style={{
+                        paddingBottom: "40px",
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto"
+                    }}
+                />
                 <Card>
                     <div className="box" >
                         <div className="icon">
@@ -98,7 +104,7 @@ class SellDetail extends Component {
                                 Recevez votre paiement
                             </h3>
                             <p>Vous recevrez le paiement par virement bancaire dans les cinq jours ouvrés
-</p>
+                            </p>
                         </div>
                     </div>
                 </Card>
