@@ -72,13 +72,12 @@ class SellDetail extends Component {
                                 />
                             </h3>
 
-                            <p>Nos experts pre-évaluent votre montre et vous font une offre
-                                Votre offre est valable durant 48heures
+                            <p>
+                                Nos experts pre-évaluent votre montre et vous font une offre. Votre offre est valable durant 48heures
                             </p>
                         </div>
                     </div>
-                    {/* ici */}
-                    {/*  */}
+
                     <div className="box">
                         <div className="icon">
                             <img src={boxIcon} alt="icones" width="80px" />
