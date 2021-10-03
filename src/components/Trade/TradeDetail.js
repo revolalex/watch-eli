@@ -21,7 +21,7 @@ class TradeDetail extends Component {
         const t = this.props.t
         return (
             <div className="contactInfo">
-                <img alt="montre" src={zenithMontre} style={{paddingBottom: "40px"}} />
+                <img alt="montre" src={zenithMontre} style={{paddingBottom: "40px", width:"100%", height: "auto", margin:"auto"}} />
                 <Card>
 
                     <div className="box" >

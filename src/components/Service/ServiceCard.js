@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import TooltipPerso from "../Global/TooltipPerso.js"
 import { Col, Row } from 'react-bootstrap';
+import hologer from '../../img/serv.jpeg'
 
 class ServiceCard extends Component {
     render() {
@@ -13,7 +14,7 @@ class ServiceCard extends Component {
                             <div className="row">
                                
                                 <div className="col-md-4">
-                                    <img className="w-100" alt="horloger" src='https://watch-eli.netlify.app/static/media/serv.9f67e423.jpeg' />
+                                    <img className="w-100" alt="horloger" src={hologer} />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-block">
