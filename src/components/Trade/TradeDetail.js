@@ -21,7 +21,13 @@ class TradeDetail extends Component {
         const t = this.props.t
         return (
             <div className="contactInfo">
-                <img alt="montre" src={zenithMontre} style={{paddingBottom: "40px", width:"100%", height: "auto", margin:"auto"}} />
+                <img alt="montre" src={zenithMontre}
+                    style={{
+                        paddingBottom: "40px",
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto"
+                    }} />
                 <Card>
 
                     <div className="box" >
@@ -86,10 +92,15 @@ class TradeDetail extends Component {
                         </div>
                     </div>
                 </Card>
-                <img 
-                style={{paddingTop: "40px"}}
-                src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" 
-                alt="serrage de main, deal" 
+                <img
+                    style={{
+                        paddingBottom: "40px",
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto"
+                    }}
+                    src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg"
+                    alt="serrage de main, deal"
                 />
 
             </div >
