@@ -92,7 +92,7 @@ class SellDetail extends Component {
                                     traduction={"L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."}
                                 />
                             </h3>
-                            <p> L'expédition est falcultatif, si notre devis ne devait pas vous satisfaire WMC s' engage à réexpédier votre montre, ous prenons les frais de logistique à notre charge</p>
+                            <p> L'expédition est falcultatif, si notre devis ne devait pas vous satisfaire WMC s' engage à réexpédier votre montre, nous prenons les frais de logistique à notre charge</p>
                         </div>
                     </div>
                     <div className="box">
