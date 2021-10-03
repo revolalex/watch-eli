@@ -17,6 +17,7 @@ class ServiceTitre extends Component {
                             <h1 className="my-logo-police">
                                 Service
                             </h1>
+                            <br/>
                             <h6 style={{ color: "#616A6B", fontStyle: "italic" }}>Calibre | Caliber | キャリバー | 机芯号 :</h6>
                             <p style={{ color: "#616A6B", fontStyle: "italic" }} className="card-text text-justify">
                                 Un calibre désigne un type de mouvement en horlogerie.

@@ -13,6 +13,7 @@ class TitreCard extends Component {
                 <div className="title-div">
                     <div className="title-setting">
                         <h1 className="my-logo-police">{this.props.titre}</h1>
+                        <br/>
                         <h5>{this.props.sousTitre}</h5>
                         <p>
                             {this.props.cardText}
