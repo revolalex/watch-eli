@@ -150,7 +150,6 @@ class FormSell extends Component {
                         // t('form-sell-intro')
                     }
                 />
-
                 <div className="container-contact">
                     {/* container on left */}
                     <SellDetail />
@@ -222,6 +221,15 @@ class FormSell extends Component {
                     </div>
 
                 </div>
+                {/* <img
+                    style={{
+                        paddingTop:"40px",
+                        width:"90%",
+                        margin:"auto"
+                    }}
+                    src="https://www.mistergoodman.fr/wp-content/uploads/2019/01/Bracelets-montres-de-luxe.jpg"
+                    alt="video"
+                /> */}
             </section>
 
 
