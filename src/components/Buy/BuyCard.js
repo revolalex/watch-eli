@@ -3,6 +3,7 @@ import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
 import Chrono24 from "./Chrono24";
 import '../css/BuyCard.css'
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import achatCard from '../../img/achat/achatCard.jpeg'
 
 
@@ -19,7 +20,7 @@ class BuyCard extends Component {
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">
-                                <br/>
+                                <br />
                                 <Card.Title>
                                     {/* {t('buy-card-title')} */}
                                     <h4>Le modèle de vos rêves en un clic sur WMC</h4>
@@ -42,9 +43,24 @@ class BuyCard extends Component {
                                 <Card.Text>
                                     Toutes nos pièces “certified pre-owned” sont évaluées, authentifiées et certifiées
                                     par des experts horlogers afin de garantir une qualité irréprochable.
-                                    Nos montres 100% certifiées d’origine et garanties 16mois*.
+                                    Nos montres 100% certifiées d’origine et garanties 16mois &nbsp;
+                                    <OverlayTrigger
+                                        overlay={
+                                            <Tooltip id="tooltip-disabled">
+                                                {`Avec WMC, vous êtes sécurisez tous nos produits sont garanties pour une période de 16 mois, pour plus d'informations consulter nos garanties légales`}
+                                            </Tooltip>
+                                        }>
+                                        <span className="d-inline-block"
+                                            style={{
+                                                color: "var(--vert-color)",
+                                                fontWeight: "900"
+                                            }}
+                                        >
+                                            <i className="fal fa-info-circle" />
+                                        </span>
+                                    </OverlayTrigger>
                                 </Card.Text>
-                                <Card.Text style={{textAlign: "center", textDecoration: "underline", fontSize: "1.2em"}}>Notre sélection de montres:</Card.Text>
+                                <Card.Text style={{ textAlign: "center", textDecoration: "underline", fontSize: "1.2em" }}>Visitez notre boutique en ligne</Card.Text>
                                 <Chrono24 />
                                 {/* <a href="/" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>read more...</a> */}
                             </div>
