@@ -19,6 +19,13 @@
     height: 30px;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+.my-logo-police{
+  font-family: 'GFS Didot', serif !important;
+  font-weight: bold;
+}
+
 .navbar-nav{
 font-size: 1em;
 }

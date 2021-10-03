@@ -42,7 +42,7 @@ class Navbar5 extends Component {
                             <span className="majuscule-title">C</span>
                             lub */}
                         </span>
-                        <span>Watch Market Club</span>
+                        <span className='my-logo-police'>Watch Market Club</span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />
                             (+33)0600000000

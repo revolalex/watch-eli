@@ -14,14 +14,16 @@ class ServiceTitre extends Component {
                 <Card >
                     <div className="title-div">
                         <div>
-                            <h1>Service</h1>
+                            <h1 className="my-logo-police">
+                                Service
+                            </h1>
                             <h6 style={{ color: "#616A6B", fontStyle: "italic" }}>Calibre | Caliber | キャリバー | 机芯号 :</h6>
                             <p style={{ color: "#616A6B", fontStyle: "italic" }} className="card-text text-justify">
                                 Un calibre désigne un type de mouvement en horlogerie.
-                                 À l'origine, il était synonyme d'une dimension, souvent exprimée en 
-                                 lignes, pour un mouvement d'horlogerie. Il existe des calibres pour 
-                                 homme ou dame, mécaniques, automatiques, quartz ou hybrides. 
-                                 Le calibre de la marque du fabricant en désigne la provenance.
+                                À l'origine, il était synonyme d'une dimension, souvent exprimée en
+                                lignes, pour un mouvement d'horlogerie. Il existe des calibres pour
+                                homme ou dame, mécaniques, automatiques, quartz ou hybrides.
+                                Le calibre de la marque du fabricant en désigne la provenance.
 
                             </p>
                             <br />
