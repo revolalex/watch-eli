@@ -118,7 +118,7 @@ class TradeFinal extends Component {
                     <TradeDetail />
                     {/* container on right */}
                     <div className="contactform card" style={{padding:"0", margin:"20px"}}>
-                    <img alt="montre" src={vesteVerte} className="card-img-top" />
+                    <img alt="montre" src={vesteVerte} className="card-img-top" style={{padding: "20px"}}/>
                         <form style={{padding:"20px"}}>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous échangeons uniquement des montres 100% certifiées authentiques </p>
@@ -134,7 +134,7 @@ class TradeFinal extends Component {
                          
                             {/* Wanted Price */}
                             <div className="inputBox">
-                                <input type="number" name="wantedPrice" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
+                                <input type="number" name="wantedPrice" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
                                 <span>Prix désiré</span>
                             </div>
                             {/* Range Condition */}

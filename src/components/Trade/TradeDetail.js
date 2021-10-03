@@ -10,7 +10,7 @@ import money from '../../img/icone/money.jpeg'
 import watchIcon from '../../img/icone/watchIcon.jpeg'
 import searchIcon from '../../img/icone/searchIcon.jpeg'
 import colisIcon from '../../img/icone/colisIcon.jpeg'
-import zenithMontre from '../../img/echange/1.jpeg'
+import zenithMontre from '../../img/echange/11.jpeg'
 
 
 
@@ -21,8 +21,9 @@ class TradeDetail extends Component {
         const t = this.props.t
         return (
             <div className="contactInfo">
+                <img alt="montre" src={zenithMontre} />
                 <Card>
-                    <img alt="montre" src={zenithMontre} className="card-img-top" />
+
                     <div className="box" >
                         <div className="icon">
                             <img src={formulaireIcon} alt="icones" width="80px" />
@@ -37,7 +38,7 @@ class TradeDetail extends Component {
                                 />
                             </h3>
 
-                         
+
                         </div>
                     </div>
                     <div className="box" >
@@ -47,7 +48,7 @@ class TradeDetail extends Component {
                         </div>
                         <div className="text">
                             <h3>
-                            {t("form-sell-step2.1")}
+                                {t("form-sell-step2.1")}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle" />}
@@ -86,8 +87,13 @@ class TradeDetail extends Component {
                             <p>de votre montre et obtenez votre nouvelle montre </p>
                         </div>
                     </div>
-                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" className="card-img-bottom" alt="serrage de main, deal" />
                 </Card>
+                <img 
+                style={{paddingTop: "40px"}}
+                src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" 
+                alt="serrage de main, deal" 
+                />
+
             </div >
 
         );
