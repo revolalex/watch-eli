@@ -23,7 +23,7 @@ class Footer extends Component {
                                     <img src={logo} height="80px" alt="watch market club logo"/>
                                     <div className="cta-text">
                                         
-                                    <h4 style={{fontFamily: "font-family: 'Koh Santepheap', cursive;"}}>Watch Market Club</h4>
+                                    <h4>Watch Market Club</h4>
 
                                     </div>
                                 </div>

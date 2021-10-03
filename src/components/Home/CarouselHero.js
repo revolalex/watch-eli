@@ -29,7 +29,7 @@ class CarouselHero extends Component {
                             alt="First slide"
                         /></a>
                         <Carousel.Caption>
-                            <h4 className="goldText">{t('caroussel-slide1-Title')}</h4>
+                            <h4 className="goldText">WMC:  Le spécialiste CPO</h4>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* Achat */}
@@ -41,7 +41,7 @@ class CarouselHero extends Component {
                             alt="First slide"
                         /></a>
                         <Carousel.Caption>
-                            <h4 className="goldText">{t('caroussel-slide2-Title')}</h4>
+                            <h4 className="goldText">Le modèle de vos rêves en un clic sur WMC</h4>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* vente */}
@@ -53,7 +53,7 @@ class CarouselHero extends Component {
                             alt="Second slide"
                         /></a>
                         <Carousel.Caption>
-                            <h4 className="goldText">{t('caroussel-slide3-Title')}</h4>
+                            <h4 className="goldText">Obtenez le meilleur prix pour votre montre sur WMC</h4>
                         </Carousel.Caption>
                     </Carousel.Item>
                     {/* Echange */}
@@ -78,7 +78,7 @@ class CarouselHero extends Component {
                             alt="Fourth slide"
                         /></a>
                         <Carousel.Caption>
-                            <h4 className="goldText">{t('caroussel-slide5-Title')}</h4>
+                            <h4 className="goldText">WMC: l’expertise horlogère à votre service</h4>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

@@ -20,9 +20,7 @@ class CardLine extends Component {
                 <section className="container mt-5 mb-5">
                     <div className="row row-cols-1 row-cols-md-2 g-4">
                         <div className="col card-shadow">
-                            <div className="card h-100"
-                            // data-aos="zoom-in" 
-                            >
+                            <div className="card h-100">
                                 <img src={boxAchat} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy-card")}</h5>

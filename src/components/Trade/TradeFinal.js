@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import '../css/FormSell.css'
 import { withTranslation } from 'react-i18next';
 import { OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
-import SellDetail from './SellDetail';
-import BrandLogo from './BrandLogo';
-import TitreCard from '../Global/TitreCard';
+import TradeDetail from './TradeDetail';
+import vesteVerte from '../../img/echange/3.jpeg'
 
 
 
 
-class FormSell extends Component {
+
+class TradeFinal extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,7 +23,6 @@ class FormSell extends Component {
         }
         this.handleSelectSet = this.handleSelectSet.bind(this)
         this.handleCommentInput = this.handleCommentInput.bind(this)
-        this.onBrandLogoClick = this.onBrandLogoClick.bind(this);
         this.handleCondition = this.handleCondition.bind(this)
         this.handleBrandInput = this.handleBrandInput.bind(this)
         this.handleModelInput = this.handleModelInput.bind(this)
@@ -31,28 +30,20 @@ class FormSell extends Component {
         this.handleSendButton = this.handleSendButton.bind(this)
         this.conditionText = this.conditionText.bind(this)
         this.handleWantedPriceInput = this.handleWantedPriceInput.bind(this)
-
-    }
-    handleWantedPriceInput(e){
-        this.setState({
-            wantedPrice: e.target.value
-        })
-
     }
     onBrandLogoClick2(e) {
         this.setState({
             brand: e.target.attributes[1].value
         })
     }
-    onBrandLogoClick(e) {
-        console.log(e.target.id)
-        this.setState({
-            brand: e.target.id
-        })
-    }
     handleSelectSet(event) {
         this.setState({
             set: event.target.value
+        })
+    }
+    handleWantedPriceInput(e){
+        this.setState({
+            wantedPrice: e.target.value
         })
     }
 
@@ -121,36 +112,31 @@ class FormSell extends Component {
         const t = this.props.t
         return (
             <section className="contact">
-                <TitreCard
-                    titre={t('form-sell-titre')}
-                    sousTitre={t('form-sell-sous-titre')}
-                    cardText={t('form-sell-intro')}
-                />
 
                 <div className="container-contact">
                     {/* container on left */}
-                    <SellDetail />
+                    <TradeDetail />
                     {/* container on right */}
-                    <div className="contactform card" style={{margin: "12px"}}>
-                        <form>
+                    <div className="contactform card" style={{padding:"0", margin:"20px"}}>
+                    <img alt="montre" src={vesteVerte} className="card-img-top" />
+                        <form style={{padding:"20px"}}>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
-                            <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
-                         
+                            <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous échangeons uniquement des montres 100% certifiées authentiques </p>
+
                             <div className="inputBox">
-                                <BrandLogo onBrandLogoClick={this.onBrandLogoClick} />
-                                <br/>
-                                <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
-                                <span>{t('form-sell-brand')}</span>
+                                <input type="text" name="marque" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
+                                <span>Marque</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                                <input type="text" name="model" required="required" value={this.state.modele} onChange={this.handleModelInput} />
                                 <span>{t('form-sell-model')}</span>
                             </div>
+                         
+                            {/* Wanted Price */}
                             <div className="inputBox">
-                                <input type="number" name="model" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
+                                <input type="number" name="wantedPrice" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
                                 <span>Prix désiré</span>
                             </div>
-                            <br />
                             {/* Range Condition */}
                             <div className="inputBox">
                                 <OverlayTrigger
@@ -172,7 +158,7 @@ class FormSell extends Component {
                             <br />
                             {/* Select box and paper */}
                             <div>
-                                <span>{t('form-sell-box-paper')}</span><br />
+                                <span>{t('form-sell-box-paper')}</span><br /><br />
                                 <Form.Select value={this.state.set} onChange={this.handleSelectSet}>
                                     <option>{t('form-sell-box')}</option>
                                     <option>{t('form-sell-paper')}</option>
@@ -199,4 +185,4 @@ class FormSell extends Component {
     }
 
 }
-export default withTranslation()(FormSell)
+export default withTranslation()(TradeFinal)

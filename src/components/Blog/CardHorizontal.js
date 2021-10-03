@@ -1,58 +1,13 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import { arrayOfImages } from '../../utils/WatchImgUrl';
 import '../css/CardHorizontal.css'
 
 class CardHorizontal extends Component {
     render() {
-        var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
-        const imgUrl = randomItem
         return (
 
             <div className="container">
                 <div classNameName="row">
-                    <div className="card col-md-12 p-3 my-horizontal-card">
-                        <div className="row ">
-                            <div className="col-md-4 my-center-vertical">
-                                <iframe className="video-toutube"
-                                    src="https://www.youtube.com/embed/zIBiG_B35-o"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-block">
-                                    <h4 className="card-title">Comment débuter une collection de montres</h4>
-                                    <br/>
-                                    <p className="card-text text-justify">
-                                        De simple amateur d’horlogerie à véritable collectionneur de montres,
-                                        il y a un cap qu’il n’est pas si simple de franchir. Par quoi commencer ?
-                                        Quelles marques choisir ? Quels modèles faut-il sélectionner ?
-                                        Est-ce forcément très coûteux ? Faut-il privilégier
-                                        la passion ou bien la notion de placement financier ?
-                                        Consulter un dictionnaire a toujours du bon.
-                                        Ainsi, chercher la définition du mot “collection” dans
-                                        le Larousse conduit à ceci : « Réunion d’objets rassemblés
-                                        et classés pour leur valeur documentaire, esthétique, pour leur prix,
-                                        leur rareté, etc. » Voici une phrase qui correspond tout à fait aux
-                                        multiples aspects que peut recouvrir une collection horlogère.
-                                        Mais d’abord, quand devient-on collectionneur ?
-                                        Posséder une, deux ou trois belles montres fait de vous un “amateur”.
-                                        Ajouter quelques pièces, lire la presse spécialisée, consulter
-                                        régulièrement WatchMarketClub vous permettra d’accéder au rang d’amateur éclairé.
-                                        Vous possédez plus d’une dizaine de montres ? Vous projetez d’en achetez d’autres,
-                                        quitte à en revendre certaines ? Alors vous êtes collectionneur.
-                                        Mais quelle que soit la catégorie dans laquelle vous vous rangez,
-                                        un seul mot compte vraiment : passion. Etre “passionné de montres”
-                                        est finalement la seule définition à retenir.
-                                    </p>
-                                    {/* <a href="/" className="btn btn-success">read more...</a> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="card col-md-12 p-3 my-horizontal-card">
                         <div className="row ">
                             <div className="col-md-8">
@@ -72,15 +27,12 @@ class CardHorizontal extends Component {
                                         <a href="https://www.hautehorlogerie.org/fr/watches-and-culture/encyclopedie/lexique-de-lhorlogerie/">
                                             Fédération de Haute Horlogerie
                                         </a>
-                                        <br/>
                                         <a href="https://www.fhs.swiss/berner/?l=fr">
                                             Dictiionnaire de l'horlogerie
                                         </a>
-                                        <br/>
                                         <a href="https://www.lecalibre.com/lexique-horloger/">
                                             Le Calibre
                                         </a>
-                                        <br/>
                                     </div>
 
                                     {/* <a href="/" className="btn btn-success">read more...</a> */}
@@ -121,26 +73,13 @@ class CardHorizontal extends Component {
                                         <a href="https://www.chrono24.fr/magazine/la-grande-histoire-des-montres-daviateur-p_18424/">
                                             Article Chrono24
                                         </a>
-                                        <br />
-                                        <a href="https://magmontres.fr/top-montres-de-pilotes-davion/">
-                                            Top 10 des montres d'aviateurs
-                                        </a>
-                                        <br />
-                                        <a href="https://journal.hautehorlogerie.org/fr/laventure-de-la-montre-pilote-i/">
-                                            Montres de pilotes part I
-                                        </a>
-                                        <br />
-                                        <a href="https://journal.hautehorlogerie.org/fr/laventure-de-la-montre-pilote-ii/">
-                                            Montres de pilotes part II
-                                        </a>
                                     </div>
-                                    {/* <a href="/" className="btn btn-success">read more...</a> */}
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card col-md-12 p-3 my-horizontal-card">
+                    {/* <div className="card col-md-12 p-3 my-horizontal-card">
                         <div className="row ">
                             <div className="col-md-8">
                                 <div className="card-block">
@@ -185,7 +124,7 @@ class CardHorizontal extends Component {
 
                                     </div>
 
-                                    {/* <a href="/" className="btn btn-success">read more...</a> */}
+                                 
                                 </div>
                             </div>
                             <div className="col-md-4">
@@ -193,7 +132,9 @@ class CardHorizontal extends Component {
                                     alt="montre" src={imgUrl} />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+
                 </div>
             </div>
         );

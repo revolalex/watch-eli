@@ -17,6 +17,9 @@ class TitreCard extends Component {
                         <p>
                             {this.props.cardText}
                         </p>
+                        <p>
+                            {this.props.cardText2}
+                        </p>
                     </div>
 
                 </div>

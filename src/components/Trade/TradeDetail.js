@@ -1,8 +1,7 @@
 import { Component } from "react";
 import { withTranslation } from 'react-i18next';
 import TooltipPerso from '../Global/TooltipPerso'
-
-import '../css/FormSell.css'
+import { Card } from "react-bootstrap";
 
 
 // ICONES
@@ -11,17 +10,19 @@ import money from '../../img/icone/money.jpeg'
 import watchIcon from '../../img/icone/watchIcon.jpeg'
 import searchIcon from '../../img/icone/searchIcon.jpeg'
 import colisIcon from '../../img/icone/colisIcon.jpeg'
+import zenithMontre from '../../img/echange/1.jpeg'
 
 
 
 
-class TradeStep2 extends Component {
+class TradeDetail extends Component {
     state = {}
     render() {
         const t = this.props.t
         return (
-            <div className="container-contact">
-            <div className="contactInfo" style={{width:"100%"}}>
+            <div className="contactInfo">
+                <Card>
+                    <img alt="montre" src={zenithMontre} className="card-img-top" />
                     <div className="box" >
                         <div className="icon">
                             <img src={formulaireIcon} alt="icones" width="80px" />
@@ -36,7 +37,7 @@ class TradeStep2 extends Component {
                                 />
                             </h3>
 
-                            <p>{t("form-sell-step1.1")}</p>
+                         
                         </div>
                     </div>
                     <div className="box" >
@@ -45,7 +46,8 @@ class TradeStep2 extends Component {
                             <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                         </div>
                         <div className="text">
-                            <h3>Recevez notre offre personnalisée
+                            <h3>
+                            {t("form-sell-step2.1")}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle" />}
@@ -53,10 +55,10 @@ class TradeStep2 extends Component {
                                 />
                             </h3>
 
-                            <p>{t("form-sell-step2.1")}</p>
                         </div>
                     </div>
-
+                    {/* ici */}
+                    {/*  */}
                     <div className="box">
                         <div className="icon">
                             <img src={searchIcon} alt="icones" width="60px" />
@@ -69,10 +71,10 @@ class TradeStep2 extends Component {
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle" />}
-                                    traduction={"L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."}
+                                    traduction={"Etape facultatif, à utiliser dans le cas d'un échange"}
                                 />
                             </h3>
-                            <p>Facultatif, Indiquez nous le ou les modèles qui vous intéresse dans le commentaire, nous vous proposerons alors une sélections en adéquation avec votre gout</p>
+                            <p>Facultatif</p>
                         </div>
                     </div>
                     <div className="box">
@@ -80,14 +82,16 @@ class TradeStep2 extends Component {
                             <img src={colisIcon} alt="icones" width="80px" />
                         </div>
                         <div className="text">
-                            <h3>Collecte gratuite à domicile</h3>
-                            <p> Nous programmons la collecte de votre montre - Expédiez votre montre - Livraison de votre nouvelle montre</p>
+                            <h3>Programmez la collecte</h3>
+                            <p>de votre montre et obtenez votre nouvelle montre </p>
                         </div>
                     </div>
+                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" className="card-img-bottom" alt="serrage de main, deal" />
+                </Card>
             </div >
-            </div>
+
         );
     }
 }
 
-export default withTranslation()(TradeStep2);
+export default withTranslation()(TradeDetail);

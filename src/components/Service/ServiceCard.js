@@ -17,17 +17,12 @@ class ServiceCard extends Component {
                                 <div className="card-block">
                                     <h4 className="card-title">Service</h4>
                                     <div className="toto">
-                                        <p className="card-text text-justify">
-                                            La fascination d’une montre mécanique réside souvent dans sa vie intérieure complexe. Pour s’assurer que votre montre fournira les services attendus pendant de nombreuses années et qu’elle fonctionnera avec précision,des séances de soin et de maintenance minutieuses sont indispensables. Profitez pour ce faire de notre service horloger: faites vérifier votre montre tous les deux ans par un spécialiste certifié et faites-la réviser entièrement tous lescinq ans.
+                                        <h6 style={{color: "#616A6B", fontStyle: "italic"}}>Calibre | Caliber | キャリバー | 机芯号 :</h6>
+                                        <p style={{color: "#616A6B", fontStyle: "italic"}} className="card-text text-justify">
+                                        Un calibre désigne un type de mouvement en horlogerie. À l'origine, il était synonyme d'une dimension, souvent exprimée en lignes, pour un mouvement d'horlogerie. Il existe des calibres pour homme ou dame, mécaniques, automatiques, quartz ou hybrides. 
                                         </p>
                                         <br />
                                         <p className="card-text text-justify">
-                                            {/* Nous travaillons main dans la main avec les plus grandes manufactures
-                      horlogères afin de vous proposer un service de réparation et de
-                      révision et entretien à la hauteur de vos attentes.
-                      Montres mécaniques à remontage manuel, montres automatiques,
-                      modèles à complications ou simples échanges de piles,
-                      nos techniciens horlogers assurent la maintenance de tous types de montres. */}
                                             Montres mécaniques à remontage manuel ou automatique, modèles à complications
                                             ou simple échange de pile, nos maîtres horlogers assurent la maintenance de tous
                                             types de montres dans le plus grand détail afin de vous proposer un service de

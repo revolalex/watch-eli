@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import TitreCard from '../components/Global/TitreCard';
 import JumbotronImage from '../components/Sell/JumbotronImage';
-// import TradeCard from '../components/Trade/TradeCard';
-// import TradeStep2 from '../components/Trade/TradeStep2';
+
 import Parralax from '../components/Home/Parralax';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import BrandContainer from '../components/Global/BrandContainer';
 import echangeImg from '../img/echange/1.jpeg'
 import LogoContainer from '../components/Global/LogoContainer';
-import TradeGlobal from '../components/Trade/TradeGlobal';
+import TradeFinal from '../components/Trade/TradeFinal';
 
 
 class Trade extends Component {
@@ -22,18 +21,20 @@ class Trade extends Component {
             <div>
                 <JumbotronImage imgSrc={echangeImg} />
                 <TitreCard
-                    titre={"Echangez votre montre "}
-                    sousTitre={"C'est trés simple et vous serez sastifait"}
-                    cardText={`WMC vous propose la solution echange. Comment ca marche:
-                    WCM vous assiste en proposant une reprise de votre montre en
-                    l’état au profit du nouveau modèle de votre choix.
-                    WMC évalue votre montre et vous offre un devis gratuit afin
-                    de vous faire profiter d’une offre financièrement attractive
-                    et d’un gain de temps en réalisant deux opérations en une.`}
+                    titre={`WMC vous propose la solution echange.`}
+                    sousTitre={`Comment ca marche: `}
+                    cardText={`WCM vous assiste en proposant une reprise de votre 
+                    montre en l’état au profit du nouveau modèle de votre choix. 
+                    WMC évalue votre montre et vous offre un devis gratuit afin 
+                    de vous faire profiter d’une offre financièrement attractive 
+                    et d’un gain de temps en réalisant deux opérations en une. 
+                    
+                    `}
+                    cardText2={`Remplissez le formulaire ci-dessous, un membre de notre équipe 
+                    vous contactera dans un délai de 48 heures afin d’établir 
+                    un devis gratuit pour procéder à l’échange de votre montre.`}
                 />
-                {/* <TradeCard />
-                <TradeStep2 /> */}
-                <TradeGlobal/>
+                <TradeFinal/>
                 <Parralax imgUrl={imgUrl} />
                 <BrandContainer />
                 <LogoContainer/>

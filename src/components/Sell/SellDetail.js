@@ -20,7 +20,7 @@ class SellDetail extends Component {
         return (
             <div className="contactInfo">
                 <Card>
-                    <img src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" class="card-img-top" alt="échange de montres"/>
+                    <img src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg" className="card-img-top" alt="échange de montres" />
                     <div className="box" >
                         <div className="icon">
                             <img src={formulaireIcon} alt="icones" width="80px" />
@@ -69,11 +69,6 @@ class SellDetail extends Component {
                                     abrevation={<i className="fal fa-info-circle" />}
                                     traduction={"L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."}
                                 />
-                                {/* <PopOverPerso
-                                    button={<i className="fal fa-info-circle" />}
-                                    titre="Expédition Information"
-                                    text="L'expédition de votre montre ne constitue en rien une obligation de votre part, et si notre devis ne devait pas vous satisfaire Watches Paris s' engage à (vous) réexpédier votre montre à nos frais."
-                                /> */}
                             </h3>
                             <p>{t("form-sell-step3.1")}</p>
                         </div>
@@ -87,7 +82,7 @@ class SellDetail extends Component {
                             <p>{t("form-sell-money")}</p>
                         </div>
                     </div>
-                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" class="card-img-bottom" alt="serrage de main, deal"/>
+                    <img src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg" className="card-img-bottom" alt="serrage de main, deal" />
                 </Card>
             </div >
 
