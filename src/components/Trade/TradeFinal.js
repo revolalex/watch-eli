@@ -19,7 +19,9 @@ class TradeFinal extends Component {
             photo: undefined,
             condition: 3,
             comment: '',
-            wantedPrice: ''
+            wantedPrice: '',
+            wantedModel: '',
+            authorization: ''
         }
         this.handleSelectSet = this.handleSelectSet.bind(this)
         this.handleCommentInput = this.handleCommentInput.bind(this)
@@ -30,11 +32,19 @@ class TradeFinal extends Component {
         this.handleSendButton = this.handleSendButton.bind(this)
         this.conditionText = this.conditionText.bind(this)
         this.handleWantedPriceInput = this.handleWantedPriceInput.bind(this)
+        this.handleWantedModelInput = this.handleWantedModelInput.bind(this)
+        this.handleCHeckBox = this.handleCHeckBox.bind(this)
     }
     onBrandLogoClick2(e) {
         this.setState({
             brand: e.target.attributes[1].value
         })
+    }
+    handleCHeckBox(e) {
+        this.setState({
+            authorization: !this.state.authorization
+        })
+
     }
     handleSelectSet(event) {
         this.setState({
@@ -45,6 +55,12 @@ class TradeFinal extends Component {
         this.setState({
             wantedPrice: e.target.value
         })
+    }
+    handleWantedModelInput(e){
+        this.setState({
+            wantedModel: e.target.value
+        })
+
     }
 
     handleBrandInput(event) {
@@ -134,9 +150,16 @@ class TradeFinal extends Component {
                          
                             {/* Wanted Price */}
                             <div className="inputBox">
-                                <input type="number" name="wantedPrice" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
+                                <input type="number" name="wantedPrice" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
                                 <span>Prix désiré</span>
                             </div>
+
+                             {/* Wanted Model */}
+                             <div className="inputBox">
+                                <input type="text" name="wantedModel" required="required" value={this.state.wantedModel} onChange={this.handleWantedModelInput} />
+                                <span>Modele désiré</span>
+                            </div>
+
                             {/* Range Condition */}
                             <div className="inputBox">
                                 <OverlayTrigger
@@ -170,6 +193,11 @@ class TradeFinal extends Component {
                                 <textarea style={{paddingTop: "30px"}} type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
                                 <span>{t('form-sell-comment')}</span>
                             </div>
+                            <br />
+                            <div>
+                                <Form.Check type="checkbox" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
+                            </div>
+                            <br />
                             {/* Send Button */}
                             <div className="inputBox">
                                 <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />

@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import TitreCard from '../Global/TitreCard';
+import { Card } from "react-bootstrap";
+import '../css/TitreCard.css'
 
 
 class ServiceTitre extends Component {
@@ -10,14 +11,24 @@ class ServiceTitre extends Component {
         // const t = this.props.t
         return (
             <div>
-                    <TitreCard
-                        titre={"Service, entretien"}
-                        sousTitre={" WMC l’expertise horlogère à votre service"}
-                        cardText={
-                            "Watches Paris vous propose une sélection de montres neuves ou d’occasion pour le plus grand bonheur des passionnés d’horlogerie mais aussi des collectionneurs. Toutes nos pièces “certified pre-owned” sont authentifiées, certifiées et restaurées par des experts horlogers afin de garantir une qualité irréprochable. Nos montres 100% certifiées d’origine."
-                        }
+                <Card >
+                    <div className="title-div">
+                        <div>
+                            <h1>Service</h1>
+                            <h6 style={{ color: "#616A6B", fontStyle: "italic" }}>Calibre | Caliber | キャリバー | 机芯号 :</h6>
+                            <p style={{ color: "#616A6B", fontStyle: "italic" }} className="card-text text-justify">
+                                Un calibre désigne un type de mouvement en horlogerie.
+                                 À l'origine, il était synonyme d'une dimension, souvent exprimée en 
+                                 lignes, pour un mouvement d'horlogerie. Il existe des calibres pour 
+                                 homme ou dame, mécaniques, automatiques, quartz ou hybrides. 
+                                 Le calibre de la marque du fabricant en désigne la provenance.
 
-                    />
+                            </p>
+                            <br />
+                        </div>
+
+                    </div>
+                </Card>
             </div>
         );
     }

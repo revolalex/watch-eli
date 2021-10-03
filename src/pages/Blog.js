@@ -17,6 +17,7 @@ class Blog extends Component {
         <JumbotronImage imgSrc="https://www.time4diamonds.com/wp/wp-content/uploads/2020/10/5.jpg" />
         <BlogTitre/>
         <CardHorizontal/>
+        <br/>
         <Parralax imgUrl={imgUrl}/>
         <BrandContainer />
         <LogoContainer/>

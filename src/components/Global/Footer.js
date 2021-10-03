@@ -117,7 +117,6 @@ class Footer extends Component {
                                         <li><Link to={'/sell'} className="nav-link active">{t("sell")}</Link></li>
                                         <li><Link to={'/service'} className="nav-link active">{t("service")}</Link></li>
                                         <li><Link to={'/blog'} className="nav-link active">{t("navbar-blog")}</Link></li>
-                                        <li><Link to={'/contact'} className="nav-link active">{t("navbar-contact")}</Link></li>
                                     </ul>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ class TitreCard extends Component {
         return (
             <Card >
                 <div className="title-div">
-                    <div>
+                    <div className="title-setting">
                         <h1>{this.props.titre}</h1>
                         <h5>{this.props.sousTitre}</h5>
                         <p>

@@ -5,10 +5,8 @@ import JumbotronImage from '../components/Sell/JumbotronImage';
 import { arrayOfImages } from '../utils/WatchImgUrl';
 import Parralax from '../components/Home/Parralax';
 import BrandContainer from '../components/Global/BrandContainer';
-// import service from '../img/service2.jpeg'
-import ServiceCard from '../components/Service/ServiceCard';
-import ServiceTitre from '../components/Service/ServiceTitre';
 import LogoContainer from '../components/Global/LogoContainer';
+import ServiceGlobal from '../components/Service/ServiceGloball';
 
 
 class Service extends Component {
@@ -19,8 +17,8 @@ class Service extends Component {
     return (
       <div>
         <JumbotronImage imgSrc="https://www.audemarspiguet.com/content/dam/ap/com/services/caring/setting-time-date.jpg.transform.apfw.jpg"/>
-        <ServiceTitre/>
-        <ServiceCard />
+        <ServiceGlobal/>
+        <br/>
         <Parralax imgUrl={imgUrl} />
         <BrandContainer />
         <LogoContainer/>

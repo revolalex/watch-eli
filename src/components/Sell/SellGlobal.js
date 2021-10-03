@@ -19,7 +19,8 @@ class FormSell extends Component {
             photo: undefined,
             condition: 3,
             comment: '',
-            wantedPrice: ''
+            wantedPrice: '',
+            authorization: false
         }
         this.handleSelectSet = this.handleSelectSet.bind(this)
         this.handleCommentInput = this.handleCommentInput.bind(this)
@@ -31,9 +32,16 @@ class FormSell extends Component {
         this.handleSendButton = this.handleSendButton.bind(this)
         this.conditionText = this.conditionText.bind(this)
         this.handleWantedPriceInput = this.handleWantedPriceInput.bind(this)
+        this.handleCHeckBox = this.handleCHeckBox.bind(this)
 
     }
-    handleWantedPriceInput(e){
+    handleCHeckBox(e) {
+        this.setState({
+            authorization: !this.state.authorization
+        })
+
+    }
+    handleWantedPriceInput(e) {
         this.setState({
             wantedPrice: e.target.value
         })
@@ -122,23 +130,39 @@ class FormSell extends Component {
         return (
             <section className="contact">
                 <TitreCard
-                    titre={t('form-sell-titre')}
-                    sousTitre={t('form-sell-sous-titre')}
-                    cardText={t('form-sell-intro')}
+                    titre={
+                        `Actualisez votre collection`
+                        // t('form-sell-titre')
+                    }
+                    sousTitre={
+                        `Vendez votre montre en trois clics`
+                        // t('form-sell-sous-titre')
+                    }
+                    cardText={
+                        `
+                        Nos spécialistes vous offrent une expertise gratuite, ainsi qu’ un conseil 
+                        personnalisé afin de maximiser la valeur de votre montre. Notre objectif 
+                        est de vous accompagner de manière transparente à travers un processus 
+                        simple, rapide et sécurisé en trois étapes. Remplissez le formulaire 
+                        ci-dessous, un membre de notre équipe vous contactera dans un délai de 
+                        48 heures afin d’établir un devis gratuit pour votre montre. 
+                        `
+                        // t('form-sell-intro')
+                    }
                 />
 
                 <div className="container-contact">
                     {/* container on left */}
                     <SellDetail />
                     {/* container on right */}
-                    <div className="contactform card" style={{margin: "12px"}}>
+                    <div className="contactform card" style={{ margin: "12px" }}>
                         <form>
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
-                            <p style={{fontStyle: "italic", fontSize: "0.9em"}}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
-                         
+                            <p style={{ fontStyle: "italic", fontSize: "0.9em" }}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
+
                             <div className="inputBox">
                                 <BrandLogo onBrandLogoClick={this.onBrandLogoClick} />
-                                <br/>
+                                <br />
                                 <input type="text" name="brand" required="required" value={this.state.brand} onChange={this.handleBrandInput} />
                                 <span>{t('form-sell-brand')}</span>
                             </div>
@@ -181,9 +205,15 @@ class FormSell extends Component {
                                 </Form.Select>
                             </div>
                             <div className="inputBox">
-                                <textarea style={{paddingTop: "30px"}} type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
+                                <textarea style={{ paddingTop: "30px" }} type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
                                 <span>{t('form-sell-comment')}</span>
                             </div>
+                            <br />
+                            <div>
+                                <Form.Check type="checkbox" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
+                            </div>
+                            <br />
+
                             {/* Send Button */}
                             <div className="inputBox">
                                 <input type="submit" name="" value={t('send')} onClick={this.handleSendButton} />

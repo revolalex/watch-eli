@@ -26,6 +26,7 @@ class Buy extends Component {
         <BuyTitre />
         <BuyCard />
         <BuyCard2 />
+        <br/>
         <Parralax imgUrl={imgUrl} />
         <BrandContainer/>
         <LogoContainer/>
