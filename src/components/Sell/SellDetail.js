@@ -110,8 +110,14 @@ class SellDetail extends Component {
                 </Card>
                 <img
                     src="https://www.europeenne-de-conseil.com/wp-content/uploads/2019/02/eviter-un-proces-en-signant-une-transaction-k4_13522933.jpg"
-                    style={{ paddingTop: '40px' }}
-                    alt="serrage de main, deal" />
+                    alt="serrage de main, deal"
+                    style={{
+                        paddingBottom: "40px",
+                        width: "100%",
+                        height: "auto",
+                        margin: "auto"
+                    }}
+                />
             </div >
 
         );

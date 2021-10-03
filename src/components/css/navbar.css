@@ -36,7 +36,7 @@ font-size: 1em;
 }
 
 .select-lang {
-  background-color: #F6F3ED
+  background-color: #F6F3ED !important
 }
 
 .main-logo {
