@@ -4,6 +4,9 @@ import { withTranslation } from 'react-i18next';
 import { OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
 import TradeDetail from './TradeDetail';
 import vesteVerte from '../../img/echange/3.jpeg'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -122,9 +125,22 @@ class TradeFinal extends Component {
     handleSendButton(e) {
         e.preventDefault();
         console.log(this.state)
+        this.notify()
     }
 
+
+    notify = () => toast.success(`Votre demande d'échange à été envoyé`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
+
     render() {
+
         const t = this.props.t
         return (
             <section className="contact">

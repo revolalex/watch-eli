@@ -13,10 +13,14 @@ import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+import { ToastContainer } from 'react-toastify';
+
+
 class App extends Component {
   render() {
     return (
       <Router>
+        <ToastContainer />
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />

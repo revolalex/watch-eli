@@ -6,6 +6,10 @@ import SellDetail from './SellDetail';
 import BrandLogo from './BrandLogo';
 import TitreCard from '../Global/TitreCard';
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 
@@ -123,10 +127,33 @@ class FormSell extends Component {
     handleSendButton(e) {
         e.preventDefault();
         console.log(this.state)
+        this.notify()
     }
+
+    notify = () => toast.success("Message envoyé, nous vous répondrons sous 48H", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
+
+
+
 
     render() {
         const t = this.props.t
+        const notify = () => toast.success('Formulaire de vente envoyé', {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+        });
         return (
             <section className="contact">
                 <TitreCard

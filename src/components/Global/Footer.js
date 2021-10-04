@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Footer.css'
 import { withTranslation } from 'react-i18next';
-// import watch from"../../img/watch.png"
+
 import ExternaLinks from '../../utils/socialMedia.js'
 import logo from '../../img/logo.png'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 class Footer extends Component {
     constructor(props) {
@@ -19,17 +22,28 @@ class Footer extends Component {
     getYear() {
         return new Date().getFullYear()
     }
-    handleClick() {
+    handleClick(e) {
+        e.preventDefault()
         console.log(this.state.email)
+        this.notify()
     }
     handleEmailInput(e) {
         e.preventDefault();
-        
         this.setState({
             email: e.target.value
         })
     }
+    notify = () => toast.success("Inscription à la newsletter confirmé", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
     render() {
+
         const t = this.props.t
         return (
             <footer className="footer-section footer mt-auto" >
@@ -112,6 +126,7 @@ class Footer extends Component {
                                         <form>
                                             <input type="email" value={this.state.email} onChange={this.handleEmailInput} placeholder={t("footer-placeholder-email")} />
                                             <button onClick={this.handleClick}><i className="fab fa-telegram-plane"></i></button>
+                                           
                                         </form>
                                     </div>
                                 </div>

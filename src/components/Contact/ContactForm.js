@@ -1,6 +1,8 @@
 import { Component } from "react";
 import './ContactForm.css'
 import { withTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 class ContactForm extends Component {
@@ -19,6 +21,7 @@ class ContactForm extends Component {
     handleSendButton(e) {
         e.preventDefault();
         console.log(this.state)
+        this.notify()
     }
     handleName(e) {
         this.setState({
@@ -35,6 +38,15 @@ class ContactForm extends Component {
             message: e.target.vale
         })
     }
+    notify = () => toast.success("Message envoyé, nous vous répondrons sous 48H", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
 
     render() {
         const t = this.props.t

@@ -73,7 +73,7 @@ class SellDetail extends Component {
                                     abrevation={<i className="fal fa-info-circle" />}
                                     traduction={
                                         `Dès réception de votre montre, celle-ci sera inspectée par nos experts horlogers.
-                                        Vous recevrez une confirmation de l’offre d'achat dans un délai d'1 à 3 jour(s) ouvrable(s). Le paiement est versé dans un délai de 1 à 3 jour(s) ouvrable(s) à compter de la date de réception/ fin de l expertise? de la montre.
+                                        Vous recevrez une confirmation de l’offre d'achat dans un délai d'1 à 3 jour(s) ouvrable(s). 
                                         `
                                     }
                                 />
@@ -108,6 +108,16 @@ class SellDetail extends Component {
                         <div className="text">
                             <h3>
                                 Recevez votre paiement
+                                &nbsp;
+                                <TooltipPerso
+                                    abrevation={<i className="fal fa-info-circle" />}
+                                    traduction={
+                                        `Une fois l'inspection de votre montre complétée, 
+                                        nous serons en mesure de vous confirmer le prix d'achat 
+                                        et de procéder au virement bancaire. Veuillez noter que 
+                                        le virement peut prendre 3 à 5 jours ouvrables.`
+                                    }
+                                />
                             </h3>
                             <p>Vous recevrez le paiement par virement bancaire dans les cinq jours ouvrés
                             </p>
