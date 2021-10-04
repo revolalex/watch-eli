@@ -7,9 +7,27 @@ import ExternaLinks from '../../utils/socialMedia.js'
 import logo from '../../img/logo.png'
 
 class Footer extends Component {
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: ''
+        }
+        this.handleEmailInput = this.handleEmailInput.bind(this)
+        this.handleClick = this.handleClick.bind(this)
+    }
+
     getYear() {
         return new Date().getFullYear()
+    }
+    handleClick() {
+        console.log(this.state.email)
+    }
+    handleEmailInput(e) {
+        e.preventDefault();
+        
+        this.setState({
+            email: e.target.value
+        })
     }
     render() {
         const t = this.props.t
@@ -20,10 +38,10 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <img src={logo} height="80px" alt="watch market club logo"/>
+                                    <img src={logo} height="80px" alt="watch market club logo" />
                                     <div className="cta-text">
-                                        
-                                    <h4>Watch Market Club</h4>
+
+                                        <h4 className="my-police-titre">Watch Market Club</h4>
 
                                     </div>
                                 </div>
@@ -32,7 +50,7 @@ class Footer extends Component {
                                 <div className="single-cta">
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
-                                        <br/>
+                                        <br />
                                         {/* <h4>{t("footer-call-us")}</h4> */}
                                         <span className="span-footer">(+33)0600000000</span>
                                     </div>
@@ -42,7 +60,7 @@ class Footer extends Component {
                                 <div className="single-cta">
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
-                                        <br/>
+                                        <br />
                                         {/* <h4>{t("footer-mail-us")}</h4> */}
                                         <span className="span-footer">eli@info.com</span>
                                     </div>
@@ -66,7 +84,7 @@ class Footer extends Component {
                                         <a href={ExternaLinks.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook-f facebook-bg"></i></a>
                                         <a href={ExternaLinks.twitter} target="_blank" rel="noreferrer"><i className="fab fa-twitter twitter-bg"></i></a>
                                         <a href={ExternaLinks.google} target="_blank" rel="noreferrer"><i className="fab fa-google-plus-g google-bg"></i></a>
-                                        <a href={ExternaLinks.chrono24} target="_blank" rel="noreferrer"><img style={{borderRadius: "50%", height:"42px"}} src="https://play-lh.googleusercontent.com/xWvqbtU9fO6_yyJoblxvsp6-MtMRtWYgBuVRQ9JTKbERYLQ4Mk8znN0l_crr9RImTw=s180" alt="Chrono 24"/></a>
+                                        <a href={ExternaLinks.chrono24} target="_blank" rel="noreferrer"><img style={{ borderRadius: "50%", height: "42px" }} src="https://play-lh.googleusercontent.com/xWvqbtU9fO6_yyJoblxvsp6-MtMRtWYgBuVRQ9JTKbERYLQ4Mk8znN0l_crr9RImTw=s180" alt="Chrono 24" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -91,9 +109,9 @@ class Footer extends Component {
                                         <p>{t("footer-subcribe-text")}</p>
                                     </div>
                                     <div className="subscribe-form">
-                                        <form action="#">
-                                            <input type="text" placeholder={t("footer-placeholder-email")}/>
-                                            <button><i className="fab fa-telegram-plane"></i></button>
+                                        <form>
+                                            <input type="email" value={this.state.email} onChange={this.handleEmailInput} placeholder={t("footer-placeholder-email")} />
+                                            <button onClick={this.handleClick}><i className="fab fa-telegram-plane"></i></button>
                                         </form>
                                     </div>
                                 </div>

@@ -21,31 +21,35 @@
 }
 
 /* ICI ALEX TITRE */
-.my-logo-police {
-  font-size: 37px
-}
-
-@media only screen and (min-width: 650px) and (max-width: 728px) {
-  .my-logo-police{
-    font-size: 27px
-  }
-
-}
-@media only screen and (min-width: 600px) and (max-width: 649px) {
-  .my-logo-police{
-    font-size: 20px
-  }
-
-}
-
 
 
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
 
 .my-logo-police {
   font-family: 'GFS Didot', serif !important;
-  font-weight: bold;
+  font-family: 'GFS Didot', serif !important;
+  font-size: 37px
 }
+
+@media only screen and (min-width: 650px) and (max-width: 738px) {
+  .my-logo-police {
+    font-size: 27px
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 649px) {
+  .my-logo-police {
+    font-size: 22px
+  }
+}
+
+.my-police-titre{
+  font-family: 'GFS Didot', serif !important;
+  font-family: 'GFS Didot', serif !important;
+}
+
+
 
 .navbar-nav {
   font-size: 1em;

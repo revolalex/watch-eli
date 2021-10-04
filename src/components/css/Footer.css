@@ -15,7 +15,6 @@ ul {
 }
 
 .single-cta i {
-  /* color: #ff5e14; */
   color: var(--text-on-background);
   font-size: 40px;
   float: left;
@@ -96,6 +95,13 @@ ul {
   border-radius: 50%;
   
 }
+@media (max-width: 990px){
+  .cta-text{
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
 
 @media (max-width: 1000px) {
   .footer-social-icon i {
