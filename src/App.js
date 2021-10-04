@@ -9,6 +9,8 @@ import Service from './pages/Service'
 import Navbar from './components/Global/navbar';
 import Footer from './components/Global/Footer';
 import Trade from './pages/Trade'
+import ContactService from './pages/ContactService'
+
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,6 +27,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
+          <Route path='/contact-service' component={ContactService} />
           <Route path='/blog' component={Blog} />
           <Route path='/buy' component={Buy} />
           <Route path='/sell' component={Sell} />

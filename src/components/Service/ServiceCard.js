@@ -69,7 +69,9 @@ class ServiceCard extends Component {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        {/* <a href="/" className="btn btn-success">read more...</a> */}
+                                        <br/>
+                                        <a href="/contact-service" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
+                                       
                                     </div>
                                 </div>
                             </div>

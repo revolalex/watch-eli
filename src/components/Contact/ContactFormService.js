@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-class ContactForm extends Component {
+class ContactService extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -57,7 +57,6 @@ class ContactForm extends Component {
 
     render() {
         const t = this.props.t
-        const {input} = this.props
       
         return (
             <div className="container-contact">
@@ -67,7 +66,7 @@ class ContactForm extends Component {
                         <br />
                         <div className="inputBox">
                             <input type="text" name="input" required="required" value={this.state.input} onChange={this.handleInput} />
-                            <span>{input || "Montre desirée"}</span>
+                            <span>Service souhaité</span>
                         </div>
                         <div className="inputBox">
                             <input type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
@@ -93,4 +92,4 @@ class ContactForm extends Component {
     }
 }
 
-export default withTranslation()(ContactForm);
+export default withTranslation()(ContactService);
