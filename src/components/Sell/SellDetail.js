@@ -16,11 +16,18 @@ import { Card } from "react-bootstrap";
 class SellDetail extends Component {
     state = {}
     render() {
+        const arrayOfImages = [
+            'https://verygoodlord.com/wp-content/uploads/2014/07/top-10-Montre-homme-mythique-luxe.jpg',
+            "https://www.lecalibre.com/wp-content/uploads/2018/07/prix-montres-de-luxe.jpg"
+        ]
+        var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
+        const imgUrl = randomItem
         const t = this.props.t
         return (
             <div className="contactInfo">
                 <img
-                    src="https://www.cresus.fr/media/wysiwyg/FORMULAIRE/Vendresamontre/vendre-sa-montre.jpg"
+
+                    src={imgUrl}
                     alt="échange de montres"
                     style={{
                         paddingBottom: "40px",
