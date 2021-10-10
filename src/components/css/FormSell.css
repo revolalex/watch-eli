@@ -55,6 +55,18 @@
 }
 
 
+.wrong-input{
+  border-color: red !important;
+}
+.good-input{
+  border-color: #263849 !important;
+}
+.good-valid{
+  color: #666;
+}
+.wrong-valid{
+  color:red !important;
+}
 
 .container-contact .contactInfo {
   width: 50%;

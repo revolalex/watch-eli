@@ -28,9 +28,13 @@ class TradeFinal extends Component {
             wantedPrice: '',
             wantedModel: '',
             authorization: false,
-            phone:'',
+            validAuth: true,
+            phone: '',
             name: '',
-            email: ''
+            validName: true,
+            email: '',
+            validEmail: true
+
         }
         this.handleSelectSet = this.handleSelectSet.bind(this)
         this.handleCommentInput = this.handleCommentInput.bind(this)
@@ -152,26 +156,39 @@ class TradeFinal extends Component {
             wantedPrice: '',
             wantedModel: '',
             authorization: false,
-            phone:'',
+            validAuth: true,
+            phone: '',
             name: '',
-            email: ''
+            validName: true,
+            email: '',
+            validEmail: true
         })
     }
     handleSendButton(e) {
-        const {name, email, phone, brand, modele} = this.state
+        const { name, email, authorization } = this.state
         e.preventDefault();
-        if(name.length< 1){
+        if (name.length < 1) {
             this.notifyError('name is require min 3 characters')
-        } else if (email.length < 1){
+            this.setState({ validName: false })
+        } else if (email.length < 1) {
+            this.setState({ validName: true })
             this.notifyError('email is require')
-        } 
-        else if(name.length > 1 && email.length > 1){
+            this.setState({ validEmail: false })
+        } else if (!authorization) {
+            this.setState({ validEmail: true })
+            this.notifyError('your authorization is require')
+            this.setState({ validAuth: false })
+
+        } else if (name.length > 1 && email.length > 1) {
+            this.setState({ validName: true })
+            this.setState({ validEmai: true })
+            this.setState({ validAuth: true })
             this.sendEmail()
         }
-        
+
     }
 
-    sendEmail(){
+    sendEmail() {
         let that = this
         emailjs.sendForm('service_jklklpo', 'template_nrwxgzo', '#my-formTrade', 'user_qVW1EQYpGrCCZBiy6lnqy')
             .then(function (response) {
@@ -294,12 +311,12 @@ class TradeFinal extends Component {
                                 onChange={this.handlePhone}
                             />
                             <div className="inputBox">
-                                <input style={{ paddingTop: "30px" }}  type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
-                                <span>Nom</span>
+                                <input style={{ paddingTop: "30px" }} className={this.state.validName ? "good-input" : "wrong-input"} type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
+                                <span className={this.state.validName ? "good-valid" : "wrong-valid"} >Nom <tag style={{ color: 'red' }}>*</tag></span>
                             </div>
                             <div className="inputBox">
-                                <input style={{ paddingTop: "30px" }}  type="email" name="email" required="required" value={this.state.email} onChange={this.handleEmail} />
-                                <span>Email</span>
+                                <input style={{ paddingTop: "30px" }} className={this.state.validEmail ? "good-input" : "wrong-input"} type="email" name="email" required="required" value={this.state.email} onChange={this.handleEmail} />
+                                <span className={this.state.validEmail ? "good-valid" : "wrong-valid"} >Email<tag style={{ color: 'red' }}>*</tag></span>
                             </div>
 
                             <div className="inputBox">
@@ -308,7 +325,7 @@ class TradeFinal extends Component {
                             </div>
                             <br />
                             <div>
-                                <Form.Check type="checkbox" name="authorization" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
+                                <Form.Check className={this.state.validAuth ? "good-valid" : "wrong-valid"} type="checkbox" name="authorization" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
                             </div>
                             <br />
                             {/* Send Button */}
