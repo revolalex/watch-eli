@@ -5,9 +5,12 @@ import { OverlayTrigger, Tooltip, Form } from 'react-bootstrap'
 import SellDetail from './SellDetail';
 import BrandLogo from './BrandLogo';
 import TitreCard from '../Global/TitreCard';
+import emailjs from 'emailjs-com'
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 
 
@@ -24,7 +27,10 @@ class FormSell extends Component {
             condition: 3,
             comment: '',
             wantedPrice: '',
-            authorization: false
+            authorization: false,
+            phone: '',
+            name: '',
+            email: ''
         }
         this.handleSelectSet = this.handleSelectSet.bind(this)
         this.handleCommentInput = this.handleCommentInput.bind(this)
@@ -37,6 +43,9 @@ class FormSell extends Component {
         this.conditionText = this.conditionText.bind(this)
         this.handleWantedPriceInput = this.handleWantedPriceInput.bind(this)
         this.handleCHeckBox = this.handleCHeckBox.bind(this)
+        this.handlePhone = this.handlePhone.bind(this)
+        this.handleEmail = this.handleEmail.bind(this)
+        this.handleName = this.handleName.bind(this)
 
     }
     handleCHeckBox(e) {
@@ -82,14 +91,11 @@ class FormSell extends Component {
         this.setState({
             condition: event.target.value
         })
-        console.log(event.target.value)
     }
     handleCommentInput(event) {
         this.setState({
             comment: event.target.value
         })
-        console.log(event.target.value)
-
     }
     /* eslint-disable */
     conditionText(t) {
@@ -124,21 +130,74 @@ class FormSell extends Component {
             photo: event.target.files
         })
     }
+
     handleSendButton(e) {
         e.preventDefault();
         console.log(this.state)
-        this.notify()
+        let that = this
+        emailjs.sendForm('service_jklklpo', 'template_nrwxgzo', '#my-formSell', 'user_qVW1EQYpGrCCZBiy6lnqy')
+            .then(function (response) {
+                console.log(response.status, response.text);
+                if (response.status === 200) {
+                    that.resetInput()
+                    that.notify()
+                } else {
+                    that.resetInput()
+                    that.notifyError()
+                }
+            });
     }
+
+    resetInput() {
+        this.setState({
+            brand: '',
+            modele: '',
+            set: '',
+            photo: undefined,
+            condition: 3,
+            comment: '',
+            wantedPrice: '',
+            authorization: false,
+            phone: '',
+            name: '',
+            email: '',
+        })
+    }
+
 
     notify = () => toast.success("Message envoyé, nous vous répondrons sous 48H", {
         position: "top-center",
-        autoClose: 2000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
         progress: undefined,
     });
+    notifyError = () => toast.error("Something went wrong", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
+    handleEmail(e) {
+        this.setState({
+            email: e.target.value
+        })
+    }
+    handleName(e) {
+        this.setState({
+            name: e.target.value
+        })
+    }
+    handlePhone(e) {
+        this.setState({
+            phone: e
+        })
+    }
 
 
 
@@ -182,9 +241,10 @@ class FormSell extends Component {
                     <SellDetail />
                     {/* container on right */}
                     <div className="contactform card" style={{ margin: "12px" }}>
-                        <form>
+                        <form id="my-formSell">
                             <h2 className="my-underline">{t('form-sell-your-watch')}</h2>
                             <p style={{ fontStyle: "italic", fontSize: "0.9em" }}>Nous achetons uniquement des montres 100% certifiées authentiques </p>
+                            <input type="text" name="formName" required="required" value="Sell" style={{ display: "none" }} />
 
                             <div className="inputBox">
                                 <BrandLogo onBrandLogoClick={this.onBrandLogoClick} />
@@ -193,11 +253,11 @@ class FormSell extends Component {
                                 <span>{t('form-sell-brand')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="text" name="model" required="required" value={this.state.model} onChange={this.handleModelInput} />
+                                <input type="text" name="modele" required="required" value={this.state.model} onChange={this.handleModelInput} />
                                 <span>{t('form-sell-model')}</span>
                             </div>
                             <div className="inputBox">
-                                <input type="number" name="model" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
+                                <input type="number" name="wantedPrice" required="required" value={this.state.wantedPrice} onChange={this.handleWantedPriceInput} />
                                 <span>Prix désiré</span>
                             </div>
                             <br />
@@ -211,12 +271,12 @@ class FormSell extends Component {
                                     <label for="customRange" className="form-label">{t('form-sell-condition')} : {this.conditionText(t)}</label>
                                 </OverlayTrigger>
                                 {/* <label for="customRange" className="form-label">{t('form-sell-condition')} : {this.state.condition}</label> */}
-                                <input type="range" className="form-range" min="0" max="5" step="1" id="customRange" onChange={this.handleCondition} value={this.state.condition} style={{ border: "none" }} />
+                                <input type="range" name="condition" className="form-range" min="0" max="5" step="1" id="customRange" onChange={this.handleCondition} value={this.state.condition} style={{ border: "none" }} />
                             </div>
                             <br />
                             {/* Photo */}
                             <div className="inputBox">
-                                <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} value={this.state.photo} onChange={this.handlePhoto} />
+                                <input type="file" name="photo" placeholder="photo" style={{ border: "none" }} onChange={this.handlePhoto} />
                                 <span>{t('form-sell-photo')}</span>
                             </div>
                             <br />
@@ -224,11 +284,30 @@ class FormSell extends Component {
                             <div>
                                 <span>{t('form-sell-box-paper')}</span><br />
                                 <Form.Select value={this.state.set} onChange={this.handleSelectSet}>
-                                    <option>{t('form-sell-box')}</option>
-                                    <option>{t('form-sell-paper')}</option>
-                                    <option>{t('form-sell-paper-and-box')}</option>
-                                    <option>{t('form-sell-nothing')}</option>
+                                    <option name="set">{t('form-sell-box')}</option>
+                                    <option name="set">{t('form-sell-paper')}</option>
+                                    <option name="set">{t('form-sell-paper-and-box')}</option>
+                                    <option name="set">{t('form-sell-nothing')}</option>
                                 </Form.Select>
+                            </div>
+                            <br />
+                            <h2 className="my-underline">Vos informations:</h2>
+                            <br />
+                            {/* Name, Email, Phone */}
+                            <PhoneInput
+                                name="phone"
+                                placeholder="Enter phone number"
+                                value={this.state.phone}
+                                onChange={this.handlePhone}
+                            />
+                            <div className="inputBox">
+                                <input style={{ paddingTop: "30px" }} type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
+                                <span>Nom</span>
+                            </div>
+
+                            <div className="inputBox">
+                                <input style={{ paddingTop: "30px" }} type="email" name="email" required="required" value={this.state.email} onChange={this.handleEmail} />
+                                <span>Email</span>
                             </div>
                             <div className="inputBox">
                                 <textarea style={{ paddingTop: "30px" }} type="textarea" rows="5" name="comment" required="required" value={this.state.comment} onChange={this.handleCommentInput} />
@@ -236,7 +315,7 @@ class FormSell extends Component {
                             </div>
                             <br />
                             <div>
-                                <Form.Check type="checkbox" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
+                                <Form.Check type="checkbox" name="authorization" label="J'autorise WMC à me contacter" value={this.state.authorization} onChange={this.handleCHeckBox} />
                             </div>
                             <br />
 
