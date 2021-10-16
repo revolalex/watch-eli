@@ -18,17 +18,27 @@
   .main-logo {
     height: 30px;
   }
+  .tel-header {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.tel-in-nav{
+  color: black;
+  text-decoration: none
 }
 
 /* ICI ALEX TITRE */
 
-
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
 .my-logo-police {
-  font-family: 'GFS Didot', serif !important;
-  font-family: 'GFS Didot', serif !important;
-  font-size: 37px
+  font-family: 'Cinzel', serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 37px;
+
 }
 
 @media only screen and (min-width: 650px) and (max-width: 738px) {
@@ -49,15 +59,13 @@
   font-family: 'GFS Didot', serif !important;
 }
 
-
-
 .navbar-nav {
   font-size: 1em;
 }
 
 /* navlink in middle */
 #basic-navbar-nav {
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .select-lang {
@@ -72,7 +80,7 @@
   align-items: center;
   display: flex;
   /* justify-content: space-evenly; */
-  padding-left: 9%;
+  /* padding-left: 9%; */
   text-align: center;
   background-color: var(--background-color);
   font-size: 1.3em;

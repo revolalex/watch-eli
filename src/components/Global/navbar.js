@@ -34,22 +34,14 @@ class Navbar5 extends Component {
                     <div className="logo-nav-div">
                         <span className="logo-police">
                             <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
-
-                            {/* <span className="majuscule-title"> - W</span>
-                            atch
-                            <span className="majuscule-title">M</span>
-                            arket
-                            <span className="majuscule-title">C</span>
-                            lub */}
                         </span>
-                        <span className='my-logo-police'>Watch Market Club</span>
+                        <span className='my-logo-police'>WatchMarketClub</span>
                         <span className="tel-header">
                             <i className="fas fa-phone" />
-                            (+33)0600000000
+                            <a className='tel-in-nav' href="tel:+33187211381">&nbsp;(+33) 1 87 21 13 81</a>
                         </span>
 
                     </div>
-
                     <Navbar className="my-navbar" expand="sm">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -60,20 +52,22 @@ class Navbar5 extends Component {
                                 <Nav.Link href="/trade">{t("navbar-trade")}</Nav.Link>
                                 <Nav.Link href="/service">{t("service")}</Nav.Link>
                                 <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
-                                {/* <Nav.Link href="/contact">{t("navbar-contact")}</Nav.Link> */}
+                                {/* FIXME essai alignement nav */}
+                                <Nav.Link >
+                                    <div className="">
+                                        <select value={this.state.value} onChange={this.handleChange} className="select-lang">
+                                            <option value="fr">
+                                                🇫🇷
+                                            </option>
+                                            <option value="en">
+                                                🇬🇧
+                                            </option>
+                                        </select>
+                                    </div>
+                                </Nav.Link>
                             </Nav>
-                            {/* <div>
-                                <select value={this.state.value} onChange={this.handleChange}>
-                                    <option value="fr">
-                                        🇫🇷
-                                    </option>
-                                    <option value="en">
-                                        🇬🇧
-                                    </option>
-                                </select>
-                            </div> */}
                         </Navbar.Collapse>
-                        <div className="tel-header">
+                        {/* <div className="tel-header">
                             <select value={this.state.value} onChange={this.handleChange} className="select-lang">
                                 <option value="fr">
                                     🇫🇷
@@ -82,7 +76,7 @@ class Navbar5 extends Component {
                                     🇬🇧
                                 </option>
                             </select>
-                        </div>
+                        </div> */}
                     </Navbar>
                 </div>
             </div>

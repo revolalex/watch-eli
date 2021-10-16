@@ -12,7 +12,7 @@ class ServiceCard extends Component {
                     <div classNameName="row">
                         <div className="card col-md-12 p-3 my-horizontal-card">
                             <div className="row">
-                               
+
                                 <div className="col-md-4">
                                     <img className="w-100" alt="horloger" src={hologer} />
                                 </div>
@@ -36,42 +36,69 @@ class ServiceCard extends Component {
                                             <br />
                                             <Row>
                                                 <Col>
+
                                                     <p>
-                                                        Remplacement de la pile
+                                                        Réglage montre mécanique
                                                         &nbsp;<TooltipPerso
                                                             abrevation={<i className="fal fa-info-circle" />}
-                                                            traduction={"Si l’aiguille des secondes de votre montre électronique ne saute plus que toutes les quatre secondes en mode EOL ou si votre montre est déjà arrêtée, il est temps de faire remplacer la pile par un détaillant spécialisé. Les étapes de travail suivantes complètent chez WMC le remplacement de la pile: Nos experts ouvrent le boîtier avec des outils spéciaux. Ils nettoient d’abord les contacts électroniques. Ils remplacent la pile, puis referment le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Les spécialistes mesurent ensuite la consommation d’énergie et effectuent un contrôle d’étanchéité selon les normes du fabricant. Ils nettoient ensuite le boîtier et le bracelet, puis vérifient et ajustent le bracelet et le fermoir, si nécessaire."}
+                                                            traduction={`Le réglage d’une montre permet d’ajuster la précision du mouvement.
+                                                            Nos horlogers certifiés possèdent les compétences qui leur permettent de régler 
+                                                            tous types de garde-temps. Chaque ouverture de montre mécanique suit scrupuleusement 
+                                                            les instructions des fabricants telle que le nettoyage et le contrôle de l’étanchéité. 
+                                                            Ainsi votre pièce fonctionnera comme au premier jour.
+                                                            `}
                                                         />
                                                     </p>
-                                                    <p>
-                                                        Réglage d'une montre mécanique
-                                                        &nbsp;<TooltipPerso
-                                                            abrevation={<i className="fal fa-info-circle" />}
-                                                            traduction={"Si votre montre avance ou retarde malgré des entretiens réguliers, nos conseillers ou nos horlogers s’en occuperont de manière compétente. Ils détermineront si la précision de marche peut être optimisée par un réglage. Les étapes suivantes complètent chez WMC le réglage d’une montre mécanique: Nos collaborateurs vérifient tout d’abord toutes les fonctions du mouvement. Ils ouvrent le boîtier et règlent la précision avec des outils spéciaux. Ils referment ensuite le boîtier à l’aide de l’outil approprié, conformément aux instructions du fabricant. Ils effectuent en outre un contrôle d’étanchéité et nettoient le boîtier et le bracelet. Ils vérifient également le bracelet et le fermoir et les ajustent en conséquence. Enfin, ils vérifient la précision de marche sur un simulateur pendant 48 à 72 heure"}
-                                                        />
-                                                    </p>
-                                                </Col>
-                                                <Col>
                                                     <p>
                                                         Révision
                                                         &nbsp;<TooltipPerso
                                                             abrevation={<i className="fal fa-info-circle" />}
-                                                            traduction={"Et faites réviser entièrement votre montre mécanique tous les quatre à six ans. Une révision tous les six à huit ans suffit pour les montres électroniques, sauf si vous remarquez que la pile n’a plus d’autonomie que pour environ six mois. Dans ce cas, il faut faire réviser rapidement votre montre. L’éventuelle remise à neuf minutieuse de l’extérieur de votre montre par des termineurs en habillage horloger diplômés est également incluse dans notre service horloger spécial. Après la révision, votre montre brille ainsi à nouveau d’un nouvel éclat."}
+                                                            traduction={`Il est recommandé par les fabricants de faire réviser sa 
+                                                            montre tous les 5 à 7 ans selon les modèles. Nos maîtres horlogers 
+                                                            procéderont à une expertise de votre montre, établiront un diagnostic 
+                                                            personnalisé, un délai d’intervention puis vous transmettrons un devis 
+                                                            gratuit dans les 5 jours ouvrés après réception de cette dernière.`}
                                                         />
                                                     </p>
+
                                                     <p>
                                                         Autre
                                                         &nbsp;<TooltipPerso
                                                             abrevation={<i className="fal fa-info-circle" />}
-                                                            traduction={"Peut importe votre besoins WMC vous propose une solution adaptée et personalisée"}
+                                                            traduction={`Quelle que soit votre question, WMC vous répond de manière personnalisée afin de vous accompagner dans votre projet. Contactez-nous pour obtenir la liste complète de nos services.`}
                                                         />
                                                     </p>
+
+
+
+                                                </Col>
+                                                <Col>
+                                                    <p>
+                                                        Remplacement de la pile
+                                                        &nbsp;<TooltipPerso
+                                                            abrevation={<i className="fal fa-info-circle" />}
+                                                            traduction={`Lorsque votre montre à quartz s'arrête, cela signifie sûrement qu’il est 
+                                                            nécessaire de remplacer la pile. Les normes fixées par les fabricants sont scrupuleusement 
+                                                            respectées par nos maîtres horlogers.Le nettoyage du mouvement, le remplacement de la pile 
+                                                            et le  contrôle de l'étanchéité font partie du protocole WMC. 
+                                                            Ainsi votre montre fonctionnera comme au premier jour.`}
+                                                        />
+                                                    </p>
+
+                                                    <p>
+                                                        Polissage
+                                                        &nbsp;<TooltipPerso
+                                                            abrevation={<i className="fal fa-info-circle" />}
+                                                            traduction={`WMC propose également des options purement esthétiques tel que le polissage et le ravivage.`}
+                                                        />
+                                                    </p>
+
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <br/>
+                                        <br />
                                         <a href="/contact-service" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
-                                       
+
                                     </div>
                                 </div>
                             </div>

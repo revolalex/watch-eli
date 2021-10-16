@@ -70,7 +70,7 @@
 }
 
 .brand-logo-autre {
-  font-size: 3vw;
+  font-size: 1.8vw;
   font-weight: bold;
   text-align: center;
   justify-content: center;
@@ -83,7 +83,7 @@
     margin: 2px;
   }
   .brand-logo-autre{
-    line-height: 3.4;
+    line-height: 5.4;
   }
 
 }

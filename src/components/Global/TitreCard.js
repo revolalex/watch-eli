@@ -15,13 +15,16 @@ class TitreCard extends Component {
                         <h1 className="my-police-titre">{this.props.titre}</h1>
                         <br/>
                         <h5>{this.props.sousTitre}</h5>
-                        <p>
+                        <h4>
                             {this.props.cardText}
-                        </p>
+                        </h4>
+                        <h4>
+                            {this.props.cardTextPart2}
+                        </h4>
                         <br/>
-                        <p>
-                            {this.props.cardText2}
-                        </p>
+                        <h3 style={{fontWeight:"bold", color:"black !impoortant",}} className="my-link-titre-card">
+                            <a className="titre-link" href="/sell"> {this.props.cardText2}</a>
+                        </h3>
                         <br/>
                     </div>
 

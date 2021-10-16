@@ -9,7 +9,7 @@ class ServiceGlobal extends React.Component {
             <div>
                 <ServiceTitre />
                 <ServiceCard />
-                <br />
+             
                 <div style={{ display: "flex" }}>
                     <img
                         style={{
@@ -21,7 +21,6 @@ class ServiceGlobal extends React.Component {
                         src={Service1}
                     />
                 </div>
-
             </div>
         )
     }

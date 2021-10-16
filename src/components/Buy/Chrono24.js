@@ -9,7 +9,7 @@ class Chrono24 extends Component {
         return (
             <Container style={{textAlign:"center"}}>
                 <div  id="chrono24-div">
-                    <a href="https://www.chrono24.fr/">
+                    <a href="https://www.chrono24.fr/" target="blank">
                         <img id="chrono24-img" src={chrono24} alt="chrono24" />
                     </a>
                 </div>

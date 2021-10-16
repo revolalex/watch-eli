@@ -12,6 +12,9 @@ class ContactForm extends Component {
         this.state = {
             name: '',
             email: '',
+            validEmail: true,
+            validName: true,
+            validMessage: true,
             message: '',
             input: ''
         }
@@ -25,9 +28,12 @@ class ContactForm extends Component {
     resetInput() {
         this.setState({
             name: "",
+            validName: true,
             email: "",
+            validEmail: true,
             message: "",
-            input: ""
+            input: "",
+            validMessage: true
 
         })
     }
@@ -35,17 +41,37 @@ class ContactForm extends Component {
         e.preventDefault();
         let that = this
         console.log(this.state)
-        emailjs.sendForm('service_jklklpo', 'template_nxcj9ms', '#my-form2', 'user_qVW1EQYpGrCCZBiy6lnqy')
+        const {name, email, message} = that.state
+        if(name.length<1){
+            that.notifyError('name is required')
+            that.setState({validName: false})
+        } else if(email.length<1){
+            that.setState({validName: true})
+            that.notifyError('email is required')
+            that.setState({validEmail: false})
+        }else if (message.length<1){
+            that.setState({validEmail: true})
+            that.setState({validName: true})
+            that.notifyError('message is required')
+            that.setState({validMessage: false})
+        }else if(email.length >=1 && name.length>=1 && message.length>=1){
+            that.setState({validEmail: true})
+            that.setState({validName: true})
+            that.setState({validMessage: true})
+            emailjs.sendForm('service_jklklpo', 'template_nxcj9ms', '#my-form2', 'user_qVW1EQYpGrCCZBiy6lnqy')
             .then(function (response) {
                 console.log(response.status, response.text);
                 if (response.status === 200) {
                     that.resetInput()
                     that.notify()
-                } else{
-                    that.resetInput()
+                }else {
                     that.notifyError()
                 }
             });
+
+        }
+
+        
     }
     handleName(e) {
         this.setState({
@@ -76,9 +102,9 @@ class ContactForm extends Component {
         draggable: true,
         progress: undefined,
     });
-    notifyError = () => toast.error("Something went wrong", {
+    notifyError = (message) => toast.error(message || "Something went wrong", {
         position: "top-center",
-        autoClose: 3000,
+        autoClose: 4000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -105,16 +131,16 @@ class ContactForm extends Component {
                         </div>
                         <div className="inputBox">
                             <input type="text" name="name" required="required" value={this.state.name} onChange={this.handleName} />
-                            <span>Name</span>
+                            <span className={this.state.validName ? "good-valid" : "wrong-valid"} >Name<i style={{ color: 'red' }}>*</i></span>
                         </div>
                         <div className="inputBox">
                             <input style={{ paddingTop: "30px" }} type="email" name="email" required="required" value={this.state.email} onChange={this.handleEmail} />
-                            <span>Email</span>
+                            <span className={this.state.validEmail ? "good-valid" : "wrong-valid"}>Email<i style={{ color: 'red' }}>*</i></span>
 
                         </div>
                         <div className="inputBox">
                             <textarea style={{ paddingTop: "30px" }} type="textarea" rows="5" name="message" required="required" value={this.state.message} onChange={this.handleMessage} />
-                            <span>Message</span>
+                            <span className={this.state.validMessage ? "good-valid" : "wrong-valid"}>Message<i style={{ color: 'red' }}>*</i></span>
                         </div>
                         <br />
                         <div className="inputBox">

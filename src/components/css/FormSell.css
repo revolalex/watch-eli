@@ -36,7 +36,7 @@
 .contact .content h2 {
   font-size: 36px;
   font-weight: 500;
-  color: var(--gold-color);
+  color: var(--black-color);
 }
 
 
@@ -78,6 +78,8 @@
   position: relative;
   padding: 20px 0;
   display: flex;
+  align-items: center;
+  margin: 5px;
 }
 
 .container-contact .contactInfo .box .icon {
@@ -102,7 +104,7 @@
 
 .container-contact .contactInfo .box .text h3 {
   font-weight: 500;
-  color: var(--gold-color)
+  color: var(--black-color)
 }
 
 .contactform {
@@ -159,7 +161,7 @@
 
 .contactform .inputBox input[type="submit"] {
   width: 100px;
-  background: var(--vert-color) !important;
+  /* background: var(--vert-color) !important; */
   color: #fff;
   border: none;
   cursor: pointer;
@@ -176,9 +178,9 @@
     align-items: center;
   }
 
-  .container-contact .contactInfo {
+  /* .container-contact .contactInfo {
     margin-bottom: 40px;
-  }
+  } */
 
   .container-contact .contactInfo,
   .contactform {
@@ -216,4 +218,9 @@
 
 .contactInfo{
   padding: 20px;
+}
+
+.inputValidator{
+  color: red;
+  font-size: 10px;
 }

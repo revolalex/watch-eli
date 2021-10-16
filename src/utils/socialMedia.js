@@ -5,6 +5,9 @@ class ExternaLinks{
     static chrono24 = "https://www.chrono24.fr/"
     static instagram = "https://www.instagram.com/?"
     static youtube = "https://www.youtube.com/"
+    static telephone = "+33 1 87 21 13 81"
+    static linkedin = "https://fr.linkedin.com/"
+    static chrono24 = "https://www.chrono24.fr/"
 
 }
 

@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
-import VvmTooltip from "../Home/VvmTooltip";
 
 // Images
 import achatCard2 from "../../img/achat/achatCard2.jpeg"
@@ -9,7 +8,7 @@ import achatCard21 from "../../img/achat/1.jpeg"
 import achatCard22 from "../../img/achat/3.jpeg"
 import achatCard23 from "../../img/achat/4.jpeg"
 import achatCard24 from "../../img/achat/5.jpeg"
-import achatCard25 from "../../img/achat/8.jpeg"
+
 
 
 
@@ -18,7 +17,7 @@ class BuyCard2 extends Component {
     state = {}
 
     render() {
-        const arrayOfImages = [achatCard21, achatCard2, achatCard22, achatCard23, achatCard24, achatCard25 ]
+        const arrayOfImages = [achatCard21, achatCard2, achatCard22, achatCard23, achatCard24 ]
         var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
         const imgUrl = randomItem
 
@@ -40,10 +39,10 @@ class BuyCard2 extends Component {
                                     {/* {t('buy-card2-text-part1')}
                                     <TooltipPerso abrevation="C.P.O" traduction="Certified Pre Own" />
                                     {t('buy-card2-text-part2')} */}
-                                    En quête d’une pièce rare ou exceptionnelle? N'hésitez pas à nous contacter directement,&nbsp;<VvmTooltip />
-                                    &nbsp;s’engage à trouver votre prochaine montre grâce à notre réseau mondial de professionnels.
+                                    En quête d’une pièce rare ou exceptionnelle? N'hésitez pas à nous contacter directement,&nbsp;W.M.C
+                                    s’engage à trouver votre prochaine montre grâce à notre réseau mondial de professionnels.
                                 </Card.Text>
-                                <a href="/contact" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
+                                <a href="/contact" target="blank" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
                             </div>
                         </div>
                     </div>

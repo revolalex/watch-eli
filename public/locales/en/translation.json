@@ -6,7 +6,6 @@
     "footer-follow-us": "Follow us",
     "footer-useful-links": "Useful Links",
     "footer-subscribe": "Subscribe Newsletter",
-    "footer-subcribe-text": "Do not miss any news, subscribe to our monthly newsletter",
     "footer-copyright-text": "All Right Reserved",
     "footer-placeholder-email": "Email Address",
     "navbar-home": "HOME",
@@ -44,15 +43,15 @@
     "form-sell-box": "Box",
     "form-sell-paper": "Papers",
     "form-sell-paper-and-box": "Box and papers",
-    "form-sell-nothing": "Nothing",
+    "form-sell-nothing": "None",
     "send": "Send",
     "form-sell-tooltip-condition": "Evaluate the condition of your watch, 10 for perfect, 0 for not working",
-    "condition-0": "To restore",
-    "condition-1": "Working",
-    "condition-2": "Average condition",
-    "condition-3": "medium condition",
-    "condition-4": "Excellent condition",
-    "condition-5": "Perfect or new",
+    "condition-0": "Imcomplete",
+    "condition-1": "Defective",
+    "condition-2": "Satisfactory",
+    "condition-3": "Good",
+    "condition-4": "Very good",
+    "condition-5": "Never worn, new",
     "form-sell-titre": "Get the best price for your watch",
     "form-sell-sous-titre": "Make room in your collection, sell your watch in three clicks. ",
     "form-sell-intro": "Our specialists offer you free expertise, as well as personalized advice to maximize the value of your watch. Our goal is to support you transparently through a simple, fast and secure process.",
@@ -69,7 +68,8 @@
     "buy-card-text2": "Visit our online store via the secure Chrono24 platform and buy with peace of mind. We only sell watches that are 100% certified as authentic and guaranteed for a minimum of 12 months.",
     "buy-card2-title": "Looking for a model",
     "buy-card2-text-part1": "In search of a rare or exceptional piece ",
-    "buy-card2-text-part2": "? Do not hesitate to contact us directly, Watches Paris is committed to finding the watch made for you."
+    "buy-card2-text-part2": "? Do not hesitate to contact us directly, Watches Paris is committed to finding the watch made for you.",
+    "autres-marques": "Others Brands"
 
 
 

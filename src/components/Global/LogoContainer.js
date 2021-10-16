@@ -19,18 +19,18 @@ class LogoContainer extends Component {
         return <div>
             <Container className="container-spacing logo-container">
                 <div className="card card-logo">
-                <Row className="justifyCenter">
+                <Row className="justifyCenter align-items-center">
                     <Col xs={2} md={1}>
                         <OverlayTrigger
                             key={'top'}
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Devis en <strong>48H</strong>.
+                                    Devis en <strong>48H</strong>
                                 </Tooltip>
                             }
                         >
-                            <img src={devis48H} className="logoIcones" alt="icone" />
+                            <img style={{marginLeft:"10px"}} src={devis48H} className="logoIcones" alt="icone" />
                         </OverlayTrigger>
                     </Col>
                     <Col xs={2} md={1}>
@@ -39,7 +39,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Des questions? N'hésitez pas à nous contacter.
+                                    Des questions? Contactez nous!
                                 </Tooltip>
                             }
                         >
@@ -52,7 +52,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Envoie gratuit.
+                                    Envoi gratuit
                                 </Tooltip>
                             }
                         >
@@ -66,7 +66,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Avis.
+                                    Avis clients
                                 </Tooltip>
                             }
                         >
@@ -80,7 +80,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Expert.
+                                    Trusted Seller
                                 </Tooltip>
                             }
                         >
@@ -94,7 +94,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Montres certifiées authentiques.
+                                    Montres certifiées 100%  authentiques
                                 </Tooltip>
                             }
                         >
@@ -107,7 +107,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Achat sécurisé, protection des Acheteurs Chrono24.
+                                    Protection des Acheteurs Chrono24
                                 </Tooltip>
                             }
                         >
@@ -121,7 +121,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Estimation.
+                                    Estimation selon prix du marché
                                 </Tooltip>
                             }
                         >
@@ -135,7 +135,7 @@ class LogoContainer extends Component {
                             placement={'top'}
                             overlay={
                                 <Tooltip id={`tooltip-top`}>
-                                    Experts certifiés par la Fondation de Haute Horlogerie (FHH).
+                                    Experts certifiés FHH
                                 </Tooltip>
                             }
                         >

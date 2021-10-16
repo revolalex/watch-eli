@@ -1,10 +1,12 @@
 import { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import '../css/BrandLogo.css'
+import { withTranslation } from 'react-i18next';
 
 class BrandLogo extends Component {
 
     render() {
+        const t = this.props.t
         return (
             <Container>
                 <Row>
@@ -19,11 +21,12 @@ class BrandLogo extends Component {
                     <Col xs={6} md={4} className="brand-logo-longines brand-logo-form" onClick={this.props.onBrandLogoClick} id="Longines"></Col>
                     <Col xs={6} md={4} className="brand-logo-audemars brand-logo-form" onClick={this.props.onBrandLogoClick} id="Audemars Piguet"></Col>
                     <Col xs={6} md={4} className="brand-logo-cartier brand-logo-form" onClick={this.props.onBrandLogoClick} id="Cartier"></Col>
-                    <Col xs={6} md={4} className="brand-logo-autre brand-logo-form" onClick={this.props.onBrandLogoClick} id="Autre">Autre</Col>
+                    <Col xs={6} md={4} className="brand-logo-autre brand-logo-form" onClick={this.props.onBrandLogoClick} id="Autre">{t('autres-marques')}</Col>
+                 
                 </Row>
             </Container>
         );
     }
 }
 
-export default BrandLogo;
+export default withTranslation()(BrandLogo);

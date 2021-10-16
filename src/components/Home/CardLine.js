@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "../css/CardLine.css"
 import { withTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import VvmTooltip from './VvmTooltip';
 
 // Image
 import boxAchat from '../../img/home/boxAchat.jpeg'
@@ -25,7 +24,7 @@ class CardLine extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title">{t("buy-card")}</h5>
                                     <p className="card-text">
-                                        <VvmTooltip />
+                                        WMC
                                         {t("card-buy-text")}
                                     </p>
                                     <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>

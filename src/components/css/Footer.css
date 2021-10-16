@@ -1,4 +1,9 @@
-
+.row1-footer{
+  align-items: center;
+}
+.row1-icon{
+  line-height: 2;
+}
 
 ul {
   margin: 0px;
@@ -23,6 +28,7 @@ ul {
 
 .span-footer{
   font-size: 1.3em !important;
+  line-height: 2;
 }
 
 .cta-text {
@@ -80,6 +86,14 @@ ul {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
+.newletter-inscription{
+  color: var(--text-on-background);
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
 
 .footer-social-icon a {
   color: #fff;
@@ -121,6 +135,9 @@ ul {
 .google-bg {
   background: #DD4B39;
 }
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
 
 .footer-widget-heading h3 {
   color: var(--text-on-background);
@@ -130,15 +147,27 @@ ul {
   position: relative;
 }
 
-.footer-widget-heading h3::before {
+/* .footer-widget-heading h3::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: -15px;
-  height: 2px;
-  width: 45%;
+  height: 1px;
+  width: 100%;
   background: var(--vert-color);
-  /* background: var(--gold-color); */
+} */
+
+@media (max-width: 991px) {
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 1px;
+    width: 100%;
+    background: var(--vert-color);
+  }
+
 }
 
 .footer-widget ul li {
@@ -150,7 +179,7 @@ ul {
 
 .footer-widget ul li a:hover {
   /* color: #ff5e14; */
-  color:var(--gold-color)
+  color:var(--black-color)
 }
 
 .footer-widget ul li a {
@@ -175,7 +204,7 @@ ul {
   position: absolute;
   right: 0;
   /* background: #ff5e14; */
-  background: var(--gold-color);
+  background: var(--black-color);
   padding: 13px 20px;
   /* border: 1px solid #ff5e14; */
   border:1px solid var(--background-color);
@@ -201,7 +230,7 @@ ul {
 
 .copyright-text p a {
   /* color: #ff5e14; */
-  color: var(--gold-color)
+  color: var(--black-color)
 }
 
 .footer-menu li {
@@ -211,7 +240,7 @@ ul {
 
 .footer-menu li:hover a {
   /* color: #ff5e14; */
-  color: var(--gold-color) !important
+  color: var(--black-color) !important
 }
 
 .footer-menu li a {
