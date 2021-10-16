@@ -9,9 +9,9 @@ class CardHorizontal extends Component {
         return (
 
             <div className="container">
-                <div classNameName="row">
+                <div className="row">
                      {/* French PART */}
-                     <div class="d-flex justify-content-center align-items-center p-3">
+                     <div className="d-flex justify-content-center align-items-center p-3">
                         <img width="30px" src={frenchIcon} alt="drapeaux français"></img>&nbsp;<h2 style={{ margin: "0" }}>Français</h2>
                     </div>
                     <div className="card col-md-12 p-3 my-horizontal-card">
@@ -32,9 +32,9 @@ class CardHorizontal extends Component {
                             <div className="col-md-4">
                                 <iframe className="video-toutube"
                                     src="https://www.youtube.com/embed/b58ViTgZQNI"
-                                    title="YouTube video player" frameborder="0"
+                                    title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
+                                    allowFullScreen>
                                 </iframe>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ class CardHorizontal extends Component {
                         </div>
                     </div>
                     {/* ENGLISH PART */}
-                    <div class="d-flex justify-content-center align-items-center p-3">
+                    <div className="d-flex justify-content-center align-items-center p-3">
                         <img width="30px" src={englishIcon} alt="drapeaux anglais"></img>&nbsp;<h2 style={{ margin: "0" }}>ENGLISH</h2>
                     </div>
                     <div className="card col-md-12 p-3 my-horizontal-card">
@@ -119,9 +119,9 @@ class CardHorizontal extends Component {
                             <div className="col-md-4">
                                 <iframe className="video-toutube"
                                     src="https://www.youtube.com/embed/KPnPPd2O_0w"
-                                    title="YouTube video player" frameborder="0"
+                                    title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
+                                    allowFullScreen>
                                 </iframe>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ class ServiceCard extends Component {
         return (
             <div>
                 <div className="container">
-                    <div classNameName="row">
+                    <div className="row">
                         <div className="card col-md-12 p-3 my-horizontal-card">
                             <div className="row">
 
