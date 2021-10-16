@@ -94,7 +94,7 @@ class CardHorizontal extends Component {
 
                             <div className="col-md-8">
                                 <div className="card-block">
-                                    <h4 className="card-title text-right">Fédération de haute horlogerie</h4>
+                                    <h4 className="card-title text-right">Fondation de haute horlogerie</h4>
                                     <br />
                                     <p className="card-text text-justify">
                                         Découvrez l'histoire, les marchés et le savoir-faire de l'univers des montres de Haute Horlogerie
