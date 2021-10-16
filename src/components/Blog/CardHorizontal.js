@@ -27,7 +27,9 @@ class CardHorizontal extends Component {
 
                                     </p>
                                     <a href="https://www.youtube.com/embed/b58ViTgZQNI" target="blank">Youtube</a>
+                                   
                                 </div>
+                                <br/>
                             </div>
                             <div className="col-md-4">
                                 <iframe className="video-toutube"
@@ -55,6 +57,7 @@ class CardHorizontal extends Component {
                                     </p>
                                     <a href="https://www.fhs.swiss/fre/knowledge.html" target="blank">Fédérartion Horlogerie Suisse</a>
                                 </div> 
+                                <br/>
                             </div>
                         </div>
                     </div>
@@ -74,6 +77,7 @@ class CardHorizontal extends Component {
                                         </a>
                                     </div>
                                 </div>
+                                <br/>
                             </div>
                             <div className="col-md-4">
                                 <img className="w-100" alt="montre" src="https://pbs.twimg.com/media/Ewx1m3jWgAsEjOU.jpg" />
@@ -97,6 +101,7 @@ class CardHorizontal extends Component {
                                     </p>
                                     <a href="https://journal.hautehorlogerie.org/fr/category/actualites/" target="blank">Fondation de Haute Horlogerie</a>
                                 </div>
+                                <br/>
                             </div>
                         </div>
                     </div>
@@ -115,6 +120,7 @@ class CardHorizontal extends Component {
                                     </p>
                                     <a href="https://www.youtube.com/embed/KPnPPd2O_0w" target="blank">Youtube</a>
                                 </div>
+                                <br/>
                             </div>
                             <div className="col-md-4">
                                 <iframe className="video-toutube"
@@ -142,6 +148,7 @@ class CardHorizontal extends Component {
                                     </p>
                                     <a href="https://www.fhs.swiss/eng/knowledge.html" target="blank">Watch dictionnary</a>
                                 </div>
+                                <br/>
                             </div>
                         </div>
                     </div>
@@ -160,6 +167,7 @@ class CardHorizontal extends Component {
                                         </a>
                                     </div>
                                 </div>
+                                <br/>
                             </div>
                             <div className="col-md-4">
                                 <img className="w-100" alt="montre" src="https://static.chrono24.com/cdn-cgi/image/f=auto,metadata=none,q=65,w=1564/magazine/wp-content/uploads/2016/04/Cartier-Santos-100.jpg" />
@@ -183,6 +191,7 @@ class CardHorizontal extends Component {
                                     </p>
                                     <a href="https://journal.hautehorlogerie.org/en/category/news/" target="blank">Haute Horlogerie Foundation</a>
                                 </div>
+                                <br/>
                             </div>
                         </div>
                     </div>
