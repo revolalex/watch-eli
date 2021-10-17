@@ -14,7 +14,7 @@ class ServiceTitre extends Component {
                 <Card >
                     <div className="title-div">
                         <div>
-                            <h1 className="my-logo-police">
+                            <h1 className="my-police-titre">
                                 Service
                             </h1>
                             <br/>

@@ -22,7 +22,7 @@ ul {
 .single-cta i {
   color: var(--text-on-background);
   font-size: 40px;
-  float: left;
+  /* float: left; */
   margin-top: 8px;
 }
 
@@ -107,7 +107,6 @@ ul {
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
-  
 }
 @media (max-width: 990px){
   .cta-text{

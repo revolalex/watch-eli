@@ -76,7 +76,7 @@ class TradeDetail extends Component {
                         </div>
                         <div className="text">
                             <h5>
-                                Visitez notre boutique en ligne
+                                Visitez notre boutique
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
@@ -92,7 +92,7 @@ class TradeDetail extends Component {
                             <img src={colisIcon} alt="icones" width={iconWidth} />
                         </div>
                         <div className="text">
-                            <h5>Expedition / Reception
+                            <h5>Expedition/Reception
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}

@@ -88,7 +88,7 @@ class Footer extends Component {
         return (
             <footer className="footer-section footer mt-auto" >
                 <div className="container">
-                    <div className="footer-cta pt-5 pb-5">
+                    <div className="footer-cta pt-3 pb-5">
                         <div className="row row1-footer">
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
@@ -97,22 +97,22 @@ class Footer extends Component {
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <i className="fas fa-phone row1-icon"></i>
+                                    {/* <i className="fas fa-phone row1-icon"></i> */}
                                     <div className="cta-text">
                                         <br />
                                         {/* <h4>{t("footer-call-us")}</h4> */}
-                                        <span className="span-footer">(+41)435088798</span>
+                                        <span className="span-footer"><i className="fas fa-phone row1-icon"></i>&nbsp;(+33) 1 87 21 13 81</span>
                                     </div>
                                 </div>
 
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    <i className="far fa-envelope-open row1-icon"></i>
+                                    {/* <i className="far fa-envelope-open row1-icon"></i> */}
                                     <div className="cta-text">
                                         <br />
                                         {/* <h4>{t("footer-mail-us")}</h4> */}
-                                        <span className="span-footer">eli@info.com</span>
+                                        <span className="span-footer"> <i className="far fa-envelope-open row1-icon"></i>&nbsp;info@watchmarketclub.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -140,11 +140,14 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
+                            
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-50 pt-2 pb-2">
                                 <div className="footer-widget">
-                                    <div className="footer-widget-heading ">
+                                    {/* <div className="footer-widget-heading ">
                                         <h3 className="newletter-inscription">{t("footer-subscribe")}</h3>
-
+                                    </div> */}
+                                    <div>
+                                        <h3 className="newletter-inscription">Newsletter inscription</h3>
                                     </div>
                                     <form id="my-form-newsletter" className="subscribe-form">
                                         <input type="text" name="formName" required="required" value="Newsletter" style={{ display: "none" }} />
