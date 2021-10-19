@@ -2,7 +2,6 @@
 import { OverlayTrigger, Tooltip, Card } from "react-bootstrap";
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import TitreCard from '../Global/TitreCard';
 
 
 class BuyTitre extends Component {
