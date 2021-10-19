@@ -38,12 +38,13 @@ class NavbarMobile extends Component {
                             <span className="majuscule-title">C</span>
                             lub */}
                         </span>
-                        <span className="tel-header">
+                        <span className="tel-header" style={{fontSize:"18px"}}>
                             <i className="fas fa-phone" />
                             (+33) 1 87 21 13 81
                         </span>
 
                     </div>
+                    <div className="wmc-navbar my-police-titre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch Market Club</div>
 
                     <Navbar className="my-navbar">
                         <Nav activeKey={pathname} className="mr-auto">

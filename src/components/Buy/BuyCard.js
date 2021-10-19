@@ -51,7 +51,7 @@ class BuyCard extends Component {
                                     <OverlayTrigger
                                         overlay={
                                             <Tooltip id="tooltip-disabled">
-                                                {`Avec WMC, vous êtes sécurisez tous nos produits sont garanties pour une période de 18 mois, pour plus d'informations consulter nos garanties légales`}
+                                                {`Avec WMC vous êtes sécurisé: tous nos produits sont garantis pour une période de 18 mois. Pour plus d'information, veuillez consulter nos garanties légales`}
                                             </Tooltip>
                                         }>
                                         <span className="d-inline-block"

@@ -13,4 +13,12 @@
   .navbar-nav {
     font-size: 0.62em;
   }
+  .fa-phone{
+    font-size: 20px;
+  }
+}
+.wmc-navbar{
+  background-color: var(--background-color);
+  padding-left:'40px';
+
 }

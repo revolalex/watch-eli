@@ -19,8 +19,7 @@ class CardHorizontal extends Component {
                         <div className="row ">
                             <div className="col-md-8">
                                 <div className="card-block">
-                                    <h4 className="card-title text-right">Le vocabulaire horloger</h4>
-                                    <br />
+                                    <h4 className="card-title text-right">Le vocabulaire horloger par Frank Sans C: </h4>
                                     {/* <p className="card-text text-justify">
                                         Pour apprécier et mieux connaître les montres, c'est toujours bien de connaître
                                         les mots qui apparaissent dans les différentes descriptions que vous pourrez
@@ -52,7 +51,6 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right"> Mieux connaître l horlogerie</h4>
-                                    <br />
                                     {/* <p className="card-text text-justify">
                                         Mieux connaître l'horlogerie. Vous trouverez ici les réponses aux questions les plus fréquemment posées sur l'horlogerie et son histoire...
                                     </p> */}
@@ -67,7 +65,6 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title">Montres d'aviation</h4>
-                                    <br />
                                     {/* <p className="card-text text-justify">
                                         Parmi les différents types connus de montres,
                                         la montre d’aviateur est peut-être celle qui témoigne de l’histoire la plus fascinante.
@@ -96,11 +93,10 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right">Fondation de haute horlogerie</h4>
-                                    <br />
                                     {/* <p className="card-text text-justify">
                                         Découvrez l'histoire, les marchés et le savoir-faire de l'univers des montres de Haute Horlogerie
                                     </p> */}
-                                    <a href="https://journal.hautehorlogerie.org/fr/category/actualites/" target="blank">Fondation de Haute Horlogerie</a>
+                                    <a href="https://journal.hautehorlogerie.org/fr/category/actualites/" target="blank">La Fondation de Haute Horlogerie</a>
                                 </div>
                                 <br/>
                             </div>
@@ -115,8 +111,7 @@ class CardHorizontal extends Component {
                         <div className="row ">
                             <div className="col-md-8">
                                 <div className="card-block">
-                                    <h4 className="card-title text-right">Kevin O'Leary</h4>
-                                    <br />
+                                    <h4 className="card-title text-right">Kevin O'Leary Interview: Debating Watches as Investments, Discussing the Industry & His Collection</h4>
                                     {/* <p className="card-text text-justify">
                                         Kevin O'Leary Interview: Debating Watches as Investments, Discussing the Industry & His Collection
                                     </p> */}
@@ -144,7 +139,6 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right">Watch dictionnary</h4>
-                                    <br />
                                     {/* <p className="card-text text-justify">
                                         Learn more about watchmaking. Here you will find answers to the most frequently asked questions about watchmaking and its history ...
                                     </p> */}
@@ -158,8 +152,7 @@ class CardHorizontal extends Component {
                         <div className="row ">
                             <div className="col-md-8">
                                 <div className="card-block">
-                                    <h4 className="card-title">Aviation Watch</h4>
-                                    <br />
+                                    <h4 className="card-title">Pilot Watches</h4>
                                     {/* <p className="card-text text-justify">
                                         Among the various known types of watches, the aviator's watch is perhaps the one that bears witness to the most fascinating history.
                                     </p> */}
@@ -187,7 +180,6 @@ class CardHorizontal extends Component {
                             <div className="col-md-8">
                                 <div className="card-block">
                                     <h4 className="card-title text-right">Haute Horlogerie Foundation</h4>
-                                    <br />
                                     {/* <p className="card-text text-justify">
                                         Discover the history, markets and know-how of the world of Fine Watchmaking watches
                                     </p> */}
