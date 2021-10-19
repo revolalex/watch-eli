@@ -32,7 +32,7 @@ ul {
 }
 
 .cta-text {
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   padding-left: 15px;
   display: inline-block;
 }
@@ -111,7 +111,7 @@ ul {
 @media (max-width: 990px){
   .cta-text{
     padding-left: 0;
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
 }
 
@@ -255,4 +255,10 @@ ul {
 #logoText{
   color: var(--text-on-background);
   font-size: 28px;
+}
+
+
+.link-email{
+  text-decoration: none;
+  color: #2E2E2E;
 }

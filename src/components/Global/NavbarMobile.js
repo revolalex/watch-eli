@@ -30,17 +30,10 @@ class NavbarMobile extends Component {
                     <div className="logo-nav-div">
                         <span className="logo-police">
                             <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
-
-                            {/* <span className="majuscule-title">W</span>
-                            atch
-                            <span className="majuscule-title">M</span>
-                            arket
-                            <span className="majuscule-title">C</span>
-                            lub */}
                         </span>
-                        <span className="tel-header" style={{fontSize:"18px"}}>
-                            <i className="fas fa-phone" />
-                            (+33) 1 87 21 13 81
+                        <span className="tel-header" style={{ fontSize: "18px" }}>
+
+                            <a className="link-email" href="tel:+33187211381"><i className="fas fa-phone" />(+33) 1 87 21 13 81</a>
                         </span>
 
                     </div>
@@ -54,11 +47,6 @@ class NavbarMobile extends Component {
                             <Nav.Link href="/trade">{t("navbar-trade")}</Nav.Link>
                             <Nav.Link href="/service">{t("service")}</Nav.Link>
                             <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
-                            {/* <NavDropdown title="Link" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/service">{t("service")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/about">{t("navbar-about")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/contact">{t("navbar-contact")}</NavDropdown.Item>
-                            </NavDropdown> */}
                         </Nav>
                         <div className="tel-header">
                             <select value={this.state.value} onChange={this.handleChange} className="select-lang">

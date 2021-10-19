@@ -99,7 +99,7 @@ class Footer extends Component {
                                 <div className="single-cta">
                                     <div className="cta-text">
                                         <br />
-                                        <span className="span-footer"><i className="fas fa-phone row1-icon"></i>&nbsp;(+33) 1 87 21 13 81</span>
+                                        <a className="link-email"  href="tel:+33187211381"><span className="span-footer"><i className="fas fa-phone row1-icon"></i>&nbsp;(+33) 1 87 21 13 81</span></a>
                                     </div>
                                 </div>
 
@@ -108,7 +108,7 @@ class Footer extends Component {
                                 <div className="single-cta">
                                     <div className="cta-text">
                                         <br />
-                                        <span className="span-footer"> <i className="far fa-envelope-open row1-icon"></i>&nbsp;info@watchmarketclub.com</span>
+                                        <a className="link-email" href="mailto:info@watchmarketclub.com"><span className="span-footer"> <i className="far fa-envelope-open row1-icon"></i>&nbsp;info@watchmarketclub.com</span></a>
                                     </div>
                                 </div>
                             </div>
