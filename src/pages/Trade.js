@@ -21,7 +21,7 @@ class Trade extends Component {
             <div>
                 <JumbotronImage imgSrc={echangeImg} />
                 <TitreCard
-                    titre={`WMC vous propose la solution echange`}
+                    titre={`WMC vous propose la solution échange`}
                     cardText={`Comment ca marche: WMC vous assiste en proposant une reprise de votre 
                     montre en l’état au profit du nouveau modèle de votre choix. 
                     WMC évalue votre montre et vous offre un devis gratuit afin 

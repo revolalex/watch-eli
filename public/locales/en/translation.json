@@ -46,7 +46,7 @@
     "form-sell-nothing": "None",
     "send": "Send",
     "form-sell-tooltip-condition": "Evaluate the condition of your watch, 10 for perfect, 0 for not working",
-    "condition-0": "Imcomplete",
+    "condition-0": "Incomplete",
     "condition-1": "Defective",
     "condition-2": "Satisfactory",
     "condition-3": "Good",

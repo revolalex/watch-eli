@@ -97,10 +97,8 @@ class Footer extends Component {
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    {/* <i className="fas fa-phone row1-icon"></i> */}
                                     <div className="cta-text">
                                         <br />
-                                        {/* <h4>{t("footer-call-us")}</h4> */}
                                         <span className="span-footer"><i className="fas fa-phone row1-icon"></i>&nbsp;(+33) 1 87 21 13 81</span>
                                     </div>
                                 </div>
@@ -108,10 +106,8 @@ class Footer extends Component {
                             </div>
                             <div className="col-xl-4 col-md-4 mb-30">
                                 <div className="single-cta">
-                                    {/* <i className="far fa-envelope-open row1-icon"></i> */}
                                     <div className="cta-text">
                                         <br />
-                                        {/* <h4>{t("footer-mail-us")}</h4> */}
                                         <span className="span-footer"> <i className="far fa-envelope-open row1-icon"></i>&nbsp;info@watchmarketclub.com</span>
                                     </div>
                                 </div>
@@ -122,13 +118,6 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-xl-8 col-lg-8 mb-50 pt-2 pb-2">
                                 <div className="footer-widget">
-                                    {/* <div className="footer-logo">
-                                        <p href="index.html" id="logoText"><img src={watch} className="img-fluid logoFooterText" id="logoFooter"  alt="logo" /> Watchiz </p>
-                                    </div> */}
-                                    {/* <div className="footer-text">
-                                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                            elit,Lorem ipsum dolor sit amet.</p>
-                                    </div> */}
                                     <div className="footer-social-icon">
                                         <span>{t("footer-follow-us")}</span>
                                         <a href={ExternaLinks.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook-f facebook-bg"></i></a>
@@ -140,20 +129,16 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-50 pt-2 pb-2">
                                 <div className="footer-widget">
-                                    {/* <div className="footer-widget-heading ">
-                                        <h3 className="newletter-inscription">{t("footer-subscribe")}</h3>
-                                    </div> */}
                                     <div>
                                         <h3 className="newletter-inscription">Newsletter inscription</h3>
                                     </div>
                                     <form id="my-form-newsletter" className="subscribe-form">
                                         <input type="text" name="formName" required="required" value="Newsletter" style={{ display: "none" }} />
                                         <div>
-                                            <input type="email" name="email"  value={this.state.email} onChange={this.handleEmailInputFooter} placeholder={t("footer-placeholder-email")} />
-                                            <button onClick={this.handleClick}><i className="fab fa-telegram-plane" disabled={isValidEmail? "" : "disabled"}></i></button>
+                                            <input type="email" name="email" value={this.state.email} onChange={this.handleEmailInputFooter} placeholder={t("footer-placeholder-email")} />
+                                            <button onClick={this.handleClick}><i className="fab fa-telegram-plane" disabled={isValidEmail ? "" : "disabled"}></i></button>
                                             {!isValidEmail && <p className="inputValidator">Valid email is required</p>}
                                         </div>
                                     </form>
@@ -185,10 +170,15 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="copyright-text">
-                    <p className="text-center ">Mentions légale - R.C.S: FR98-763241-457280 </p>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-4 col-lg-4  text-lg-left">
+                            <div className="copyright-text">
+                                <p className="">Mentions légale - R.C.S: 903 624 930</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </footer>
 
         )
