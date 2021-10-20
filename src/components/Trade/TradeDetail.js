@@ -39,14 +39,14 @@ class TradeDetail extends Component {
                             <i className="fad fa-long-arrow-alt-down arrow-down-icon info"></i>
                         </div>
                         <div className="text">
-                            <h5>{t("form-sell-step1")}
+                            <h5>{t("sell-step-1")}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={"Nous vous contacterons à votre convenance afin de vous assister dans la vérification des informations "}
+                                    traduction={t('sell-step-1-tooltip')}
                                 />
                             </h5>
-                            <p>Un expert WMC vous contactera dans un délai de 48h</p>
+                            <p>{t('sell-step-1-texte')}</p>
                         </div>
                     </div>
                     <br />
@@ -57,14 +57,14 @@ class TradeDetail extends Component {
                         </div>
                         <div className="text">
                             <h5>
-                                {t("form-sell-step2.1")}
+                                {t("sell-step-2")}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={"Un membre de notre équipe vous contactera dans un délai de 48 heures"}
+                                    traduction={t('sell-step-2-tooltip')}
                                 />
                             </h5>
-                            <p>Pre-évaluation de votre montre </p>
+                            <p>{t("sell-step-2-texte")}</p>
                         </div>
                     </div>
                     <br />
@@ -76,11 +76,11 @@ class TradeDetail extends Component {
                         </div>
                         <div className="text">
                             <h5>
-                                Visitez notre boutique
+                                {t('trade-step-3')}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={"Nos experts vous conseillent avec plaisir"}
+                                    traduction={t('trade-step-3-tooltip')}
                                 />
                             </h5>
                             <a href={ExternaLinks.chrono24} target='blank'>Chrono24</a>
@@ -92,17 +92,18 @@ class TradeDetail extends Component {
                             <img src={colisIcon} alt="icones" width={iconWidth} />
                         </div>
                         <div className="text">
-                            <h5>Expedition/Reception
+                            <h5>{t('trade-step-4')}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={"Programmez la collecte de votre montre et obtenez votre nouvelle montre"}
+                                    traduction={t('sell-step-4-tooltip')}
                                 />
                             </h5>
-                            <p>Envoi gratuit 100% assuré 100% sécurisé</p>
+                            <p>{t('sell-step-3-texte')}</p>
                         </div>
                     </div>
                     <br />
+                    <p style={{textAlign: "center", fontStyle:"italic"}}>{t('authentic-watch')}</p>
                 </Card>
                 <img
                     style={{

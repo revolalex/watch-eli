@@ -19,7 +19,7 @@ class SellDetail extends Component {
     render() {
 
         const t = this.props.t
-        const iconWidth= "60px"
+        const iconWidth = "60px"
         return (
             <div className="contactInfo">
                 <img
@@ -34,32 +34,26 @@ class SellDetail extends Component {
                     }}
                 />
                 <Card>
-                    <br/>
+                    <br />
                     <div className="box" >
                         <div className="icon">
-                            <img src={formulaireIcon} alt="icones" width={iconWidth}/>
+                            <img src={formulaireIcon} alt="icones" width={iconWidth} />
                             <i className="fad fa-long-arrow-alt-down arrow-down-icon"></i>
                         </div>
                         <div className="text">
-                            <h5>{t("form-sell-step1")}
+                            <h5>{t("sell-step-1")}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={
-                                        `Nous vous contacterons à votre convenance afin de vous assister dans la vérification des informations `
-                                        // `WMC s’engage à traiter vos informations (personnelles) de manière entièrement confidentielle.
-                                        // Vos données personnelles ne sont exploitées que dans le cadre de votre demande d'achat, de vente ou du déroulement de votre commande.
-                                        // `
-                                    }
+                                    traduction={t('sell-step-1-tooltip')}
                                 />
                             </h5>
-
                             <p>
-                                Un expert WMC vous contactera dans un délai de 48h
+                                {t('sell-step-1-texte')}
                             </p>
                         </div>
                     </div>
-                    <br/>
+                    <br />
                     <div className="box" >
                         <div className="icon">
                             <img src={money} alt="icones" width={iconWidth} />
@@ -67,24 +61,19 @@ class SellDetail extends Component {
                         </div>
                         <div className="text">
                             <h5>
-                                Recevez votre offre personnalisée
+                                {t('sell-step-2')}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={
-                                        `Dès réception de votre montre, celle-ci sera inspectée par nos experts horlogers.
-                                        Vous recevrez une confirmation de l’offre d'achat dans un délai d'1 à 3 jour(s) ouvrable(s). 
-                                        `
-                                    }
+                                    traduction={t('sell-step-2-tooltip')}
                                 />
                             </h5>
-
                             <p>
-                                Nos experts pre-évaluent votre montre et vous font une offre. Votre offre est valable durant 48heures
+                                {t('sell-step-2-texte')}
                             </p>
                         </div>
                     </div>
-                    <br/>
+                    <br />
                     <div className="box">
                         <div className="icon">
                             <img src={boxIcon} alt="icones" width={iconWidth} />
@@ -92,40 +81,39 @@ class SellDetail extends Component {
                         </div>
                         <div className="text">
                             <h5>
-                                {t("form-sell-step3")}&nbsp;
+                                {t("sell-step-3")}&nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={"Pour l'envoi de votre montre, nous vous faisons parvenir un bordereau d'expédition qu'il suffit d'imprimer et de coller sur votre colis.Votre montre est 100% assurée pour la valeur du devis pendant toute notre prise en charge"}
+                                    traduction={t('sell-step-3-tooltip')}
                                 />
                             </h5>
-                            <p>Envoi gratuit 100% assuré 100% sécurisé</p>
+                            <p>{t('sell-step-3-texte')}</p>
                         </div>
                     </div>
-                    <br/>
+                    <br />
                     <div className="box">
                         <div className="icon">
                             <img src={argent} alt="icones" width={iconWidth} />
                         </div>
                         <div className="text">
                             <h5>
-                                Recevez votre paiement
+                                {t('sell-step-4')}
                                 &nbsp;
                                 <TooltipPerso
                                     abrevation={<i className="fal fa-info-circle infoIconSize" />}
-                                    traduction={
-                                        `Confirmez vos informations et recevez votre paiement sécurisé en cinq jours `
-                                    }
+                                    traduction={t('sell-step-4-tooltip')}
                                 />
                             </h5>
-                            <p>Paiement par virement bancaire dans les cinq jours ouvrés
+                            <p>{t('sell-step-4-texte')}
                             </p>
                         </div>
                     </div>
-                    <br/>
+                    <br />
+                    <p style={{textAlign: "center", fontStyle:"italic"}}>{t('authentic-watch')}</p>
                 </Card>
-                <br/><br/>
+                <br /><br />
                 <img
-                src={img2}
+                    src={img2}
                     alt="serrage de main, deal"
                     style={{
                         paddingBottom: "40px",

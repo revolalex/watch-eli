@@ -8,7 +8,7 @@ import '../css/TitreCard.css'
 class ServiceTitre extends Component {
     state = {}
     render() {
-        // const t = this.props.t
+        const t = this.props.t
         return (
             <div>
                 <Card >
@@ -20,11 +20,7 @@ class ServiceTitre extends Component {
                             <br/>
                             <h4 style={{ color: "#616A6B", fontStyle: "italic" }}>Calibre | Caliber | キャリバー | 机芯号 :</h4>
                             <h5 style={{ color: "#616A6B", fontStyle: "italic" }} className="card-text text-justify">
-                                Un calibre désigne un type de mouvement en horlogerie.
-                                À l'origine, il était synonyme d'une dimension, souvent exprimée en
-                                lignes, pour un mouvement d'horlogerie. Il existe des calibres pour
-                                homme ou dame, mécaniques, automatiques, quartz ou hybrides.
-                                Le calibre de la marque du fabricant en désigne la provenance.
+                               {t('service-bandeau-texte')}
                             </h5>
                             <br />
                         </div>

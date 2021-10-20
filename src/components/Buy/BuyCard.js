@@ -11,7 +11,7 @@ import ExternaLinks from '../../utils/socialMedia.js'
 class BuyCard extends Component {
     state = {}
     render() {
-        // const t = this.props.t
+        const t = this.props.t
         return (
             <Container>
                 <div className="card col-md-12 p-3 my-horizontal-card">
@@ -23,35 +23,28 @@ class BuyCard extends Component {
                             <div className="card-block">
                                 <br />
                                 <Card.Title>
-                                    {/* {t('buy-card-title')} */}
-                                    <h4>Le modèle de vos rêves en un clic sur WMC</h4>
+                                    <h4>{t('carousel-slide-2')}</h4>
                                 </Card.Title>
-                                <br/>
+                                <br />
                                 <Card.Text>
-                                    {/* {t('buy-card-text')} */}
-                                    Trouvez le modèle de vos rêves en visitant notre boutique en
-                                    ligne via la plateforme sécurisée Chrono24.com et procédez
-                                    facilement et en toute tranquillité.
+                                    {t('achat-card-1-texte')}
                                 </Card.Text>
                                 <br />
                                 <Card.Text>
-                                    {/* {t('buy-card-text2')} */}
-                                    Sécurisez vos achats grâce à la
-                                    <a href="https://www.chrono24.fr/about-us.htm#gref" target="blank"> Protection des Acheteurs de Chrono24:</a>
-                                    &nbsp;transaction sécurisée sur le compte d’un tiers de confiance et garantie d'authenticité.
+                                    {t('achat-card-1-texte-2')}
+                                    <a href="https://www.chrono24.fr/about-us.htm" target="blank">{t('achat-card-1-texte-3')}</a>
+                                    &nbsp;{t('achat-card-1-texte-4')}
                                 </Card.Text>
-                                <br/>
+                                <br />
                                 <img className="protection-achat-img" src="https://static.chrono24.com/images/default/icons/stage-buyers-protection.svg" alt="achat potection chono24" />
                                 <br />
-                                <br/>
+                                <br />
                                 <Card.Text>
-                                    Toutes nos pièces “certified pre-owned” sont évaluées, authentifiées et certifiées
-                                    par des experts horlogers afin de garantir une qualité irréprochable.
-                                    Nos montres 100% certifiées d’origine et garanties 18mois &nbsp;
+                                    {t('achat-card-1-texte-5')} &nbsp;
                                     <OverlayTrigger
                                         overlay={
                                             <Tooltip id="tooltip-disabled">
-                                                {`Avec WMC vous êtes sécurisé: tous nos produits sont garantis pour une période de 18 mois. Pour plus d'information, veuillez consulter nos garanties légales`}
+                                                {t('achat-card-1-texte-5-tooltip')}
                                             </Tooltip>
                                         }>
                                         <span className="d-inline-block"
@@ -64,12 +57,11 @@ class BuyCard extends Component {
                                         </span>
                                     </OverlayTrigger>
                                 </Card.Text>
-                                <br/>
-                                <a href={ExternaLinks.chrono24} target="blank"><Card.Text style={{ textAlign: "center", textDecoration: "underline", fontSize: "1.2em" }}>Visitez notre boutique en ligne</Card.Text></a>
-                                <br/>
+                                <br />
+                                <a href={ExternaLinks.chrono24} target="blank"><Card.Text style={{ textAlign: "center", textDecoration: "underline", fontSize: "1.2em" }}>{t('achat-card-1-texte-6')}</Card.Text></a>
+                                <br />
                                 <Chrono24 />
-                                <br/>
-                                {/* <a href="/" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>read more...</a> */}
+                                <br />
                             </div>
                         </div>
                     </div>

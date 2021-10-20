@@ -7,24 +7,22 @@ import { withTranslation } from 'react-i18next';
 class BuyTitre extends Component {
     state = {}
     render() {
-        // const t = this.props.t
+        const t = this.props.t
         return (
-
-
             <Card >
                 <div className="title-div">
                     <div className="title-setting">
-                        <h1 className="my-police-titre">Trouvez la montre de vos rêves</h1>
+                        <h1 className="my-police-titre">{t('achat-bandeau-titre')}</h1>
                         <br />
                         <h5>
-                            WMC vous propose une sélection de montres neuves ou d’occasion pour le plus grand bonheur des amateurs d’horlogerie et des collectionneurs passionnés. Toutes nos pièces “certified pre-owned” sont contrôlées, authentifiées et certifiées par des experts horlogers afin de garantir une qualité irréprochable.
+                            {t('achat-bandeau-texte')}
                         </h5>
                         <h5>
-                            Nos montres sont 100% certifiées d’origine et garanties 18mois&nbsp;
+                            {t('achat-bandeau-texte-2')}&nbsp;
                             <OverlayTrigger
                                 overlay={
                                     <Tooltip id="tooltip-disabled">
-                                        {`Avec WMC vous êtes sécurisé: tous nos produits sont garantis pour une période de 18 mois. Pour plus d'information, veuillez consulter nos garanties légales`}
+                                        {t('achat-bandeau-tooltip')}
                                     </Tooltip>
                                 }>
                                 <span className="d-inline-block"

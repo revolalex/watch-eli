@@ -17,6 +17,7 @@ import LogoContainer from '../components/Global/LogoContainer';
 
 class Home extends Component {
   render() {
+    const t = this.props.t
 
     var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
     const imgUrl = randomItem
@@ -24,10 +25,10 @@ class Home extends Component {
       <div>
         <CarouselHero />
         <TitreCard
-                    titre={"Pourquoi choisir WMC"}
+                    titre={t("home-bandeau-titre")}
                     sousTitre={""}
-                    cardText={"WMC est composé d'une équipe de passionnés d'horlogerie au bénéfice d' une grande expérience dans le domaine. En effet nos membres experts sont certifiés “Watch specialists” par la prestigieuse FHH (Fédération de la Haute Horlogerie Suisse). Nos connaissances approfondies de l’industrie horlogère nous permettent d’offrir à nos clients un conseil et une expertise personnalisés, ainsi que la possibilité de reprise ou d'échange."}
-                    cardText2={"Recevez dès maintenant une évaluation gratuite de votre montre"}
+                    cardText={t('home-bandeau-texte')}
+                    cardText2={t('home-bandeau-texte-2')}
                 />
         <CardLine />
         

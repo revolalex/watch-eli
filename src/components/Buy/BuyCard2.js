@@ -17,8 +17,8 @@ class BuyCard2 extends Component {
     state = {}
 
     render() {
-        const arrayOfImages = [achatCard21, achatCard2, achatCard22, achatCard23, achatCard24 ]
-        var randomItem = arrayOfImages[Math.floor(Math.random()*arrayOfImages.length)];
+        const arrayOfImages = [achatCard21, achatCard2, achatCard22, achatCard23, achatCard24]
+        var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
         const imgUrl = randomItem
 
         const t = this.props.t
@@ -31,18 +31,14 @@ class BuyCard2 extends Component {
                         </div>
                         <div className="col-md-8">
                             <div className="card-block">
-                                <br/>
+                                <br />
                                 <Card.Title>
-                                    <h4>{t('buy-card2-title')}</h4>
+                                    <h4>{t('achat-card-2-title')}</h4>
                                 </Card.Title>
                                 <Card.Text>
-                                    {/* {t('buy-card2-text-part1')}
-                                    <TooltipPerso abrevation="C.P.O" traduction="Certified Pre Own" />
-                                    {t('buy-card2-text-part2')} */}
-                                    En quête d’une pièce rare ou exceptionnelle? N'hésitez pas à nous contacter directement,&nbsp;W.M.C
-                                    s’engage à trouver votre prochaine montre grâce à notre réseau mondial de professionnels.
+                                    {t('achat-card-2-texte')}
                                 </Card.Text>
-                                <a href="/contact" target="blank" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>Nous contacter</a>
+                                <a href="/contact" target="blank" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>{t('contact-us')}</a>
                             </div>
                         </div>
                     </div>

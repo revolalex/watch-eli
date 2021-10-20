@@ -18,46 +18,40 @@ class CardLine extends Component {
             <div className="container card-line-container">
                 <section className="container mt-5 mb-5">
                     <div className="row row-cols-1 row-cols-md-2 g-4">
+                        {/* ACHAT */}
                         <div className="col card-shadow">
                             <div className="card h-100">
                                 <img src={boxAchat} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t("buy-card")}</h5>
+                                    <h5 className="card-title">{t("home-card-achat-title")}</h5>
                                     <p className="card-text">
-                                        WMC
-                                        {t("card-buy-text")}
+                                        {t("home-card-achat-texte")}
                                     </p>
                                     <p><Link to={'/buy'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
+                        {/* VENTE */}
                         <div className="col card-shadow">
-                            <div className="card h-100"
-                            >
+                            <div className="card h-100">
                                 <img src={boxVente} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{t("sell-card")}</h5>
-                                    <p className="card-text">{t("card-sell-text")}</p>
+                                    <h5 className="card-title">{t("home-card-sell-title")}</h5>
+                                    <p className="card-text">{t("home-card-sell-texte")}</p>
                                     <p><Link to={'/sell'} className="active cardLink">{t("card-more-info")}</Link></p>
                                 </div>
                             </div>
                         </div>
+                        {/* ECHANGE */}
                         <div className="col card-shadow">
-                            <div className="card h-100"
-                            >
+                            <div className="card h-100">
                                 <img src={boxEchange} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        {/* {t('navbar-trade')} */}
-                                        Vous ne la portez plus? WMC Échange
+                                        {t('home-card-trade-title')}
                                     </h5>
                                     <p className="card-text">
-                                        {/* {t('card-trade-text')} */}
-                                        WMC vous propose d’échanger simplement, rapidement et de manière sécurisée.
-                                        Nous expertisons votre montre gratuitement pour reprise et vous proposons
-                                        une sélection de pièces soigneusement restaurées ou neuves.
-                                        Maximisez votre temps et votre argent en une seule opération simple et rapide!
-
+                                        {t('home-card-trade-texte')}
                                     </p>
                                     <p>
                                         <Link to={'/trade'} className="active cardLink">
@@ -67,9 +61,9 @@ class CardLine extends Component {
                                 </div>
                             </div>
                         </div>
+                        {/* SERVICE */}
                         <div className="col card-shadow">
-                            <div className="card h-100"
-                            >
+                            <div className="card h-100">
                                 <img src={boxService} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">
