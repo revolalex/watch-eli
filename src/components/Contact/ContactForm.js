@@ -120,7 +120,6 @@ class ContactForm extends Component {
             <div className="container-contact">
                 <div className="contactform card">
                     <form id="my-form2" >
-                        {/* <form id="my-form" action="https://formspree.io/f/meqvdnpo" method="POST" encType="multipart/form-data"> */}
                         <h2 className="my-underline" style={{ textAlign: "center" }}>Contact</h2>
                         <br />
                         <input type="text" name="formName" required="required" value="Contact" style={{display:"none"}}/>

@@ -67,17 +67,10 @@ class CardLine extends Component {
                                 <img src={boxService} className="card-img-top img-from-card" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        {/* {t("service")} */}
-                                        WMC l’expertise horlogère à votre service
+                                        {t('home-card-service-title')}
                                     </h5>
                                     <p className="card-text">
-                                        {/* {t("card-service-text")} */}
-                                        Montres mécaniques à remontage manuel ou automatique,
-                                        modèles à complications ou simple échange de pile,
-                                        nos maîtres horlogers assurent la maintenance de tous
-                                        types de montres dans le plus grand détail afin de vous
-                                        proposer un service de réparation, révision et entretien
-                                        à la hauteur de vos attentes.
+                                       {t('home-card-service-texte')}
                                     </p>
                                     <p>
                                         <Link to={'/service'} className="active cardLink">
