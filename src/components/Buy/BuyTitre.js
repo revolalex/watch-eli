@@ -12,7 +12,7 @@ class BuyTitre extends Component {
             <Card >
                 <div className="title-div">
                     <div className="title-setting">
-                        <h1 className="my-police-titre">{t('achat-bandeau-titre')}</h1>
+                        <h1 className="my-police-titre">{t('carousel-slide-2')}</h1>
                         <br />
                         <h5>
                             {t('achat-bandeau-texte')}

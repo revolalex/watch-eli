@@ -10,6 +10,7 @@ import Navbar from './components/Global/navbar';
 import Footer from './components/Global/Footer';
 import Trade from './pages/Trade'
 import ContactService from './pages/ContactService'
+import GeneralConditions from './components/Global/GeneralConditions';
 
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +34,7 @@ class App extends Component {
           <Route path='/sell' component={Sell} />
           <Route path='/service' component={Service} />
           <Route path='/trade' component={Trade} />
+          <Route path='/condition-generale' component={GeneralConditions} />
         </Switch>
         <Footer />
       </Router>

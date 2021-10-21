@@ -23,7 +23,7 @@ class BuyCard extends Component {
                             <div className="card-block">
                                 <br />
                                 <Card.Title>
-                                    <h4>{t('carousel-slide-2')}</h4>
+                                    {/* <h4>{t('carousel-slide-2')}</h4> */}
                                 </Card.Title>
                                 <br />
                                 <Card.Text>

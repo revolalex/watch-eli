@@ -172,7 +172,7 @@ class Footer extends Component {
                     <div className="row">
                         <div className="col-xl-4 col-lg-4  text-lg-left">
                             <div className="copyright-text">
-                                <p className="">Mentions légale - R.C.S: 903 624 930</p>
+                                <p className=""><a href='/condition-generale'>{t('condition-generale')}</a> - R.C.S: 903 624 930</p>
                             </div>
                         </div>
                     </div>
