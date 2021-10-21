@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import i18n from '../../i18n';
 import '../css/NavBarMobile.css'
 import logo2 from '../../img/logo2.png'
+import Langue from "./Langue";
 
 class NavbarMobile extends Component {
     constructor(props) {
@@ -32,13 +33,11 @@ class NavbarMobile extends Component {
                             <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
                         </span>
                         <span className="tel-header" style={{ fontSize: "18px" }}>
-
                             <a className="link-email" href="tel:+33187211381"><i className="fas fa-phone" />(+33) 1 87 21 13 81</a>
                         </span>
 
                     </div>
-                    <div className="wmc-navbar my-police-titre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch Market Club</div>
-
+                    <div className="wmc-navbar my-police-titre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch Market Club <Langue handleChange={this.handleChange}/></div>
                     <Navbar className="my-navbar">
                         <Nav activeKey={pathname} className="mr-auto">
                             <Nav.Link href="/">{t('navbar-home')}</Nav.Link>
@@ -48,7 +47,7 @@ class NavbarMobile extends Component {
                             <Nav.Link href="/service">{t("service")}</Nav.Link>
                             <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
                         </Nav>
-                        <div className="tel-header">
+                        {/* <div className="tel-header">
                             <select value={this.state.value} onChange={this.handleChange} className="select-lang">
                                 <option value="fr">
                                     🇫🇷
@@ -57,7 +56,7 @@ class NavbarMobile extends Component {
                                     🇬🇧
                                 </option>
                             </select>
-                        </div>
+                        </div> */}
                     </Navbar>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import i18n from '../../i18n';
 import NavbarMobile from "./NavbarMobile";
 import logo2 from '../../img/logo2.png'
+import Langue from "./Langue";
 
 
 
@@ -53,7 +54,7 @@ class Navbar5 extends Component {
                                 <Nav.Link href="/service">{t("service")}</Nav.Link>
                                 <Nav.Link href="/blog">{t("navbar-blog")}</Nav.Link>
                                 {/* FIXME essai alignement nav */}
-                                <Nav.Link >
+                                {/* <Nav.Link >
                                     <div className="">
                                         <select value={this.state.value} onChange={this.handleChange} className="select-lang">
                                             <option value="fr">
@@ -64,19 +65,10 @@ class Navbar5 extends Component {
                                             </option>
                                         </select>
                                     </div>
-                                </Nav.Link>
+                                </Nav.Link> */}
                             </Nav>
                         </Navbar.Collapse>
-                        {/* <div className="tel-header">
-                            <select value={this.state.value} onChange={this.handleChange} className="select-lang">
-                                <option value="fr">
-                                    🇫🇷
-                                </option>
-                                <option value="en">
-                                    🇬🇧
-                                </option>
-                            </select>
-                        </div> */}
+                        <Langue handleChange={this.handleChange}/>
                     </Navbar>
                 </div>
             </div>
