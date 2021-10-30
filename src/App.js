@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Sell from './pages/Sell'
 import Buy from './pages/Buy'
 import Service from './pages/Service'
-import Navbar from './components/Global/navbar';
+import Navbar from './components/Global/navbar2';
 import Footer from './components/Global/Footer';
 import Trade from './pages/Trade'
 import ContactService from './pages/ContactService'
@@ -38,6 +38,7 @@ class App extends Component {
         </Switch>
         <Footer />
       </Router>
+      
     );
   }
 }

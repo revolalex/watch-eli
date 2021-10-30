@@ -11,7 +11,6 @@ import ServiceGlobal from '../components/Service/ServiceGloball';
 
 class Service extends Component {
   render() {
-    // const imageSource = "https://s3-eu-west-1.amazonaws.com/poslux-wordpress/wp-content/uploads/sites/2/2019/02/06011845/IWC-Hero-21.jpg"
     var randomItem = arrayOfImages[Math.floor(Math.random() * arrayOfImages.length)];
     const imgUrl = randomItem
     return (

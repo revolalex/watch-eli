@@ -4,6 +4,7 @@ import TooltipPerso from "../Global/TooltipPerso.js"
 import { Col, Row } from 'react-bootstrap';
 import hologer from '../../img/serv.jpeg'
 import { withTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 class ServiceCard extends Component {
     render() {
@@ -14,7 +15,6 @@ class ServiceCard extends Component {
                     <div className="row">
                         <div className="card col-md-12 p-3 my-horizontal-card">
                             <div className="row">
-
                                 <div className="col-md-4">
                                     <img className="w-100" alt="horloger" src={hologer} />
                                 </div>
@@ -24,7 +24,7 @@ class ServiceCard extends Component {
                                         <div className="toto">
                                             <br />
                                             <p className="card-text text-justify">
-                                              {t('service-card-texte')}
+                                                {t('service-card-texte')}
                                             </p>
                                             <br />
                                             <Row>
@@ -51,9 +51,6 @@ class ServiceCard extends Component {
                                                             traduction={t('service-autre-tooltip')}
                                                         />
                                                     </p>
-
-
-
                                                 </Col>
                                                 <Col>
                                                     <p>
@@ -71,13 +68,13 @@ class ServiceCard extends Component {
                                                             traduction={t('service-polissage-tooltip')}
                                                         />
                                                     </p>
-
                                                 </Col>
                                             </Row>
                                         </div>
                                         <br />
-                                        <a href="/contact-service" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>{t('contact-us')}</a>
-
+                                        <Link to={'/contact-service'}>
+                                            <p className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>{t('contact-us')}</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

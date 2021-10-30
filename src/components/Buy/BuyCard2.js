@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Container, Card } from "react-bootstrap";
 import { withTranslation } from "react-i18next";
-
+import { Link } from 'react-router-dom';
 // Images
 import achatCard2 from "../../img/achat/achatCard2.jpeg"
 import achatCard21 from "../../img/achat/1.jpeg"
@@ -38,7 +38,9 @@ class BuyCard2 extends Component {
                                 <Card.Text>
                                     {t('achat-card-2-texte')}
                                 </Card.Text>
-                                <a href="/contact" target="blank" className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>{t('contact-us')}</a>
+                                <Link to={'/contact'}>
+                                    <p className="btn btn-success" style={{ backgroundColor: "var(--vert-color)" }}>{t('contact-us')}</p>
+                                </Link>
                             </div>
                         </div>
                     </div>

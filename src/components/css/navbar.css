@@ -118,3 +118,48 @@
     font-family: 'Crimson Text', cursive;
   }
 }
+
+
+
+/* #my-ul li{
+  display: inline;
+}
+
+
+
+
+#my-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#my-ul li {
+  float: left;
+}
+
+#my-ul li a {
+  display: block;
+  padding: 8px;
+} */
+
+
+.navz ul {
+  margin: 0px;
+  padding: 0px;
+  list-style:none;
+}
+
+.navz a {
+  padding: 1em;
+  display: block;
+  text-align:center;
+  text-decoration: none;
+}
+
+.navz .menuz {
+  display: flex; /*1*/
+  flex-direction : row; /*2*/
+  justify-content: center; /*3*/
+}

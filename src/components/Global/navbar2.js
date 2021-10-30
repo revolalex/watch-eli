@@ -5,12 +5,15 @@ import '../css/navbar.css'
 import { withTranslation } from 'react-i18next';
 import React, { Component } from 'react';
 import i18n from '../../i18n';
-import '../css/NavBarMobile.css'
+import NavbarMobile from "./NavbarMobile";
 import logo2 from '../../img/logo2.png'
 import Langue from "./Langue";
 import { Link } from 'react-router-dom';
 
-class NavbarMobile extends Component {
+
+
+
+class Navbar5 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,23 +32,26 @@ class NavbarMobile extends Component {
         return nowUrl
     }
     render() {
-    
         const t = this.props.t
         return (
-            <div className="my-mobile-nav">
-                <div className="sticky-top">
+            <div>
+                <NavbarMobile />
+                <div className="sticky-top big-screen-nav">
                     <div className="logo-nav-div">
                         <span className="logo-police">
                             <Nav.Link href="/"><img className="main-logo" src={logo2} alt="logo watch" /></Nav.Link>
                         </span>
-                        <span className="tel-header" style={{ fontSize: "18px" }}>
-                            <a className="link-email" href="tel:+33187211381"><i className="fas fa-phone" />(+33) 1 87 21 13 81</a>
+                        <span className='my-logo-police'>WatchMarketClub</span>
+                        <span className="tel-header">
+                            <i className="fas fa-phone" />
+                            <a className='tel-in-nav' href="tel:+33187211381">&nbsp;(+33) 1 87 21 13 81</a>
                         </span>
 
                     </div>
-                    <div className="wmc-navbar my-police-titre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch Market Club <Langue handleChange={this.handleChange}/></div>
-                    <Navbar className="my-navbar">
-                    <Nav className="mr-auto navbar-nav">
+                    <Navbar className="my-navbar" expand="sm">
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="mr-auto navbar-nav">
                                 <Link to={'/'} className={`nav-link ${this.activeLink('/')}`} >{t("navbar-home")}</Link>
                                 <Link to={'/buy'} className={`nav-link ${this.activeLink('/buy')}`}>{t("buy")}</Link>
                                 <Link to={'/sell'} className={`nav-link ${this.activeLink('/sell')}`}>{t("sell")}</Link>
@@ -53,16 +59,8 @@ class NavbarMobile extends Component {
                                 <Link to={'/service'} className={`nav-link ${this.activeLink('/service')}`}>{t("service")}</Link>
                                 <Link to={'/blog'} className={`nav-link ${this.activeLink('/blog')}`}>{t("navbar-blog")}</Link>
                             </Nav>
-                        {/* <div className="tel-header">
-                            <select value={this.state.value} onChange={this.handleChange} className="select-lang">
-                                <option value="fr">
-                                    🇫🇷
-                                </option>
-                                <option value="en">
-                                    🇬🇧
-                                </option>
-                            </select>
-                        </div> */}
+                        </Navbar.Collapse>
+                        <Langue handleChange={this.handleChange} />
                     </Navbar>
                 </div>
             </div>
@@ -70,4 +68,5 @@ class NavbarMobile extends Component {
     }
 }
 
-export default withTranslation()(withRouter(NavbarMobile))
+
+export default withTranslation()(withRouter(Navbar5))
