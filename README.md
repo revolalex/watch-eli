@@ -1,6 +1,17 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/made%20with-javaScript-yellow?logo=javaScript).
+![](https://img.shields.io/badge/made%20with-react-blue?logo=react).
+<img src="https://img.shields.io/badge/react-router-blue.svg" alt="react-router">.
+![](https://img.shields.io/badge/made%20with-Bootstrap-blueviolet?logo=Bootstrap).
+
+
+# Watch Seller Website
+
+This project was for a friend who sell second hand watch
+
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/56839789/144705219-4d67e9dc-c85f-4e60-aaaa-055ec9d6a0d4.gif)
+
 
 ## Available Scripts
 
